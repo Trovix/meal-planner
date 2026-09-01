@@ -1,0 +1,63 @@
+{
+  "id": "eggs_benedict",
+  "name": "Eggs Benedict",
+  "description": "Toasted English muffin topped with Serrano ham, poached eggs and warm immersion-blender hollandaise, finished with fresh chives and black pepper.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "breakfast"
+  ],
+  "macros": {
+    "calories_kcal": 820,
+    "protein_g": 34,
+    "carbs_g": 33,
+    "fat_g": 61
+  },
+  "buy": [
+    {
+      "ingredient_id": "english_muffins",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "eggs",
+      "quantity": 4,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "serrano_ham",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "lemon",
+      "quantity": 0.5,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "fresh_chives",
+      "quantity": 0.5,
+      "unit": "pack"
+    }
+  ],
+  "pantry": [
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Melt the butter until very hot but not browned.",
+    "Put 2 egg yolks, 2 tsp lemon juice and a pinch of salt into a narrow immersion-blender jug.",
+    "Place the immersion blender over the yolks and start blending. Slowly pour in the hot butter while blending continuously until the sauce emulsifies and becomes thick and glossy. Taste and add a little more lemon or salt if needed. Keep warm.",
+    "Split and toast the English muffin.",
+    "Bring a saucepan of water to a very gentle simmer. Crack each of the remaining 2 eggs into a small cup, lower into the water and poach for roughly 3 minutes until the whites are set and the yolks remain runny.",
+    "Warm the Serrano ham briefly in a frying pan or microwave.",
+    "Top each muffin half with Serrano ham and a poached egg.",
+    "Spoon the warm hollandaise generously over the eggs.",
+    "Finish with chopped chives and black pepper and serve immediately."
+  ]
+}
