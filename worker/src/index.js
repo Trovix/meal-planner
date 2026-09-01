@@ -163,6 +163,38 @@ function validateRecipeShape(recipe) {
   ) {
     throw new Error("Invalid instructions.");
   }
+  if (recipe.make_ahead !== undefined) {
+    const makeAhead = recipe.make_ahead;
+    const expected = new Set([
+      "component",
+      "max_refrigerated_hours",
+      "instructions",
+      "storage",
+      "day_of",
+    ]);
+    if (
+      !makeAhead ||
+      typeof makeAhead !== "object" ||
+      Array.isArray(makeAhead) ||
+      Object.keys(makeAhead).length !== expected.size ||
+      Object.keys(makeAhead).some((key) => !expected.has(key)) ||
+      !shortString(makeAhead.component, 160) ||
+      !Number.isInteger(makeAhead.max_refrigerated_hours) ||
+      makeAhead.max_refrigerated_hours < 1 ||
+      makeAhead.max_refrigerated_hours > 48 ||
+      !Array.isArray(makeAhead.instructions) ||
+      makeAhead.instructions.length < 1 ||
+      makeAhead.instructions.length > 30 ||
+      makeAhead.instructions.some((step) => !shortString(step, 1000)) ||
+      !shortString(makeAhead.storage, 1000) ||
+      !Array.isArray(makeAhead.day_of) ||
+      makeAhead.day_of.length < 1 ||
+      makeAhead.day_of.length > 30 ||
+      makeAhead.day_of.some((step) => !shortString(step, 1000))
+    ) {
+      throw new Error("Invalid make-ahead guidance.");
+    }
+  }
 
   const ingredientDefinitions = recipe.ingredient_definitions || {};
   if (
@@ -224,6 +256,7 @@ function validateRecipeShape(recipe) {
     "buy",
     "pantry",
     "instructions",
+    "make_ahead",
     "substitutions",
     "ingredient_definitions",
     "pantry_definitions",

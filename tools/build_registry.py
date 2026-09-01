@@ -143,6 +143,22 @@ def validate_recipe(recipe, path, ingredients, pantry):
         or any(not isinstance(step, str) or not step.strip() for step in recipe["instructions"])
     ):
         fail(f"{path}: instructions must be a non-empty string array")
+    if "make_ahead" in recipe:
+        make_ahead = recipe["make_ahead"]
+        expected = {"component", "max_refrigerated_hours", "instructions", "storage", "day_of"}
+        if not isinstance(make_ahead, dict) or set(make_ahead) != expected:
+            fail(f"{path}: make_ahead must contain exactly component, max_refrigerated_hours, instructions, storage and day_of")
+        if not isinstance(make_ahead["component"], str) or not make_ahead["component"].strip():
+            fail(f"{path}: make_ahead.component must be a non-empty string")
+        hours = make_ahead["max_refrigerated_hours"]
+        if not isinstance(hours, int) or isinstance(hours, bool) or not 1 <= hours <= 48:
+            fail(f"{path}: make_ahead.max_refrigerated_hours must be an integer from 1 to 48")
+        for key in ("instructions", "day_of"):
+            steps = make_ahead[key]
+            if not isinstance(steps, list) or not steps or any(not isinstance(step, str) or not step.strip() for step in steps):
+                fail(f"{path}: make_ahead.{key} must be a non-empty string array")
+        if not isinstance(make_ahead["storage"], str) or not make_ahead["storage"].strip():
+            fail(f"{path}: make_ahead.storage must be a non-empty string")
     validate_substitutions(recipe, path, ingredients, pantry)
 
 

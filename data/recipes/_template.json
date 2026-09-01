@@ -7,6 +7,13 @@
   "macros":{"calories_kcal":0,"protein_g":0,"carbs_g":0,"fat_g":0},
   "buy":[{"ingredient_id":"ingredient_id","quantity":1,"unit":"g"}],
   "pantry":["salt"],
+  "make_ahead":{
+    "component":"Optional component that can be prepared ahead",
+    "max_refrigerated_hours":48,
+    "instructions":["Prepare the component."],
+    "storage":"Cool promptly, cover and refrigerate within two hours for up to 48 hours.",
+    "day_of":["Reheat until steaming throughout, then finish the meal fresh."]
+  },
   "substitutions":[],
   "instructions":["First step.","Second step."]
 }

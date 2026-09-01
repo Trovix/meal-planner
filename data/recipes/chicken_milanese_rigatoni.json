@@ -17,6 +17,19 @@
     {"ingredient_id": "garlic", "quantity": 2, "unit": "cloves"}
   ],
   "pantry": ["plain_flour", "olive_oil", "neutral_oil", "salt", "black_pepper"],
+  "make_ahead": {
+    "component": "Tomato sauce",
+    "max_refrigerated_hours": 48,
+    "instructions": [
+      "Warm 1 tbsp olive oil in a saucepan. Cook the crushed garlic for 30 seconds, add the canned tomatoes and simmer for 10 minutes.",
+      "Immersion-blend until smooth and season to taste."
+    ],
+    "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+    "day_of": [
+      "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+      "Bread and cook the chicken fresh, boil the rigatoni, then finish the pasta with the mozzarella, Parmesan and basil."
+    ]
+  },
   "substitutions": [
     {
       "id": "pre_breaded_chicken",

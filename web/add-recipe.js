@@ -33,6 +33,7 @@
     value.toLowerCase().trim().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
   const splitIds = (value) => value.split(",").map((item) => item.trim()).filter(Boolean);
   const safeId = (value) => /^[a-z0-9_]{1,64}$/.test(value);
+  const lines = (value) => value.split("\n").map((item) => item.trim()).filter(Boolean);
 
   nameInput.addEventListener("input", () => {
     if (!idInput.dataset.manual) idInput.value = slug(nameInput.value);
@@ -352,11 +353,42 @@
       },
       buy,
       pantry,
-      instructions: document.querySelector("#instructions").value
-        .split("\n")
-        .map((value) => value.trim())
-        .filter(Boolean),
+      instructions: lines(document.querySelector("#instructions").value),
     };
+    const makeAheadValues = {
+      component: document.querySelector("#make-ahead-component").value.trim(),
+      hours: document.querySelector("#make-ahead-hours").value.trim(),
+      instructions: lines(document.querySelector("#make-ahead-instructions").value),
+      storage: document.querySelector("#make-ahead-storage").value.trim(),
+      dayOf: lines(document.querySelector("#make-ahead-day-of").value),
+    };
+    if (
+      makeAheadValues.component ||
+      makeAheadValues.hours ||
+      makeAheadValues.instructions.length ||
+      makeAheadValues.storage ||
+      makeAheadValues.dayOf.length
+    ) {
+      const hours = Number(makeAheadValues.hours);
+      if (
+        !makeAheadValues.component ||
+        !Number.isInteger(hours) ||
+        hours < 1 ||
+        hours > 48 ||
+        !makeAheadValues.instructions.length ||
+        !makeAheadValues.storage ||
+        !makeAheadValues.dayOf.length
+      ) {
+        throw new Error("Complete every prepare-ahead field, using a refrigerated time from 1 to 48 hours.");
+      }
+      result.make_ahead = {
+        component: makeAheadValues.component,
+        max_refrigerated_hours: hours,
+        instructions: makeAheadValues.instructions,
+        storage: makeAheadValues.storage,
+        day_of: makeAheadValues.dayOf,
+      };
+    }
     const alternativeItems = substitutions(catalogue, pantryCatalogue);
     if (alternativeItems.length) result.substitutions = alternativeItems;
     if (Object.keys(ingredientDefs).length) result.ingredient_definitions = ingredientDefs;

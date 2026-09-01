@@ -13,6 +13,12 @@
       : number.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
   };
 
+  const refrigeratedDuration = (hours) => {
+    if (hours === 24) return "up to 1 day";
+    if (hours === 48) return "up to 2 days";
+    return `up to ${hours} hours`;
+  };
+
   function effectiveMeal(meal, selectedSubstitutionIds = new Set()) {
     const substitutions = (meal.substitutions || []).filter((substitution) =>
       selectedSubstitutionIds.has(substitution.id),
@@ -152,6 +158,15 @@
     );
     macroSummary.className = "macros mono";
 
+    let makeAheadSummary = null;
+    if (meal.make_ahead) {
+      makeAheadSummary = text(
+        document.createElement("p"),
+        `Make ahead: ${meal.make_ahead.component} · ${refrigeratedDuration(meal.make_ahead.max_refrigerated_hours)}`,
+      );
+      makeAheadSummary.className = "make-ahead-summary mono";
+    }
+
     const details = document.createElement("details");
     const summary = text(document.createElement("summary"), "Ingredients & method");
     const detailsBody = document.createElement("div");
@@ -208,6 +223,39 @@
     }
 
     detailsBody.append(shoppingHeading, shoppingContainer, pantryHeading, pantryContainer);
+    if (meal.make_ahead) {
+      const makeAheadHeading = text(
+        document.createElement(`h${sectionLevel}`),
+        "Optional: prepare ahead",
+      );
+      makeAheadHeading.className = "recipe-section-title";
+      const makeAheadPanel = document.createElement("section");
+      makeAheadPanel.className = "make-ahead-panel";
+      const component = document.createElement("p");
+      const componentLabel = text(document.createElement("strong"), `${meal.make_ahead.component} — `);
+      component.append(
+        componentLabel,
+        document.createTextNode(refrigeratedDuration(meal.make_ahead.max_refrigerated_hours)),
+      );
+      const prepareLabel = text(document.createElement("p"), "Prepare");
+      prepareLabel.className = "make-ahead-label";
+      const prepare = document.createElement("ol");
+      prepare.className = "recipe-method";
+      for (const step of meal.make_ahead.instructions) {
+        prepare.append(text(document.createElement("li"), step));
+      }
+      const storage = text(document.createElement("p"), meal.make_ahead.storage);
+      storage.className = "make-ahead-storage";
+      const dayOfLabel = text(document.createElement("p"), "On the day");
+      dayOfLabel.className = "make-ahead-label";
+      const dayOf = document.createElement("ol");
+      dayOf.className = "recipe-method";
+      for (const step of meal.make_ahead.day_of) {
+        dayOf.append(text(document.createElement("li"), step));
+      }
+      makeAheadPanel.append(component, prepareLabel, prepare, storage, dayOfLabel, dayOf);
+      detailsBody.append(makeAheadHeading, makeAheadPanel);
+    }
     if ((meal.instructions || []).length) {
       const methodHeading = text(document.createElement(`h${sectionLevel}`), "Method");
       methodHeading.className = "recipe-section-title";
@@ -221,7 +269,9 @@
 
     renderIngredients();
     details.append(summary, detailsBody);
-    article.append(header, description, macroSummary, details);
+    article.append(header, description, macroSummary);
+    if (makeAheadSummary) article.append(makeAheadSummary);
+    article.append(details);
     return article;
   }
 

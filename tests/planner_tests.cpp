@@ -29,5 +29,27 @@ int main() {
         mealplanner::validate_recipe_json(first_recipe.dump(), ingredients, pantry)
     );
     assert(validation["valid"] == true);
+
+    auto make_ahead_recipe = first_recipe;
+    make_ahead_recipe["make_ahead"] = {
+        {"component", "Sauce"},
+        {"max_refrigerated_hours", 48},
+        {"instructions", {"Cook and blend."}},
+        {"storage", "Cool promptly, cover and refrigerate."},
+        {"day_of", {"Reheat until steaming."}}
+    };
+    const auto make_ahead_validation = json::parse(
+        mealplanner::validate_recipe_json(make_ahead_recipe.dump(), ingredients, pantry)
+    );
+    assert(make_ahead_validation["valid"] == true);
+
+    make_ahead_recipe["make_ahead"].erase("storage");
+    bool invalid_make_ahead_rejected = false;
+    try {
+        mealplanner::validate_recipe_json(make_ahead_recipe.dump(), ingredients, pantry);
+    } catch (const std::exception&) {
+        invalid_make_ahead_rejected = true;
+    }
+    assert(invalid_make_ahead_rejected);
     std::cout << "planner tests passed\n";
 }

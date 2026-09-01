@@ -190,6 +190,12 @@ p {
   font-size: .85rem;
 }
 
+.make-ahead-summary {
+  margin: .4rem 0 0;
+  color: #49604d;
+  font-size: .85rem;
+}
+
 .recipe-card details {
   margin-top: .7rem;
 }
@@ -245,6 +251,26 @@ p.recipe-pantry { padding-left: 0; }
 
 .recipe-method li {
   margin-bottom: .5rem;
+}
+
+.make-ahead-panel {
+  margin-top: .35rem;
+  padding: .8rem 1rem;
+  border-left: 2px solid #708b75;
+  background: #f4f7f3;
+}
+
+.make-ahead-panel > :first-child { margin-top: 0; }
+.make-ahead-panel > :last-child { margin-bottom: 0; }
+
+.make-ahead-label {
+  margin: .8rem 0 .25rem;
+  font-weight: 600;
+}
+
+.make-ahead-storage {
+  margin: .75rem 0;
+  color: #4f5751;
 }
 
 .shopping-list {
@@ -375,6 +401,18 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .5rem;
+}
+
+.make-ahead-editor {
+  margin: 2rem 0 1rem;
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.make-ahead-editor legend {
+  padding: 0 .25rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .substitution-row input[data-field="note"],

@@ -1,6 +1,171 @@
 {
   "meals": [
     {
+      "id": "cashew_chicken",
+      "name": "Cashew Chicken",
+      "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 470,
+        "protein_g": 29,
+        "carbs_g": 27,
+        "fat_g": 30
+      },
+      "buy": [
+        {
+          "ingredient_id": "boneless_chicken_thighs",
+          "quantity": 114,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "raw_cashews",
+          "quantity": 34,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "fresh_ginger",
+          "quantity": 6,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "celery",
+          "quantity": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "green_bell_pepper",
+          "quantity": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "chicken_stock",
+          "quantity": 0.05,
+          "unit": "cubes"
+        }
+      ],
+      "pantry": [
+        "black_pepper",
+        "dark_soy",
+        "light_soy",
+        "neutral_oil",
+        "rice_vinegar",
+        "salt",
+        "honey",
+        "cornflour"
+      ],
+      "instructions": [
+        "Whisk together 1 tsp dark soy sauce, 1 tsp light soy sauce, 20 ml prepared chicken stock, 2 tsp rice vinegar, 2 tsp honey, 3/4 tsp cornflour and a pinch of black pepper until smooth.",
+        "Toast the raw cashews in a dry frying pan over medium heat for 5-8 minutes, stirring often, until lightly golden and fragrant, then set aside.",
+        "Season the chicken thigh pieces with salt. Heat 1 tsp neutral oil in a wok over high heat and sear the chicken for 6-8 minutes, turning often, until evenly browned and cooked through to 75\u00b0C. Transfer to a plate.",
+        "Add the remaining 1/2 tsp neutral oil to the wok. Stir-fry the spring onions for 1 minute until lightly charred, then add the roughly chopped garlic and grated ginger and stir-fry for 30 seconds.",
+        "Add the diced celery and green pepper and stir-fry vigorously for 30 seconds. Return the chicken, stir-fry for another 30 seconds, then pour in the sauce. Bring to a boil and toss for about 25 seconds until thick and glossy. Fold through the toasted cashews and serve immediately."
+      ]
+    },
+    {
+      "id": "chicken_leek_carrot_celery_pie",
+      "name": "Chicken, Leek, Carrot & Celery Pie",
+      "description": "Flour-coated chicken breast with leek, carrot and celery in a light cream and mustard sauce beneath crisp shortcrust pastry.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1250,
+        "protein_g": 65,
+        "carbs_g": 80,
+        "fat_g": 65
+      },
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "shortcrust_pastry",
+          "quantity": 120,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "leek",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "carrots",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "celery",
+          "quantity": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "chicken_stock",
+          "quantity": 0.25,
+          "unit": "cubes"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 15,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "black_pepper",
+        "dijon_mustard",
+        "dried_thyme",
+        "olive_oil",
+        "plain_flour",
+        "salt"
+      ],
+      "make_ahead": {
+        "component": "Chicken pie filling",
+        "max_refrigerated_hours": 48,
+        "instructions": [
+          "Cut the chicken into roughly 3 cm pieces, season and roll lightly in 15 g plain flour. Brown in 1 tbsp olive oil, then continue cooking until the centre reaches 75\u00b0C; transfer to a plate.",
+          "Melt the butter in the same pan. Add the leek, carrot, celery and dried thyme, then cook for 8\u201310 minutes until softened.",
+          "Gradually stir in 150 ml prepared chicken stock and simmer until thickened. Stir in the double cream and 1/2 tsp Dijon mustard, then return the cooked chicken only long enough to coat it and bring the filling back to a simmer."
+        ],
+        "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
+        "day_of": [
+          "Transfer the cold filling to a small pie dish while the oven heats to 200\u00b0C conventional or 180\u00b0C fan.",
+          "Top with the shortcrust pastry, trim and crimp, cut a steam hole and brush with beaten egg. Bake for 30\u201335 minutes until deeply golden and the filling is bubbling and steaming throughout."
+        ]
+      },
+      "instructions": [
+        "Heat the oven to 200\u00b0C conventional or 180\u00b0C fan.",
+        "Season the chicken breast pieces with salt and black pepper. Roll them lightly in 15 g plain flour and shake off any excess.",
+        "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Brown the chicken for 2-3 minutes per side, then transfer it to a plate; it does not need to be fully cooked yet.",
+        "Reduce the heat to medium and melt the butter in the same pan. Add the sliced leek, diced carrot, diced celery and dried thyme, then cook for 8-10 minutes until softened.",
+        "Dissolve the chicken stock cube in 150 ml boiling water. Gradually stir the stock into the vegetables, scraping the floury browned bits from the pan, and simmer until the sauce begins to thicken.",
+        "Stir in the double cream and 1/2 tsp Dijon mustard. Return the chicken and its resting juices, simmer for 2 minutes, then season to taste.",
+        "Transfer the filling to a small pie dish and leave it to cool for about 10 minutes so it does not soften the pastry.",
+        "Lay the shortcrust pastry over the filling, trim and crimp the edges, cut a steam hole in the centre and brush with beaten egg.",
+        "Bake for 25-30 minutes until the pastry is crisp and deeply golden. Rest for 5 minutes before serving."
+      ]
+    },
+    {
       "id": "chicken_milanese_rigatoni",
       "name": "Chicken Milanese with Tomato & Mozzarella Rigatoni",
       "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a smooth garlic and tomato sauce, torn mozzarella, Parmesan and basil.",
@@ -66,6 +231,19 @@
         "salt",
         "black_pepper"
       ],
+      "make_ahead": {
+        "component": "Tomato sauce",
+        "max_refrigerated_hours": 48,
+        "instructions": [
+          "Warm 1 tbsp olive oil in a saucepan. Cook the crushed garlic for 30 seconds, add the canned tomatoes and simmer for 10 minutes.",
+          "Immersion-blend until smooth and season to taste."
+        ],
+        "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+        "day_of": [
+          "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+          "Bread and cook the chicken fresh, boil the rigatoni, then finish the pasta with the mozzarella, Parmesan and basil."
+        ]
+      },
       "substitutions": [
         {
           "id": "pre_breaded_chicken",

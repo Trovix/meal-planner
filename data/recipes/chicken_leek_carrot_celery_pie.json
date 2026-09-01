@@ -65,6 +65,20 @@
     "plain_flour",
     "salt"
   ],
+  "make_ahead": {
+    "component": "Chicken pie filling",
+    "max_refrigerated_hours": 48,
+    "instructions": [
+      "Cut the chicken into roughly 3 cm pieces, season and roll lightly in 15 g plain flour. Brown in 1 tbsp olive oil, then continue cooking until the centre reaches 75°C; transfer to a plate.",
+      "Melt the butter in the same pan. Add the leek, carrot, celery and dried thyme, then cook for 8–10 minutes until softened.",
+      "Gradually stir in 150 ml prepared chicken stock and simmer until thickened. Stir in the double cream and 1/2 tsp Dijon mustard, then return the cooked chicken only long enough to coat it and bring the filling back to a simmer."
+    ],
+    "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
+    "day_of": [
+      "Transfer the cold filling to a small pie dish while the oven heats to 200°C conventional or 180°C fan.",
+      "Top with the shortcrust pastry, trim and crimp, cut a steam hole and brush with beaten egg. Bake for 30–35 minutes until deeply golden and the filling is bubbling and steaming throughout."
+    ]
+  },
   "instructions": [
     "Heat the oven to 200°C conventional or 180°C fan.",
     "Season the chicken breast pieces with salt and black pepper. Roll them lightly in 15 g plain flour and shake off any excess.",

@@ -103,6 +103,33 @@
           <textarea id="instructions" placeholder="One step per line." required></textarea>
         </div>
 
+        <fieldset class="make-ahead-editor">
+          <legend>Optional: prepare ahead</legend>
+          <p class="muted">Leave this section blank if the recipe has no worthwhile make-ahead component. The normal method above should still describe cooking the whole meal in one session.</p>
+          <div class="grid">
+            <div class="field">
+              <label for="make-ahead-component">Component</label>
+              <input id="make-ahead-component" type="text" placeholder="e.g. Curry sauce">
+            </div>
+            <div class="field">
+              <label for="make-ahead-hours">Maximum refrigerated time (hours)</label>
+              <input id="make-ahead-hours" type="number" min="1" max="48" step="1" placeholder="48">
+            </div>
+          </div>
+          <div class="field">
+            <label for="make-ahead-instructions">Prepare-ahead steps</label>
+            <textarea id="make-ahead-instructions" placeholder="One step per line."></textarea>
+          </div>
+          <div class="field">
+            <label for="make-ahead-storage">Cooling and storage instructions</label>
+            <textarea id="make-ahead-storage" placeholder="Cool promptly, cover and refrigerate within two hours..."></textarea>
+          </div>
+          <div class="field">
+            <label for="make-ahead-day-of">Day-of steps</label>
+            <textarea id="make-ahead-day-of" placeholder="One step per line."></textarea>
+          </div>
+        </fieldset>
+
         <div class="controls">
           <button class="button" type="submit">Validate recipe</button>
           <button class="button secondary" id="download" type="button" disabled>Download JSON</button>

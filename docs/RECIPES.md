@@ -27,6 +27,12 @@ Every selected pantry ID must exist in the catalogue. An ingredient cannot appea
 
 Substitutions identify the standard shopping ingredient IDs they replace and the alternative shopping items to use. Expanded recipe cards provide a checkbox for each substitution. Selecting it immediately updates the visible shopping list, pantry list and reminder payload.
 
+## Optional prepare-ahead guidance
+
+Use the prepare-ahead fields only when a worthwhile component can be refrigerated without harming the finished meal. Supply the component, a maximum refrigerated time of no more than 48 hours, preparation steps, cooling and storage guidance, and the steps needed on the day. The ordinary method must still explain how to cook the whole recipe in one session.
+
+Recipe cards show a compact prepare-ahead cue and put the full guidance inside the expanded card. A partially completed block is rejected by the browser, C++ and publishing validators.
+
 ## Manual workflow
 
 Downloaded recipe JSON can be placed in `data/recipes/`, then validated with:

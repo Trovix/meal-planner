@@ -172,6 +172,41 @@ void validate_recipe(const json& recipe, const json& ingredients, const json* pa
             throw std::runtime_error("Every instruction must be a non-empty string");
         }
     }
+    if (recipe.contains("make_ahead")) {
+        const auto& make_ahead = recipe["make_ahead"];
+        const std::set<std::string> expected{
+            "component", "max_refrigerated_hours", "instructions", "storage", "day_of"
+        };
+        if (!make_ahead.is_object() || make_ahead.size() != expected.size()) {
+            throw std::runtime_error("Make-ahead guidance has invalid fields");
+        }
+        for (const auto& [key, value] : make_ahead.items()) {
+            if (!expected.contains(key)) {
+                throw std::runtime_error("Make-ahead guidance has invalid fields");
+            }
+        }
+        if (!make_ahead["component"].is_string() || make_ahead["component"].get<std::string>().empty() ||
+            !make_ahead["storage"].is_string() || make_ahead["storage"].get<std::string>().empty()) {
+            throw std::runtime_error("Make-ahead component and storage guidance must be non-empty strings");
+        }
+        if (!make_ahead["max_refrigerated_hours"].is_number_integer()) {
+            throw std::runtime_error("Make-ahead refrigeration time must be an integer from 1 to 48 hours");
+        }
+        const int hours = make_ahead["max_refrigerated_hours"].get<int>();
+        if (hours < 1 || hours > 48) {
+            throw std::runtime_error("Make-ahead refrigeration time must be an integer from 1 to 48 hours");
+        }
+        for (const auto* key : {"instructions", "day_of"}) {
+            if (!make_ahead[key].is_array() || make_ahead[key].empty()) {
+                throw std::runtime_error(std::string("Make-ahead ") + key + " must be a non-empty array");
+            }
+            for (const auto& step : make_ahead[key]) {
+                if (!step.is_string() || step.get<std::string>().empty()) {
+                    throw std::runtime_error(std::string("Every make-ahead ") + key + " step must be a non-empty string");
+                }
+            }
+        }
+    }
     validate_substitutions(recipe, ingredients, buy_ids, pantry_ids);
 }
 
