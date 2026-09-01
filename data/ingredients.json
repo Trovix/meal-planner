@@ -281,6 +281,18 @@
       "category": "Meat & Fish",
       "pack_quantity": 100,
       "pack_unit": "g"
+    },
+    "rump_steak": {
+      "name": "Rump steak",
+      "category": "Meat & Fish",
+      "pack_quantity": 227,
+      "pack_unit": "g"
+    },
+    "pak_choi": {
+      "name": "Pak choi",
+      "category": "Produce",
+      "pack_quantity": 2,
+      "pack_unit": "each"
     }
   }
 }
