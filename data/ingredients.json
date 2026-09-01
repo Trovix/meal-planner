@@ -293,6 +293,24 @@
       "category": "Produce",
       "pack_quantity": 2,
       "pack_unit": "each"
+    },
+    "basmati_rice": {
+      "name": "Basmati Rice",
+      "category": "Cupboard",
+      "pack_quantity": 1000,
+      "pack_unit": "g"
+    },
+    "greek_yoghurt": {
+      "name": "Greek Yoghurt",
+      "category": "Dairy",
+      "pack_quantity": 500,
+      "pack_unit": "g"
+    },
+    "fresh_coriander": {
+      "name": "Fresh Coriander",
+      "category": "Produce",
+      "pack_quantity": 1,
+      "pack_unit": "pack"
     }
   }
 }
