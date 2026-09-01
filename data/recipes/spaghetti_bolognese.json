@@ -1,0 +1,95 @@
+{
+  "id": "spaghetti_bolognese",
+  "name": "Spaghetti Bolognese",
+  "description": "A rich beef Bolognese with onion, carrot and celery, tossed with spaghetti and finished with Parmesan.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 1200,
+    "protein_g": 72,
+    "carbs_g": 125,
+    "fat_g": 42
+  },
+  "buy": [
+    {
+      "ingredient_id": "beef_mince",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "spaghetti",
+      "quantity": 125,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "carrots",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "celery",
+      "quantity": 0.25,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 2,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "canned_tomatoes",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "tomato_puree",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "beef_stock",
+      "quantity": 0.5,
+      "unit": "cubes"
+    },
+    {
+      "ingredient_id": "parmesan",
+      "quantity": 30,
+      "unit": "g"
+    }
+  ],
+  "pantry": [
+    "olive_oil",
+    "salt",
+    "black_pepper",
+    "dried_oregano",
+    "worcestershire_sauce"
+  ],
+  "instructions": [
+    "Finely dice the onion, carrot and celery. Heat 1 tbsp olive oil in a saucepan over medium heat and cook the vegetables for 8–10 minutes until soft and lightly golden.",
+    "Add the crushed garlic and 1 tsp dried oregano and cook for 30 seconds. Stir in the tomato purée and cook for 2 minutes until it darkens slightly.",
+    "Increase the heat to medium-high, add the beef mince and season with salt and black pepper. Cook for 6–8 minutes, breaking it up thoroughly, until well browned with no pink remaining.",
+    "Add the canned tomatoes, 200 ml prepared beef stock and 2 tsp Worcestershire sauce. Bring to a simmer, then cook uncovered over low heat for 30–40 minutes, stirring occasionally, until rich and thick.",
+    "Boil the spaghetti in well-salted water until al dente. Reserve a mugful of pasta water, then drain.",
+    "Taste and season the Bolognese. Toss the spaghetti through the sauce, adding a splash of pasta water if needed so the sauce coats it evenly.",
+    "Serve immediately with the grated Parmesan and plenty of black pepper."
+  ],
+  "make_ahead": {
+    "component": "Bolognese sauce",
+    "max_refrigerated_hours": 48,
+    "instructions": [
+      "Cook the onion, carrot and celery in olive oil until soft, then add the garlic, dried oregano and tomato purée.",
+      "Brown the beef mince thoroughly, breaking it up well, until no pink remains.",
+      "Add the canned tomatoes, prepared beef stock and Worcestershire sauce. Simmer uncovered for 30–40 minutes until rich and thick, then season to taste."
+    ],
+    "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
+    "day_of": [
+      "Reheat the Bolognese sauce until steaming throughout, stirring frequently and adding a splash of water if it has thickened.",
+      "Boil the spaghetti fresh, toss it through the reheated sauce and finish with Parmesan and black pepper."
+    ]
+  }
+}
