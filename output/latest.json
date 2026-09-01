@@ -1,0 +1,120 @@
+{
+  "macro_totals": {
+    "calories_kcal": 2025.0,
+    "carbs_g": 185.0,
+    "fat_g": 81.0,
+    "protein_g": 123.0
+  },
+  "request_id": "actions-test-001",
+  "selected_meals": [
+    {
+      "id": "steak_au_poivre",
+      "name": "Steak au Poivre, Frites & Dressed Salad"
+    },
+    {
+      "id": "pork_mustard_mash",
+      "name": "Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach"
+    }
+  ],
+  "shopping_list": [
+    {
+      "buy_text": "1 x Double cream",
+      "category": "Dairy",
+      "ingredient_id": "double_cream",
+      "name": "Double cream",
+      "needed": 100.0,
+      "pack_quantity": 300.0,
+      "pack_unit": "ml",
+      "packs": 1,
+      "unit": "ml"
+    },
+    {
+      "buy_text": "1 x Frozen chips",
+      "category": "Frozen",
+      "ingredient_id": "frozen_chips",
+      "name": "Frozen chips",
+      "needed": 350.0,
+      "pack_quantity": 1500.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    },
+    {
+      "buy_text": "1 x Pork tenderloin",
+      "category": "Meat & Fish",
+      "ingredient_id": "pork_tenderloin",
+      "name": "Pork tenderloin",
+      "needed": 250.0,
+      "pack_quantity": 500.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    },
+    {
+      "buy_text": "1 x Sirloin steak",
+      "category": "Meat & Fish",
+      "ingredient_id": "sirloin_steak",
+      "name": "Sirloin steak",
+      "needed": 227.0,
+      "pack_quantity": 227.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    },
+    {
+      "buy_text": "1 x Lemons",
+      "category": "Produce",
+      "ingredient_id": "lemon",
+      "name": "Lemons",
+      "needed": 1.0,
+      "pack_quantity": 4.0,
+      "pack_unit": "each",
+      "packs": 1,
+      "unit": "each"
+    },
+    {
+      "buy_text": "1 x Mixed salad leaves",
+      "category": "Produce",
+      "ingredient_id": "salad_leaves",
+      "name": "Mixed salad leaves",
+      "needed": 80.0,
+      "pack_quantity": 120.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    },
+    {
+      "buy_text": "1 x Potatoes",
+      "category": "Produce",
+      "ingredient_id": "potatoes",
+      "name": "Potatoes",
+      "needed": 400.0,
+      "pack_quantity": 2500.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    },
+    {
+      "buy_text": "1 x Shallots",
+      "category": "Produce",
+      "ingredient_id": "shallot",
+      "name": "Shallots",
+      "needed": 2.0,
+      "pack_quantity": 4.0,
+      "pack_unit": "each",
+      "packs": 1,
+      "unit": "each"
+    },
+    {
+      "buy_text": "1 x Spinach",
+      "category": "Produce",
+      "ingredient_id": "spinach",
+      "name": "Spinach",
+      "needed": 100.0,
+      "pack_quantity": 200.0,
+      "pack_unit": "g",
+      "packs": 1,
+      "unit": "g"
+    }
+  ]
+}
