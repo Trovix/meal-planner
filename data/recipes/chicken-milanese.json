@@ -1,0 +1,10 @@
+{
+  "id":"chicken_milanese_rigatoni",
+  "name":"Chicken Milanese with Tomato & Mozzarella Rigatoni",
+  "description":"Crisp Parmesan-breaded chicken breast with rigatoni in a garlic-chilli tomato sauce, torn mozzarella, Parmesan and basil.",
+  "servings":1,"active":true,
+  "macros":{"calories_kcal":1050,"protein_g":68,"carbs_g":120,"fat_g":35},
+  "buy":[{"ingredient_id":"chicken_breast","quantity":200,"unit":"g"},{"ingredient_id":"rigatoni","quantity":125,"unit":"g"},{"ingredient_id":"mozzarella","quantity":75,"unit":"g"},{"ingredient_id":"passata","quantity":250,"unit":"g"},{"ingredient_id":"parmesan","quantity":30,"unit":"g"},{"ingredient_id":"fresh_basil","quantity":1,"unit":"pack"},{"ingredient_id":"eggs","quantity":1,"unit":"each"}],
+  "pantry":["breadcrumbs","plain_flour","garlic","chilli_flakes","olive_oil","neutral_oil","salt","black_pepper"],
+  "instructions":["Flatten the chicken breast evenly, then flour, egg and coat with breadcrumbs mixed with Parmesan.","Fry until crisp and cooked through, then rest on a rack.","Cook the rigatoni and toss with a garlic-chilli passata sauce.","Fold mozzarella and basil through the pasta and serve alongside the Milanese, keeping sauce off the crust."]
+}
