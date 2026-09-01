@@ -1,0 +1,90 @@
+{
+  "id": "butter_chicken",
+  "name": "Butter Chicken with Basmati Rice",
+  "description": "Charred yoghurt-marinated chicken thighs in a rich, smooth tomato, butter and cream sauce with garlic, ginger and warming spices, served with basmati rice.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 1050,
+    "protein_g": 56,
+    "carbs_g": 94,
+    "fat_g": 48
+  },
+  "buy": [
+    {
+      "ingredient_id": "boneless_chicken_thighs",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "basmati_rice",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "greek_yoghurt",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "canned_tomatoes",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "double_cream",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 2,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "fresh_ginger",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "fresh_coriander",
+      "quantity": 0.5,
+      "unit": "pack"
+    }
+  ],
+  "pantry": [
+    "garam_masala",
+    "turmeric",
+    "mild_curry_powder",
+    "neutral_oil",
+    "salt",
+    "sugar"
+  ],
+  "instructions": [
+    "Mix the chicken thighs with the Greek yoghurt, 1 tsp garam masala, ½ tsp turmeric, ½ tsp mild curry powder, half the grated ginger, 1 crushed garlic clove and ½ tsp salt. Leave to marinate for at least 20 minutes, or refrigerate for up to 24 hours.",
+    "Rinse the basmati rice until the water runs mostly clear. Cook the 100 g rice according to the packet instructions, then cover and keep warm.",
+    "Heat 1 tsp neutral oil in a frying pan over high heat. Shake excess marinade from the chicken and cook for 3-4 minutes per side until well browned and lightly charred. It does not need to be completely cooked through yet. Transfer to a plate.",
+    "Reduce the heat to medium and melt 15 g butter in the same pan. Add the remaining garlic and ginger and cook for about 30 seconds.",
+    "Add 1 tsp garam masala and ½ tsp mild curry powder and cook for another 30 seconds until fragrant.",
+    "Add the canned tomatoes, ½ tsp sugar and a pinch of salt. Simmer for 8-10 minutes until reduced and slightly darkened.",
+    "Blend the sauce until completely smooth with an immersion blender, then return it to the pan over low heat.",
+    "Stir in the double cream and remaining 10 g butter. Return the chicken and any resting juices to the sauce and simmer gently for 5-7 minutes, until the chicken reaches 75°C in the centre and the sauce is thick and glossy. Add a splash of water if it becomes too thick.",
+    "Taste and adjust the salt and sugar if necessary. Serve over the basmati rice and finish with roughly chopped fresh coriander."
+  ],
+  "make_ahead": {
+    "component": "Butter Chicken Sauce",
+    "max_refrigerated_hours": 48,
+    "instructions": [
+      "Cook the garlic, ginger and spices in 15 g butter, then add the canned tomatoes, sugar and salt and simmer for 8-10 minutes. Blend until completely smooth. Stir in the double cream and remaining butter and bring briefly back to a simmer."
+    ],
+    "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+    "day_of": [
+      "Marinate and char the chicken, then reheat the prepared sauce until steaming. Add the chicken and its resting juices and simmer until the chicken reaches 75°C. Cook the basmati rice fresh and serve with chopped coriander."
+    ]
+  }
+}
