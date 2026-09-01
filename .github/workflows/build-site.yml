@@ -3,6 +3,8 @@ name: Build static WASM site
 on:
   push:
     branches: [main, wasm-webapp]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
