@@ -1,0 +1,79 @@
+{
+  "id": "chicken_leek_carrot_celery_pie",
+  "name": "Chicken, Leek, Carrot & Celery Pie",
+  "description": "Flour-coated chicken breast with leek, carrot and celery in a light cream and mustard sauce beneath crisp shortcrust pastry.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 1250,
+    "protein_g": 65,
+    "carbs_g": 80,
+    "fat_g": 65
+  },
+  "buy": [
+    {
+      "ingredient_id": "chicken_breast",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "shortcrust_pastry",
+      "quantity": 120,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "leek",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "carrots",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "celery",
+      "quantity": 0.25,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "chicken_stock",
+      "quantity": 0.25,
+      "unit": "cubes"
+    },
+    {
+      "ingredient_id": "double_cream",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 15,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "eggs",
+      "quantity": 1,
+      "unit": "each"
+    }
+  ],
+  "pantry": [
+    "black_pepper",
+    "dijon_mustard",
+    "dried_thyme",
+    "olive_oil",
+    "plain_flour",
+    "salt"
+  ],
+  "instructions": [
+    "Heat the oven to 200°C conventional or 180°C fan.",
+    "Season the chicken breast pieces with salt and black pepper. Roll them lightly in 15 g plain flour and shake off any excess.",
+    "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Brown the chicken for 2-3 minutes per side, then transfer it to a plate; it does not need to be fully cooked yet.",
+    "Reduce the heat to medium and melt the butter in the same pan. Add the sliced leek, diced carrot, diced celery and dried thyme, then cook for 8-10 minutes until softened.",
+    "Dissolve the chicken stock cube in 150 ml boiling water. Gradually stir the stock into the vegetables, scraping the floury browned bits from the pan, and simmer until the sauce begins to thicken.",
+    "Stir in the double cream and 1/2 tsp Dijon mustard. Return the chicken and its resting juices, simmer for 2 minutes, then season to taste.",
+    "Transfer the filling to a small pie dish and leave it to cool for about 10 minutes so it does not soften the pastry.",
+    "Lay the shortcrust pastry over the filling, trim and crimp the edges, cut a steam hole in the centre and brush with beaten egg.",
+    "Bake for 25-30 minutes until the pastry is crisp and deeply golden. Rest for 5 minutes before serving."
+  ]
+}
