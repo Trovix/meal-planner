@@ -329,6 +329,12 @@
       "category": "Produce",
       "pack_quantity": 1,
       "pack_unit": "pack"
+    },
+    "english_muffins": {
+      "name": "English muffins",
+      "category": "Bakery",
+      "pack_quantity": 4,
+      "pack_unit": "each"
     }
   }
 }
