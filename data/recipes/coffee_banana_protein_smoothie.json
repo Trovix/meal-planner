@@ -1,0 +1,49 @@
+{
+  "id": "coffee_banana_protein_smoothie",
+  "name": "Coffee, Banana & Peanut Butter Protein Smoothie",
+  "description": "A thick iced breakfast smoothie with banana, peanut butter, vanilla whey, oats, milk and espresso - high in protein with enough carbohydrate and fat to make it a proper breakfast.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "breakfast"
+  ],
+  "macros": {
+    "calories_kcal": 620,
+    "protein_g": 43,
+    "carbs_g": 72,
+    "fat_g": 20
+  },
+  "buy": [
+    {
+      "ingredient_id": "semi_skimmed_milk",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "banana",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "vanilla_whey",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "rolled_oats",
+      "quantity": 40,
+      "unit": "g"
+    }
+  ],
+  "pantry": [
+    "peanut_butter",
+    "salt"
+  ],
+  "instructions": [
+    "Pull a double espresso and allow it to cool for a few minutes.",
+    "Add the milk, banana, vanilla whey, rolled oats, peanut butter, espresso, a small pinch of salt and a generous handful of ice to a blender.",
+    "Blend on high until completely smooth and creamy.",
+    "If too thick, add a splash of milk; if too thin, add more ice.",
+    "Pour into a large glass and serve immediately."
+  ]
+}
