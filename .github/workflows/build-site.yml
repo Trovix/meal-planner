@@ -55,6 +55,14 @@ jobs:
           cp build-wasm/mealplanner.js dist/mealplanner.js
           cp build-wasm/mealplanner.wasm dist/mealplanner.wasm
 
+      - name: WebAssembly planner smoke test
+        run: |
+          node tests/wasm_smoke_test.cjs \
+            dist/mealplanner.js \
+            dist/mealplanner.wasm \
+            dist/data/meals.json \
+            dist/data/ingredients.json
+
       - name: Copy web assets
         run: cp -R web/. dist/
 

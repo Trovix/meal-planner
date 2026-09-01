@@ -16,10 +16,54 @@
   let ingredientsRoot = null;
   let pantryRoot = null;
 
+  const requestedMealCount = 3;
+  const mealTypeLabels = {
+    breakfast: { singular: "breakfast", plural: "breakfasts", heading: "Breakfasts" },
+    lunch: { singular: "lunch", plural: "lunches", heading: "Lunches" },
+    dinner: { singular: "dinner", plural: "dinners", heading: "Dinners" },
+    snack: { singular: "snack", plural: "snacks", heading: "Snacks" },
+  };
+
   function randomSeed() {
     return globalThis.crypto?.getRandomValues
       ? crypto.getRandomValues(new Uint32Array(1))[0]
       : Date.now() >>> 0;
+  }
+
+  function activeMealsForSelectedType() {
+    const mealType = mealTypeSelect.value;
+    return (mealsRoot?.meals || []).filter(
+      (meal) => meal.active !== false && (!mealType || meal.meal_types.includes(mealType)),
+    );
+  }
+
+  function updateRollAvailability() {
+    const mealType = mealTypeSelect.value;
+    const labels = mealTypeLabels[mealType] || {
+      singular: "meal",
+      plural: "meals",
+      heading: "Meals",
+    };
+    const available = activeMealsForSelectedType().length;
+
+    generateButton.textContent = `Roll for three ${labels.plural}`;
+    result.classList.add("hidden");
+    mealsElement.replaceChildren();
+    macroElement.replaceChildren();
+    status.className = "status";
+
+    if (!module || available < requestedMealCount) {
+      generateButton.disabled = true;
+      if (module) {
+        status.textContent = available === 0
+          ? `No active ${labels.plural} are available yet.`
+          : `Only ${available} active ${available === 1 ? labels.singular : labels.plural} ${available === 1 ? "is" : "are"} available. Three are required to roll.`;
+      }
+      return;
+    }
+
+    generateButton.disabled = false;
+    status.textContent = "";
   }
 
   async function initialise() {
@@ -51,8 +95,7 @@
         "string",
       ]);
       freeResult = module.cwrap("free_result", null, ["number"]);
-      generateButton.disabled = false;
-      status.textContent = "";
+      updateRollAvailability();
     } catch (error) {
       status.textContent = error.message || "Planner failed to load.";
       status.classList.add("error");
@@ -60,25 +103,33 @@
   }
 
   function renderPlan(plan) {
-    mealsElement.replaceChildren();
-
-    for (const selected of plan.selected_meals) {
-      const meal = mealsRoot.meals.find((candidate) => candidate.id === selected.id);
-      if (!meal) continue;
-      mealsElement.append(
-        MealRecipeView.createRecipeCard(meal, ingredientsRoot, pantryRoot, { headingLevel: 3 }),
-      );
+    if (!Array.isArray(plan.selected_meals) || plan.selected_meals.length !== requestedMealCount) {
+      throw new Error("The planner did not return exactly three recipes. Please roll again.");
     }
 
+    const selectedIds = plan.selected_meals.map((selected) => selected.id);
+    if (new Set(selectedIds).size !== requestedMealCount) {
+      throw new Error("The planner returned a duplicate recipe. Please roll again.");
+    }
+
+    const cards = plan.selected_meals.map((selected) => {
+      const meal = mealsRoot.meals.find((candidate) => candidate.id === selected.id);
+      if (!meal) throw new Error(`Recipe '${selected.id}' is missing from the loaded catalogue.`);
+      return MealRecipeView.createRecipeCard(
+        meal,
+        ingredientsRoot,
+        pantryRoot,
+        { headingLevel: 3 },
+      );
+    });
+
+    const cardFragment = document.createDocumentFragment();
+    cardFragment.append(...cards);
+
     const mealType = mealTypeSelect.value;
-    const pluralLabels = {
-      breakfast: "Breakfasts",
-      lunch: "Lunches",
-      dinner: "Dinners",
-      snack: "Snacks",
-    };
-    resultHeading.textContent = pluralLabels[mealType] || "Meals";
+    resultHeading.textContent = mealTypeLabels[mealType]?.heading || "Meals";
     const macros = plan.macro_totals;
+    mealsElement.replaceChildren(cardFragment);
     macroElement.replaceChildren(
       Object.assign(document.createElement("p"), {
         textContent:
@@ -97,13 +148,19 @@
   generateButton.addEventListener("click", () => {
     status.className = "status";
     status.textContent = "Rolling…";
+    result.classList.add("hidden");
     let pointer = 0;
 
     try {
+      if (activeMealsForSelectedType().length < requestedMealCount) {
+        updateRollAvailability();
+        return;
+      }
+
       pointer = generatePlanForType(
         mealsJson,
         ingredientsJson,
-        3,
+        requestedMealCount,
         randomSeed(),
         mealTypeSelect.value,
       );
@@ -115,6 +172,9 @@
       renderPlan(plan);
       status.textContent = `Three ${mealTypeSelect.value ? `${mealTypeSelect.value} recipes` : "recipes"} rolled.`;
     } catch (error) {
+      result.classList.add("hidden");
+      mealsElement.replaceChildren();
+      macroElement.replaceChildren();
       status.textContent = error.message || "Could not generate a meal plan.";
       status.classList.add("error");
     } finally {
@@ -123,15 +183,7 @@
   });
 
   mealTypeSelect.addEventListener("change", () => {
-    const labels = {
-      breakfast: "breakfasts",
-      lunch: "lunches",
-      dinner: "dinners",
-      snack: "snacks",
-    };
-    generateButton.textContent = `Roll for three ${labels[mealTypeSelect.value] || "meals"}`;
-    result.classList.add("hidden");
-    status.textContent = "";
+    updateRollAvailability();
   });
 
   initialise();

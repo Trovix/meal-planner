@@ -2,6 +2,9 @@
 #include <cassert>
 #include <iostream>
 #include <nlohmann/json.hpp>
+#include <set>
+#include <utility>
+#include <vector>
 
 using json = nlohmann::json;
 
@@ -30,6 +33,36 @@ int main() {
     assert(dinner_plan["selected_meals"].size() == 1);
     assert(dinner_plan["selected_meals"][0]["id"] == "a");
     assert(dinner_plan["selected_meals"][0]["meal_types"] == json::array({"dinner"}));
+
+    auto three_dinner_root = json::parse(meals);
+    for (const auto& [id, name] : std::vector<std::pair<std::string, std::string>>{
+             {"c", "C"}, {"d", "D"}, {"e", "E"}}) {
+        auto extra_dinner = three_dinner_root["meals"][0];
+        extra_dinner["id"] = id;
+        extra_dinner["name"] = name;
+        three_dinner_root["meals"].push_back(extra_dinner);
+    }
+    for (std::uint32_t seed = 0; seed < 100; ++seed) {
+        const auto three_dinner_plan = json::parse(
+            mealplanner::generate_plan_json(three_dinner_root.dump(), ingredients, 3, seed, "dinner")
+        );
+        assert(three_dinner_plan["selected_meals"].size() == 3);
+        std::set<std::string> selected_ids;
+        for (const auto& selected : three_dinner_plan["selected_meals"]) {
+            assert(selected["meal_types"] == json::array({"dinner"}));
+            selected_ids.insert(selected["id"].get<std::string>());
+        }
+        assert(selected_ids.size() == 3);
+    }
+
+    bool empty_category_rejected = false;
+    try {
+        mealplanner::generate_plan_json(meals, ingredients, 3, 42, "snack");
+    } catch (const std::exception& error) {
+        empty_category_rejected = std::string(error.what()) ==
+            "Not enough active snack recipes for requested meal count";
+    }
+    assert(empty_category_rejected);
 
     const auto first_recipe = json::parse(meals)["meals"][0];
     const auto validation = json::parse(

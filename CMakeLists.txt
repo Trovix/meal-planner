@@ -19,12 +19,16 @@ target_link_libraries(mealplanner_core PUBLIC nlohmann_json::nlohmann_json)
 if(EMSCRIPTEN)
   add_executable(mealplanner_wasm wasm/bindings.cpp)
   target_link_libraries(mealplanner_wasm PRIVATE mealplanner_core)
+  target_compile_options(mealplanner_core PRIVATE "-fexceptions")
+  target_compile_options(mealplanner_wasm PRIVATE "-fexceptions")
   set_target_properties(mealplanner_wasm PROPERTIES OUTPUT_NAME "mealplanner" SUFFIX ".js")
   target_link_options(mealplanner_wasm PRIVATE
     "-O3"
+    "-fexceptions"
     "-sMODULARIZE=1"
     "-sEXPORT_NAME=createMealPlannerModule"
     "-sALLOW_MEMORY_GROWTH=1"
+    "-sSTACK_SIZE=1048576"
     "-sEXPORTED_FUNCTIONS=['_generate_plan','_generate_plan_for_type','_validate_recipe','_free_result']"
     "-sEXPORTED_RUNTIME_METHODS=['cwrap','UTF8ToString']"
   )
