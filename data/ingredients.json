@@ -311,6 +311,24 @@
       "category": "Produce",
       "pack_quantity": 1,
       "pack_unit": "pack"
+    },
+    "smoked_salmon": {
+      "name": "Smoked salmon",
+      "category": "Fish",
+      "pack_quantity": 100,
+      "pack_unit": "g"
+    },
+    "sourdough_bread": {
+      "name": "Sourdough bread",
+      "category": "Bakery",
+      "pack_quantity": 500,
+      "pack_unit": "g"
+    },
+    "fresh_chives": {
+      "name": "Fresh chives",
+      "category": "Produce",
+      "pack_quantity": 1,
+      "pack_unit": "pack"
     }
   }
 }
