@@ -263,6 +263,24 @@
       "category": "Cupboard",
       "pack_quantity": 200,
       "pack_unit": "g"
+    },
+    "green_pesto": {
+      "name": "Green pesto",
+      "category": "Cupboard",
+      "pack_quantity": 190,
+      "pack_unit": "g"
+    },
+    "sun_dried_tomatoes": {
+      "name": "Sun-dried tomatoes",
+      "category": "Cupboard",
+      "pack_quantity": 280,
+      "pack_unit": "g"
+    },
+    "serrano_ham": {
+      "name": "Serrano ham",
+      "category": "Meat & Fish",
+      "pack_quantity": 100,
+      "pack_unit": "g"
     }
   }
 }
