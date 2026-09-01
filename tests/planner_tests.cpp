@@ -1,0 +1,6 @@
+#include "mealplanner/planner.hpp"
+#include <cassert>
+#include <iostream>
+#include <nlohmann/json.hpp>
+using json=nlohmann::json;
+int main(){const std::string ingredients=R"({"ingredients":{"rice":{"name":"Rice","category":"Cupboard","pack_quantity":500,"pack_unit":"g"},"eggs":{"name":"Eggs","category":"Dairy","pack_quantity":6,"pack_unit":"each"}}})";const std::string meals=R"({"meals":[{"id":"a","name":"A","description":"A","active":true,"macros":{"calories_kcal":500,"protein_g":20,"carbs_g":70,"fat_g":10},"buy":[{"ingredient_id":"rice","quantity":300,"unit":"g"}],"pantry":[],"instructions":["Cook."]},{"id":"b","name":"B","description":"B","active":true,"macros":{"calories_kcal":600,"protein_g":30,"carbs_g":80,"fat_g":15},"buy":[{"ingredient_id":"rice","quantity":300,"unit":"g"},{"ingredient_id":"eggs","quantity":2,"unit":"each"}],"pantry":[],"instructions":["Cook."]}]})";auto r=json::parse(mealplanner::generate_plan_json(meals,ingredients,2,42));assert(r["selected_meals"].size()==2);assert(r["macro_totals"]["calories_kcal"]==1100);bool rice=false;for(const auto&i:r["shopping_list"])if(i["ingredient_id"]=="rice"){rice=true;assert(i["needed"]==600);assert(i["packs"]==2);}assert(rice);auto v=json::parse(mealplanner::validate_recipe_json(json::parse(meals)["meals"][0].dump(),ingredients));assert(v["valid"]==true);std::cout<<"planner tests passed\n";}
