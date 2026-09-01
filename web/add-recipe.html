@@ -141,6 +141,11 @@
           <div class="field">
             <label for="admin-password">Admin password</label>
             <input id="admin-password" type="password" autocomplete="current-password" placeholder="Required to write to GitHub">
+            <small>
+              No password? Validate the recipe, download its JSON, add it as
+              <code>data/recipes/&lt;recipe_id&gt;.json</code> in a fork of the
+              <a href="https://github.com/Trovix/meal-planner">GitHub repository</a>, then open a pull request.
+            </small>
           </div>
           <button class="button" id="publish" type="button" disabled>Publish recipe</button>
           <p class="muted">The password is sent only to the Cloudflare Worker over HTTPS. GitHub credentials never enter this page.</p>
