@@ -65,6 +65,12 @@
     },
     "garam_masala": {
       "name": "Garam masala"
+    },
+    "dried_oregano": {
+      "name": "Dried oregano"
+    },
+    "worcestershire_sauce": {
+      "name": "Worcestershire sauce"
     }
   }
 }
