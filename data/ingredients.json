@@ -335,6 +335,30 @@
       "category": "Bakery",
       "pack_quantity": 4,
       "pack_unit": "each"
+    },
+    "semi_skimmed_milk": {
+      "name": "Semi-skimmed milk",
+      "category": "Dairy",
+      "pack_quantity": 2000,
+      "pack_unit": "ml"
+    },
+    "banana": {
+      "name": "Banana",
+      "category": "Produce",
+      "pack_quantity": 6,
+      "pack_unit": "each"
+    },
+    "vanilla_whey": {
+      "name": "Vanilla whey protein",
+      "category": "Cupboard",
+      "pack_quantity": 1000,
+      "pack_unit": "g"
+    },
+    "rolled_oats": {
+      "name": "Rolled oats",
+      "category": "Cupboard",
+      "pack_quantity": 1000,
+      "pack_unit": "g"
     }
   }
 }
