@@ -35,8 +35,7 @@ jobs:
       - name: Validate recipes and build registry
         run: |
           mkdir -p dist/data
-          python3 tools/build_registry.py --out dist/data/meals.json
-          cp data/ingredients.json dist/data/ingredients.json
+          python3 tools/build_registry.py --out dist/data/meals.json --ingredients-out dist/data/ingredients.json
 
       - name: Stage header-only dependency for WASM
         run: |
