@@ -1,10 +1,10 @@
 {
   "id":"chicken_peanut_noodles",
-  "name":"Sichuan Peanut Noodles with Charred Chicken Thigh & Smashed Cucumber",
-  "description":"Charred soy-Shaoxing chicken thighs over rich Sichuan peanut noodles with a cold smashed cucumber salad.",
+  "name":"Sichuan Peanut Noodles with Charred Chicken Thigh & Cucumber Salad",
+  "description":"Charred soy-Shaoxing chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
   "servings":1,"active":true,
   "macros":{"calories_kcal":1050,"protein_g":58,"carbs_g":120,"fat_g":38},
   "buy":[{"ingredient_id":"boneless_chicken_thighs","quantity":250,"unit":"g"},{"ingredient_id":"wheat_noodles","quantity":150,"unit":"g"},{"ingredient_id":"cucumber","quantity":0.5,"unit":"each"},{"ingredient_id":"spring_onions","quantity":2,"unit":"each"}],
-  "pantry":["peanut_butter","light_soy","black_vinegar","shaoxing_wine","sesame_oil","chilli_crisp","sichuan_pepper","sesame_seeds","garlic","sugar","salt"],
-  "instructions":["Marinate the chicken briefly with soy and Shaoxing, then char until cooked through.","Whisk peanut butter, soy, black vinegar, sesame oil, garlic, chilli crisp and a splash of noodle water into a glossy sauce.","Boil the noodles and toss through the sauce.","Smash and season the cucumber, then plate with sliced chicken, spring onion, sesame and Sichuan pepper."]
+  "pantry":["sesame_paste","peanut_butter","light_soy","black_vinegar","shaoxing_wine","sesame_oil","sichuan_pepper","sesame_seeds","garlic","sugar","salt"],
+  "instructions":["Marinate the chicken briefly with soy and Shaoxing, then char until cooked through.","Whisk sesame paste, peanut butter, soy, black vinegar, sesame oil, garlic and a splash of noodle water into a glossy sauce.","Boil the noodles and toss through the sauce.","Slice and season the cucumber for the salad, then plate with sliced chicken, spring onion, sesame and Sichuan pepper."]
 }
