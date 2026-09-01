@@ -6,24 +6,26 @@ The production site is static. C++ is compiled to WebAssembly during CI; the pla
 
 1. Push changes to `main`.
 2. `.github/workflows/build-site.yml` validates recipes, runs native tests, compiles the WASM target and writes a complete static site to `dist/`.
-3. The workflow publishes `dist/` to the `site` branch.
-4. Cloudflare Pages should be connected to this repository with `site` as the production branch and no build command.
-5. Attach `meal.james-platt.com` as the Pages custom domain.
+3. The workflow publishes `dist/` with GitHub Pages.
+4. GitHub Pages is configured for a custom GitHub Actions workflow and uses `meal.james-platt.com` as its custom domain.
+5. Cloudflare DNS keeps an unproxied `CNAME` from `meal.james-platt.com` to `trovix.github.io`.
 
-The `wasm-webapp` feature branch builds and tests but deliberately does not publish the production `site` branch.
+Pull requests build and test the site but do not publish it.
 
-## Cloudflare Pages settings
+## GitHub Pages settings
 
-- Repository: `Trovix/meal-planner`
-- Production branch: `site`
-- Framework preset: None
-- Build command: leave blank
-- Build output directory: `/`
+- Source: GitHub Actions
+- Custom domain: `meal.james-platt.com`
+- Enforce HTTPS: enabled once GitHub finishes provisioning the certificate
 
-If Cloudflare insists on a build command, use `echo "prebuilt"`.
+Because this repository uses a custom Actions workflow, a `CNAME` file is not required and would be ignored.
 
-## DNS
+## Publisher Worker
 
-If `james-platt.com` is already using Cloudflare nameservers, add the Pages custom domain in Cloudflare and let Cloudflare create the DNS record.
+Cloudflare Builds deploys the Worker from `worker/` on each push to `main`.
 
-If Namecheap is still authoritative DNS, either move the domain's nameservers to Cloudflare, or keep Namecheap DNS and create the CNAME target Cloudflare shows for the Pages project. Use the exact hostname Cloudflare provides; do not guess it.
+- Worker: `meal-planner-publisher`
+- Custom domain: `meal-api.james-platt.com`
+- Required runtime secrets: `ADMIN_PASSWORD` and `GITHUB_TOKEN`
+
+Store both values as encrypted Worker runtime secrets. Build-time secrets alone are not available through the Worker's `env` parameter.
