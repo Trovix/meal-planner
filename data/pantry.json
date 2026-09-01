@@ -56,6 +56,15 @@
     },
     "dried_thyme": {
       "name": "Dried thyme"
+    },
+    "mild_curry_powder": {
+      "name": "Mild curry powder"
+    },
+    "turmeric": {
+      "name": "Ground turmeric"
+    },
+    "garam_masala": {
+      "name": "Garam masala"
     }
   }
 }
