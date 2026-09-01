@@ -3,15 +3,31 @@ project(mealplanner LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-find_package(nlohmann_json 3.2.0 REQUIRED)
+
+if(EMSCRIPTEN)
+  add_library(nlohmann_json INTERFACE)
+  target_include_directories(nlohmann_json INTERFACE ${CMAKE_SOURCE_DIR}/third_party)
+  add_library(nlohmann_json::nlohmann_json ALIAS nlohmann_json)
+else()
+  find_package(nlohmann_json 3.2.0 REQUIRED)
+endif()
+
 add_library(mealplanner_core src/planner.cpp)
 target_include_directories(mealplanner_core PUBLIC include)
 target_link_libraries(mealplanner_core PUBLIC nlohmann_json::nlohmann_json)
+
 if(EMSCRIPTEN)
   add_executable(mealplanner_wasm wasm/bindings.cpp)
   target_link_libraries(mealplanner_wasm PRIVATE mealplanner_core)
   set_target_properties(mealplanner_wasm PROPERTIES OUTPUT_NAME "mealplanner" SUFFIX ".js")
-  target_link_options(mealplanner_wasm PRIVATE "-O3" "-sMODULARIZE=1" "-sEXPORT_NAME=createMealPlannerModule" "-sALLOW_MEMORY_GROWTH=1" "-sEXPORTED_FUNCTIONS=['_generate_plan','_validate_recipe','_free_result']" "-sEXPORTED_RUNTIME_METHODS=['cwrap','UTF8ToString']")
+  target_link_options(mealplanner_wasm PRIVATE
+    "-O3"
+    "-sMODULARIZE=1"
+    "-sEXPORT_NAME=createMealPlannerModule"
+    "-sALLOW_MEMORY_GROWTH=1"
+    "-sEXPORTED_FUNCTIONS=['_generate_plan','_validate_recipe','_free_result']"
+    "-sEXPORTED_RUNTIME_METHODS=['cwrap','UTF8ToString']"
+  )
 else()
   add_executable(mealplanner src/main.cpp)
   target_link_libraries(mealplanner PRIVATE mealplanner_core)
