@@ -227,6 +227,24 @@
       "category": "Produce",
       "pack_quantity": 1000,
       "pack_unit": "g"
+    },
+    "panko_breadcrumbs": {
+      "name": "Panko breadcrumbs",
+      "category": "Cupboard",
+      "pack_quantity": 150,
+      "pack_unit": "g"
+    },
+    "onion": {
+      "name": "Brown onions",
+      "category": "Produce",
+      "pack_quantity": 3,
+      "pack_unit": "each"
+    },
+    "white_cabbage": {
+      "name": "White cabbage",
+      "category": "Produce",
+      "pack_quantity": 1,
+      "pack_unit": "each"
     }
   }
 }
