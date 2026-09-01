@@ -1,1 +1,106 @@
-(()=>{const SHORTCUT_NAME="Add Shopping List",generateButton=document.querySelector("#generate"),status=document.querySelector("#status"),result=document.querySelector("#result"),mealsEl=document.querySelector("#meals"),shoppingEl=document.querySelector("#shopping"),macroEl=document.querySelector("#macro-summary"),content=document.querySelector("#content");let module,generatePlan,freeResult,mealsJson="",ingredientsJson="",mealsRoot=null,ingredientsRoot=null;requestAnimationFrame(()=>content?.classList.add("is-visible"));const text=(n,v)=>(n.textContent=String(v),n);const fmt=n=>Number.isInteger(Number(n))?String(Number(n)):Number(n).toFixed(1).replace(/\.0$/,"");function randomSeed(){return globalThis.crypto?.getRandomValues?crypto.getRandomValues(new Uint32Array(1))[0]:(Date.now()>>>0)}function mealShopping(meal){return meal.buy.map(item=>{const meta=ingredientsRoot.ingredients[item.ingredient_id],pack=Number(meta.pack_quantity),needed=Number(item.quantity),packs=Math.max(1,Math.ceil(needed/pack));return{...item,name:meta.name,category:meta.category,pack_quantity:pack,pack_unit:meta.pack_unit,packs,buy_quantity:packs*pack}})}function reminderLines(meal){return mealShopping(meal).map(i=>`${i.name} — ${fmt(i.quantity)} ${i.unit} required (${i.packs} × ${fmt(i.pack_quantity)} ${i.pack_unit})`).join("\n")}function sendMealToReminders(meal){const lines=reminderLines(meal);location.href=`shortcuts://run-shortcut?name=${encodeURIComponent(SHORTCUT_NAME)}&input=text&text=${encodeURIComponent(lines)}`}async function initialise(){try{const[mr,ir,wasm]=await Promise.all([fetch("data/meals.json",{cache:"no-store"}),fetch("data/ingredients.json",{cache:"no-store"}),createMealPlannerModule()]);if(!mr.ok||!ir.ok)throw new Error("Could not load recipe data.");[mealsJson,ingredientsJson]=await Promise.all([mr.text(),ir.text()]);mealsRoot=JSON.parse(mealsJson);ingredientsRoot=JSON.parse(ingredientsJson);module=wasm;generatePlan=module.cwrap("generate_plan","number",["string","string","number","number"]);freeResult=module.cwrap("free_result",null,["number"]);generateButton.disabled=false;status.textContent="Ready."}catch(e){status.textContent=e.message||"Planner failed to load.";status.classList.add("error")}}function renderPlan(plan){mealsEl.replaceChildren();shoppingEl.replaceChildren();for(const selected of plan.selected_meals){const source=mealsRoot.meals.find(m=>m.id===selected.id);const item=document.createElement("li");item.className="meal";const header=document.createElement("div");header.className="meal-header";const title=text(document.createElement("h3"),selected.name);const add=document.createElement("button");add.className="button secondary meal-reminder";add.type="button";add.textContent="Add to Reminders";add.addEventListener("click",()=>sendMealToReminders(source));header.append(title,add);const description=text(document.createElement("p"),selected.description),macros=text(document.createElement("div"),`${selected.macros.calories_kcal} kcal · ${selected.macros.protein_g} g protein`);macros.className="macros mono";item.append(header,description,macros);mealsEl.append(item)}let last="";for(const item of plan.shopping_list){if(item.category!==last){const c=text(document.createElement("li"),item.category);c.className="category mono";shoppingEl.append(c);last=item.category}const row=document.createElement("li"),required=text(document.createElement("span"),`${item.name} — ${fmt(item.needed)} ${item.unit}`),buy=text(document.createElement("span"),`${item.packs} × ${fmt(item.pack_quantity)} ${item.pack_unit}`);buy.className="mono muted";row.append(required,buy);shoppingEl.append(row)}const m=plan.macro_totals;macroEl.replaceChildren(text(document.createElement("p"),`${Math.round(m.calories_kcal)} kcal · ${Math.round(m.protein_g)} g protein · ${Math.round(m.carbs_g)} g carbs · ${Math.round(m.fat_g)} g fat`),text(document.createElement("p"),"Totals for the three rolled dinners."));result.classList.remove("hidden")}generateButton.addEventListener("click",()=>{status.className="status";status.textContent="Rolling…";let pointer=0;try{pointer=generatePlan(mealsJson,ingredientsJson,3,randomSeed());if(!pointer)throw new Error("C++ planner returned no result.");const plan=JSON.parse(module.UTF8ToString(pointer));if(plan.error)throw new Error(plan.error);renderPlan(plan);status.textContent="Three meals rolled."}catch(e){status.textContent=e.message||"Could not generate a meal plan.";status.classList.add("error")}finally{if(pointer)freeResult(pointer)}});initialise()})();
+(() => {
+  const generateButton = document.querySelector("#generate");
+  const status = document.querySelector("#status");
+  const result = document.querySelector("#result");
+  const mealsElement = document.querySelector("#meals");
+  const macroElement = document.querySelector("#macro-summary");
+
+  let module;
+  let generatePlan;
+  let freeResult;
+  let mealsJson = "";
+  let ingredientsJson = "";
+  let mealsRoot = null;
+  let ingredientsRoot = null;
+
+  function randomSeed() {
+    return globalThis.crypto?.getRandomValues
+      ? crypto.getRandomValues(new Uint32Array(1))[0]
+      : Date.now() >>> 0;
+  }
+
+  async function initialise() {
+    try {
+      const [mealsResponse, ingredientsResponse, wasm] = await Promise.all([
+        fetch("data/meals.json", { cache: "no-store" }),
+        fetch("data/ingredients.json", { cache: "no-store" }),
+        createMealPlannerModule(),
+      ]);
+
+      if (!mealsResponse.ok || !ingredientsResponse.ok) {
+        throw new Error("Could not load recipe data.");
+      }
+
+      [mealsJson, ingredientsJson] = await Promise.all([
+        mealsResponse.text(),
+        ingredientsResponse.text(),
+      ]);
+      mealsRoot = JSON.parse(mealsJson);
+      ingredientsRoot = JSON.parse(ingredientsJson);
+      module = wasm;
+      generatePlan = module.cwrap("generate_plan", "number", [
+        "string",
+        "string",
+        "number",
+        "number",
+      ]);
+      freeResult = module.cwrap("free_result", null, ["number"]);
+      generateButton.disabled = false;
+      status.textContent = "";
+    } catch (error) {
+      status.textContent = error.message || "Planner failed to load.";
+      status.classList.add("error");
+    }
+  }
+
+  function renderPlan(plan) {
+    mealsElement.replaceChildren();
+
+    for (const selected of plan.selected_meals) {
+      const meal = mealsRoot.meals.find((candidate) => candidate.id === selected.id);
+      if (!meal) continue;
+      mealsElement.append(
+        MealRecipeView.createRecipeCard(meal, ingredientsRoot, { headingLevel: 3 }),
+      );
+    }
+
+    const macros = plan.macro_totals;
+    macroElement.replaceChildren(
+      Object.assign(document.createElement("p"), {
+        textContent:
+          `${Math.round(macros.calories_kcal)} kcal · ` +
+          `${Math.round(macros.protein_g)} g protein · ` +
+          `${Math.round(macros.carbs_g)} g carbs · ` +
+          `${Math.round(macros.fat_g)} g fat`,
+      }),
+      Object.assign(document.createElement("p"), {
+        textContent: "Totals for the three rolled dinners.",
+      }),
+    );
+    result.classList.remove("hidden");
+  }
+
+  generateButton.addEventListener("click", () => {
+    status.className = "status";
+    status.textContent = "Rolling…";
+    let pointer = 0;
+
+    try {
+      pointer = generatePlan(mealsJson, ingredientsJson, 3, randomSeed());
+      if (!pointer) throw new Error("C++ planner returned no result.");
+
+      const plan = JSON.parse(module.UTF8ToString(pointer));
+      if (plan.error) throw new Error(plan.error);
+
+      renderPlan(plan);
+      status.textContent = "Three meals rolled.";
+    } catch (error) {
+      status.textContent = error.message || "Could not generate a meal plan.";
+      status.classList.add("error");
+    } finally {
+      if (pointer) freeResult(pointer);
+    }
+  });
+
+  initialise();
+})();

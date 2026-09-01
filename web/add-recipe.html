@@ -1,1 +1,120 @@
-<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffefd"><title>Add Recipe · Meal Planner</title><link rel="stylesheet" href="style.css"></head><body><main class="page"><nav class="nav"><a href="./">Planner</a><a href="registry.html">Registry</a><a href="add-recipe.html" aria-current="page">Add recipe</a><a href="https://james-platt.com/">James Platt</a></nav><div class="fade" id="content"><h1>Add Recipe</h1><p>Build and validate a recipe locally. Publishing requires the admin password.</p><form id="recipe-form"><div class="grid"><div class="field"><label for="name">Name</label><input id="name" type="text" required></div><div class="field"><label for="id">Recipe ID</label><input id="id" type="text" required><small>Auto-generated from the name; edit if needed.</small></div></div><div class="field"><label for="description">Description</label><textarea id="description" required></textarea></div><div class="grid"><div class="field"><label for="kcal">Calories (kcal)</label><input id="kcal" type="number" min="0" step="1" required></div><div class="field"><label for="protein">Protein (g)</label><input id="protein" type="number" min="0" step="0.1" required></div><div class="field"><label for="carbs">Carbs (g)</label><input id="carbs" type="number" min="0" step="0.1" required></div><div class="field"><label for="fat">Fat (g)</label><input id="fat" type="number" min="0" step="0.1" required></div></div><div class="grid"><div class="field"><label for="servings">Servings</label><input id="servings" type="number" min="1" step="1" value="1" required></div><div class="field"><label>Registry</label><label class="checkbox"><input id="active" type="checkbox" checked> Active for random selection</label></div></div><h2>New ingredients</h2><p class="muted">Only use this when the ingredient is not already in the catalogue. Define its normal shop pack size so the planner can calculate the minimum quantity to buy.</p><div id="new-ingredients"></div><button class="button secondary" id="add-new-ingredient" type="button">Add new ingredient</button><h2>Ingredients to buy</h2><div id="ingredients"></div><button class="button secondary" id="add-ingredient" type="button">Add ingredient</button><div class="field" style="margin-top:1rem"><label for="pantry">Pantry items</label><input id="pantry" type="text" placeholder="salt, olive_oil, garlic"><small>Comma-separated IDs. Pantry items are not added to the shopping list.</small></div><div class="field"><label for="instructions">Instructions</label><textarea id="instructions" placeholder="One step per line." required></textarea></div><div class="controls"><button class="button" type="submit">Validate recipe</button><button class="button secondary" id="download" type="button" disabled>Download JSON</button><button class="button secondary" id="copy" type="button" disabled>Copy JSON</button></div><section class="admin-publish"><h2>Publish</h2><div class="field"><label for="admin-password">Admin password</label><input id="admin-password" type="password" autocomplete="current-password" placeholder="Required to write to GitHub"></div><button class="button" id="publish" type="button" disabled>Publish recipe</button><p class="muted">The password is sent only to the Cloudflare Worker over HTTPS. GitHub credentials never enter this page.</p></section></form><p class="status" id="status" aria-live="polite">Loading ingredient catalogue and C++ validator…</p><pre class="output hidden" id="output"></pre></div></main><script src="mealplanner.js"></script><script src="add-recipe.js"></script></body></html>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffefd">
+  <title>Add Recipe · Meal Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="./">Planner</a>
+      <a href="registry.html">Registry</a>
+      <a href="add-recipe.html" aria-current="page">Add recipe</a>
+      <a href="https://james-platt.com/">James Platt</a>
+    </nav>
+
+    <div class="fade" id="content">
+      <h1>Add Recipe</h1>
+      <p>Build and validate a recipe locally. Publishing requires the admin password.</p>
+
+      <form id="recipe-form">
+        <div class="grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="id">Recipe ID</label>
+            <input id="id" type="text" required>
+            <small>Auto-generated from the name; edit if needed.</small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="description">Description</label>
+          <textarea id="description" required></textarea>
+        </div>
+
+        <div class="grid">
+          <div class="field">
+            <label for="kcal">Calories (kcal)</label>
+            <input id="kcal" type="number" min="0" step="1" required>
+          </div>
+          <div class="field">
+            <label for="protein">Protein (g)</label>
+            <input id="protein" type="number" min="0" step="0.1" required>
+          </div>
+          <div class="field">
+            <label for="carbs">Carbs (g)</label>
+            <input id="carbs" type="number" min="0" step="0.1" required>
+          </div>
+          <div class="field">
+            <label for="fat">Fat (g)</label>
+            <input id="fat" type="number" min="0" step="0.1" required>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="field">
+            <label for="servings">Servings</label>
+            <input id="servings" type="number" min="1" step="1" value="1" required>
+          </div>
+          <div class="field">
+            <label>Registry</label>
+            <label class="checkbox">
+              <input id="active" type="checkbox" checked>
+              Active for random selection
+            </label>
+          </div>
+        </div>
+
+        <h2>New ingredients</h2>
+        <p class="muted">Only use this when the ingredient is not already in the catalogue. Define its normal shop pack size so the planner can calculate the minimum quantity to buy.</p>
+        <div id="new-ingredients"></div>
+        <button class="button secondary" id="add-new-ingredient" type="button">Add new ingredient</button>
+
+        <h2>Ingredients to buy</h2>
+        <div id="ingredients"></div>
+        <button class="button secondary" id="add-ingredient" type="button">Add ingredient</button>
+
+        <div class="field" style="margin-top:1rem">
+          <label for="pantry">Pantry items</label>
+          <input id="pantry" type="text" placeholder="salt, olive_oil, garlic">
+          <small>Comma-separated IDs. Pantry items are not added to the shopping list.</small>
+        </div>
+
+        <div class="field">
+          <label for="instructions">Instructions</label>
+          <textarea id="instructions" placeholder="One step per line." required></textarea>
+        </div>
+
+        <div class="controls">
+          <button class="button" type="submit">Validate recipe</button>
+          <button class="button secondary" id="download" type="button" disabled>Download JSON</button>
+          <button class="button secondary" id="copy" type="button" disabled>Copy JSON</button>
+        </div>
+
+        <section class="admin-publish">
+          <h2>Publish</h2>
+          <div class="field">
+            <label for="admin-password">Admin password</label>
+            <input id="admin-password" type="password" autocomplete="current-password" placeholder="Required to write to GitHub">
+          </div>
+          <button class="button" id="publish" type="button" disabled>Publish recipe</button>
+          <p class="muted">The password is sent only to the Cloudflare Worker over HTTPS. GitHub credentials never enter this page.</p>
+        </section>
+      </form>
+
+      <p class="status" id="status" aria-live="polite">Loading ingredient catalogue and C++ validator…</p>
+      <pre class="output hidden" id="output"></pre>
+    </div>
+  </main>
+
+  <script src="mealplanner.js"></script>
+  <script src="site.js"></script>
+  <script src="add-recipe.js"></script>
+</body>
+</html>
