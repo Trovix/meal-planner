@@ -1,0 +1,92 @@
+{
+  "id": "beef_steak_ramen",
+  "name": "Beef Steak Ramen with Soft-Boiled Egg",
+  "description": "Seared rump steak, wheat noodles, pak choi and spring onions in a beef, soy, garlic and ginger broth, topped with a soft-boiled egg.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 920,
+    "protein_g": 67,
+    "carbs_g": 82,
+    "fat_g": 31
+  },
+  "buy": [
+    {
+      "ingredient_id": "rump_steak",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "wheat_noodles",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "eggs",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "beef_stock",
+      "quantity": 1,
+      "unit": "cubes"
+    },
+    {
+      "ingredient_id": "pak_choi",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "spring_onions",
+      "quantity": 2,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 1,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "fresh_ginger",
+      "quantity": 10,
+      "unit": "g"
+    }
+  ],
+  "pantry": [
+    "light_soy",
+    "dark_soy",
+    "honey",
+    "rice_vinegar",
+    "sesame_oil",
+    "neutral_oil",
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Bring a small saucepan of water to the boil. Carefully lower in the egg and cook for 6½ minutes. Transfer it immediately to cold water, then peel and halve it.",
+    "Pat the steak dry and season it with salt and black pepper. Heat 1 tsp neutral oil in a frying pan over high heat and sear the steak for approximately 2–3 minutes per side, depending on its thickness and your preferred doneness.",
+    "Transfer the steak to a board and rest it for at least 5 minutes. For medium-rare steak, aim for approximately 52–54°C after resting.",
+    "Add 500 ml water and the beef stock cube to the saucepan. Add the crushed garlic, grated ginger, 1 tbsp light soy sauce, 1 tsp dark soy sauce and 1 tsp honey. Simmer gently for 8–10 minutes.",
+    "Add the noodles and cook according to their packet instructions. Halve the pak choi lengthways and add it for the final 2 minutes.",
+    "Remove the broth from the heat and stir in 1 tsp rice vinegar and 1 tsp sesame oil. Taste before adding any extra salt.",
+    "Slice the rested steak thinly against the grain. Divide the noodles, pak choi and broth into a deep bowl, then arrange the steak and soft-boiled egg on top. Finish with finely sliced spring onions, black pepper and the steak's resting juices."
+  ],
+  "substitutions": [
+    {
+      "id": "ribeye_upgrade",
+      "label": "Use ribeye steak",
+      "replaces": [
+        "rump_steak"
+      ],
+      "buy": [
+        {
+          "ingredient_id": "ribeye_steak",
+          "quantity": 200,
+          "unit": "g"
+        }
+      ],
+      "omit_pantry": [],
+      "note": "Cook the ribeye exactly as described for the rump steak, adjusting the frying time for its thickness."
+    }
+  ]
+}
