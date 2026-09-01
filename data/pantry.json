@@ -1,20 +1,58 @@
 {
   "pantry": {
-    "black_pepper": {"name": "Black pepper"},
-    "brandy": {"name": "Brandy"},
-    "dark_soy": {"name": "Dark soy sauce"},
-    "dijon_mustard": {"name": "Dijon mustard"},
-    "light_soy": {"name": "Light soy sauce"},
-    "neutral_oil": {"name": "Neutral oil"},
-    "olive_oil": {"name": "Olive oil"},
-    "peanut_butter": {"name": "Peanut butter"},
-    "plain_flour": {"name": "Plain flour"},
-    "rice_vinegar": {"name": "Rice vinegar"},
-    "salt": {"name": "Salt"},
-    "sesame_oil": {"name": "Sesame oil"},
-    "sesame_paste": {"name": "Sesame paste"},
-    "sesame_seeds": {"name": "Sesame seeds"},
-    "sugar": {"name": "Sugar"},
-    "wholegrain_mustard": {"name": "Wholegrain mustard"}
+    "black_pepper": {
+      "name": "Black pepper"
+    },
+    "brandy": {
+      "name": "Brandy"
+    },
+    "dark_soy": {
+      "name": "Dark soy sauce"
+    },
+    "dijon_mustard": {
+      "name": "Dijon mustard"
+    },
+    "light_soy": {
+      "name": "Light soy sauce"
+    },
+    "neutral_oil": {
+      "name": "Neutral oil"
+    },
+    "olive_oil": {
+      "name": "Olive oil"
+    },
+    "peanut_butter": {
+      "name": "Peanut butter"
+    },
+    "plain_flour": {
+      "name": "Plain flour"
+    },
+    "rice_vinegar": {
+      "name": "Rice vinegar"
+    },
+    "salt": {
+      "name": "Salt"
+    },
+    "sesame_oil": {
+      "name": "Sesame oil"
+    },
+    "sesame_paste": {
+      "name": "Sesame paste"
+    },
+    "sesame_seeds": {
+      "name": "Sesame seeds"
+    },
+    "sugar": {
+      "name": "Sugar"
+    },
+    "wholegrain_mustard": {
+      "name": "Wholegrain mustard"
+    },
+    "honey": {
+      "name": "Honey"
+    },
+    "cornflour": {
+      "name": "Cornflour"
+    }
   }
 }
