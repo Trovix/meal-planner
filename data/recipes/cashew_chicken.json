@@ -1,0 +1,72 @@
+{
+  "id": "cashew_chicken",
+  "name": "Cashew Chicken",
+  "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 470,
+    "protein_g": 29,
+    "carbs_g": 27,
+    "fat_g": 30
+  },
+  "buy": [
+    {
+      "ingredient_id": "boneless_chicken_thighs",
+      "quantity": 114,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "raw_cashews",
+      "quantity": 34,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "spring_onions",
+      "quantity": 2,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 1,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "fresh_ginger",
+      "quantity": 6,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "celery",
+      "quantity": 0.25,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "green_bell_pepper",
+      "quantity": 0.25,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "chicken_stock",
+      "quantity": 0.05,
+      "unit": "cubes"
+    }
+  ],
+  "pantry": [
+    "black_pepper",
+    "dark_soy",
+    "light_soy",
+    "neutral_oil",
+    "rice_vinegar",
+    "salt",
+    "honey",
+    "cornflour"
+  ],
+  "instructions": [
+    "Whisk together 1 tsp dark soy sauce, 1 tsp light soy sauce, 20 ml prepared chicken stock, 2 tsp rice vinegar, 2 tsp honey, 3/4 tsp cornflour and a pinch of black pepper until smooth.",
+    "Toast the raw cashews in a dry frying pan over medium heat for 5-8 minutes, stirring often, until lightly golden and fragrant, then set aside.",
+    "Season the chicken thigh pieces with salt. Heat 1 tsp neutral oil in a wok over high heat and sear the chicken for 6-8 minutes, turning often, until evenly browned and cooked through to 75°C. Transfer to a plate.",
+    "Add the remaining 1/2 tsp neutral oil to the wok. Stir-fry the spring onions for 1 minute until lightly charred, then add the roughly chopped garlic and grated ginger and stir-fry for 30 seconds.",
+    "Add the diced celery and green pepper and stir-fry vigorously for 30 seconds. Return the chicken, stir-fry for another 30 seconds, then pour in the sauce. Bring to a boil and toss for about 25 seconds until thick and glossy. Fold through the toasted cashews and serve immediately."
+  ]
+}
