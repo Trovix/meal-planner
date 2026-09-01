@@ -1,0 +1,297 @@
+{
+  "meals": [
+    {
+      "id": "chicken_milanese_rigatoni",
+      "name": "Chicken Milanese with Tomato & Mozzarella Rigatoni",
+      "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a garlic-chilli tomato sauce, torn mozzarella, Parmesan and basil.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1050,
+        "protein_g": 68,
+        "carbs_g": 120,
+        "fat_g": 35
+      },
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "rigatoni",
+          "quantity": 125,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "quantity": 75,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "passata",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fresh_basil",
+          "quantity": 1,
+          "unit": "pack"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "breadcrumbs",
+        "plain_flour",
+        "garlic",
+        "chilli_flakes",
+        "olive_oil",
+        "neutral_oil",
+        "salt",
+        "black_pepper"
+      ],
+      "instructions": [
+        "Flatten the chicken breast evenly, then flour, egg and coat with breadcrumbs mixed with Parmesan.",
+        "Fry until crisp and cooked through, then rest on a rack.",
+        "Cook the rigatoni and toss with a garlic-chilli passata sauce.",
+        "Fold mozzarella and basil through the pasta and serve alongside the Milanese, keeping sauce off the crust."
+      ]
+    },
+    {
+      "id": "pork_mustard_mash",
+      "name": "Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach",
+      "description": "Seared pork tenderloin with a shallot, white wine, Dijon-wholegrain mustard cream sauce, buttery mash and wilted spinach.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 975,
+        "protein_g": 65,
+        "carbs_g": 95,
+        "fat_g": 33
+      },
+      "buy": [
+        {
+          "ingredient_id": "pork_tenderloin",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "potatoes",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spinach",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "dijon_mustard",
+        "wholegrain_mustard",
+        "white_wine",
+        "chicken_stock",
+        "butter",
+        "olive_oil",
+        "garlic",
+        "salt",
+        "black_pepper"
+      ],
+      "instructions": [
+        "Boil the potatoes until tender and mash with butter.",
+        "Sear the pork tenderloin, then finish until just cooked and rest.",
+        "Sweat shallot in the pan, deglaze with white wine, add stock, reduce, then finish with Dijon, wholegrain mustard and cream.",
+        "Wilt the spinach and serve with sliced pork, mash and sauce."
+      ]
+    },
+    {
+      "id": "salmon_fried_rice",
+      "name": "Crispy Salmon, Soy & Egg Fried Rice, Tenderstem",
+      "description": "Crispy-skin salmon with soy and egg fried jasmine rice, charred tenderstem broccoli and a light soy glaze.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1050,
+        "protein_g": 60,
+        "carbs_g": 115,
+        "fat_g": 38
+      },
+      "buy": [
+        {
+          "ingredient_id": "salmon_fillet",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jasmine_rice",
+          "quantity": 130,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "tenderstem_broccoli",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "light_soy",
+        "dark_soy",
+        "sesame_oil",
+        "rice_vinegar",
+        "honey",
+        "garlic",
+        "neutral_oil",
+        "salt"
+      ],
+      "instructions": [
+        "Cook the jasmine rice and let excess steam escape.",
+        "Sear the salmon skin-side down until crisp, then finish gently on the flesh side.",
+        "Stir-fry garlic and spring onion, scramble in the eggs, then add rice, soy and sesame oil.",
+        "Char the tenderstem and finish the salmon with a light soy-honey glaze."
+      ]
+    },
+    {
+      "id": "chicken_peanut_noodles",
+      "name": "Sichuan Peanut Noodles with Charred Chicken Thigh & Smashed Cucumber",
+      "description": "Charred soy-Shaoxing chicken thighs over rich Sichuan peanut noodles with a cold smashed cucumber salad.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1050,
+        "protein_g": 58,
+        "carbs_g": 120,
+        "fat_g": 38
+      },
+      "buy": [
+        {
+          "ingredient_id": "boneless_chicken_thighs",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat_noodles",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "peanut_butter",
+        "light_soy",
+        "black_vinegar",
+        "shaoxing_wine",
+        "sesame_oil",
+        "chilli_crisp",
+        "sichuan_pepper",
+        "sesame_seeds",
+        "garlic",
+        "sugar",
+        "salt"
+      ],
+      "instructions": [
+        "Marinate the chicken briefly with soy and Shaoxing, then char until cooked through.",
+        "Whisk peanut butter, soy, black vinegar, sesame oil, garlic, chilli crisp and a splash of noodle water into a glossy sauce.",
+        "Boil the noodles and toss through the sauce.",
+        "Smash and season the cucumber, then plate with sliced chicken, spring onion, sesame and Sichuan pepper."
+      ]
+    },
+    {
+      "id": "steak_au_poivre",
+      "name": "Steak au Poivre, Frites & Dressed Salad",
+      "description": "Pan-seared sirloin with a cognac/brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1050,
+        "protein_g": 58,
+        "carbs_g": 90,
+        "fat_g": 48
+      },
+      "buy": [
+        {
+          "ingredient_id": "sirloin_steak",
+          "quantity": 227,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "frozen_chips",
+          "quantity": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salad_leaves",
+          "quantity": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "pantry": [
+        "brandy",
+        "dijon_mustard",
+        "black_pepper",
+        "olive_oil",
+        "butter",
+        "salt",
+        "beef_stock"
+      ],
+      "instructions": [
+        "Season and sear the sirloin to the desired doneness, then rest it.",
+        "Cook the frozen frites until crisp.",
+        "Sweat the shallot in the steak pan, deglaze with brandy, add stock and reduce, then finish with cream and cracked black pepper.",
+        "Dress the salad leaves with lemon, Dijon and olive oil, then plate with the rested steak and sauce."
+      ]
+    }
+  ]
+}
