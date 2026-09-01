@@ -1,7 +1,7 @@
 {
   "id":"chicken_peanut_noodles",
   "name":"Sichuan Peanut Noodles with Charred Chicken Thigh & Cucumber Salad",
-  "description":"Charred soy-Shaoxing chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
+  "description":"Charred chicken thighs marinated in soy and dry sherry, served over rich sesame-peanut noodles with a cold cucumber salad.",
   "servings":1,"active":true,
   "macros":{"calories_kcal":1050,"protein_g":58,"carbs_g":120,"fat_g":38},
   "buy":[{"ingredient_id":"boneless_chicken_thighs","quantity":250,"unit":"g"},{"ingredient_id":"wheat_noodles","quantity":150,"unit":"g"},{"ingredient_id":"cucumber","quantity":0.5,"unit":"each"},{"ingredient_id":"spring_onions","quantity":2,"unit":"each"}],
