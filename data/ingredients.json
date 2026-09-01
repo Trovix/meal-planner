@@ -245,6 +245,24 @@
       "category": "Produce",
       "pack_quantity": 1,
       "pack_unit": "each"
+    },
+    "beef_mince": {
+      "name": "Lean beef mince (5% fat)",
+      "category": "Meat & Fish",
+      "pack_quantity": 500,
+      "pack_unit": "g"
+    },
+    "spaghetti": {
+      "name": "Spaghetti",
+      "category": "Cupboard",
+      "pack_quantity": 500,
+      "pack_unit": "g"
+    },
+    "tomato_puree": {
+      "name": "Tomato purée",
+      "category": "Cupboard",
+      "pack_quantity": 200,
+      "pack_unit": "g"
     }
   }
 }
