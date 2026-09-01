@@ -1,9 +1,368 @@
 {
   "meals": [
-    {"id":"steak_au_poivre","name":"Steak au Poivre, Frites & Dressed Salad","description":"Pan-seared sirloin with a cognac/brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.","macros":{"calories_kcal":1050,"protein_g":58,"carbs_g":90,"fat_g":48},"buy":[{"ingredient_id":"sirloin_steak","quantity":227,"unit":"g"},{"ingredient_id":"frozen_chips","quantity":350,"unit":"g"},{"ingredient_id":"salad_leaves","quantity":80,"unit":"g"},{"ingredient_id":"double_cream","quantity":50,"unit":"ml"},{"ingredient_id":"shallot","quantity":1,"unit":"each"},{"ingredient_id":"lemon","quantity":1,"unit":"each"}],"pantry":["brandy","dijon_mustard","black_pepper","olive_oil","butter","salt","beef_stock"]},
-    {"id":"salmon_fried_rice","name":"Crispy Salmon, Soy & Egg Fried Rice, Tenderstem","description":"Crispy-skin salmon with soy and egg fried jasmine rice, charred tenderstem broccoli and a light soy glaze.","macros":{"calories_kcal":1050,"protein_g":60,"carbs_g":115,"fat_g":38},"buy":[{"ingredient_id":"salmon_fillet","quantity":220,"unit":"g"},{"ingredient_id":"jasmine_rice","quantity":130,"unit":"g"},{"ingredient_id":"eggs","quantity":2,"unit":"each"},{"ingredient_id":"tenderstem_broccoli","quantity":150,"unit":"g"},{"ingredient_id":"spring_onions","quantity":2,"unit":"each"}],"pantry":["light_soy","dark_soy","sesame_oil","rice_vinegar","honey","garlic","neutral_oil","salt"]},
-    {"id":"chicken_peanut_noodles","name":"Sichuan Peanut Noodles with Charred Chicken Thigh & Smashed Cucumber","description":"Charred soy-Shaoxing chicken thighs over rich Sichuan peanut noodles with a cold smashed cucumber salad.","macros":{"calories_kcal":1050,"protein_g":58,"carbs_g":120,"fat_g":38},"buy":[{"ingredient_id":"boneless_chicken_thighs","quantity":250,"unit":"g"},{"ingredient_id":"wheat_noodles","quantity":150,"unit":"g"},{"ingredient_id":"cucumber","quantity":0.5,"unit":"each"},{"ingredient_id":"spring_onions","quantity":2,"unit":"each"}],"pantry":["peanut_butter","light_soy","black_vinegar","shaoxing_wine","sesame_oil","chilli_crisp","sichuan_pepper","sesame_seeds","garlic","sugar","salt"]},
-    {"id":"pork_mustard_mash","name":"Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach","description":"Seared pork tenderloin with a shallot, white wine, Dijon-wholegrain mustard cream sauce, buttery mash and wilted spinach.","macros":{"calories_kcal":975,"protein_g":65,"carbs_g":95,"fat_g":33},"buy":[{"ingredient_id":"pork_tenderloin","quantity":250,"unit":"g"},{"ingredient_id":"potatoes","quantity":400,"unit":"g"},{"ingredient_id":"spinach","quantity":100,"unit":"g"},{"ingredient_id":"double_cream","quantity":50,"unit":"ml"},{"ingredient_id":"shallot","quantity":1,"unit":"each"}],"pantry":["dijon_mustard","wholegrain_mustard","white_wine","chicken_stock","butter","olive_oil","garlic","salt","black_pepper"]},
-    {"id":"chicken_milanese_rigatoni","name":"Chicken Milanese with Tomato & Mozzarella Rigatoni","description":"Crisp Parmesan-breaded chicken breast with rigatoni in a garlic-chilli tomato sauce, torn mozzarella, Parmesan and basil.","macros":{"calories_kcal":1050,"protein_g":68,"carbs_g":120,"fat_g":35},"buy":[{"ingredient_id":"chicken_breast","quantity":200,"unit":"g"},{"ingredient_id":"rigatoni","quantity":125,"unit":"g"},{"ingredient_id":"mozzarella","quantity":75,"unit":"g"},{"ingredient_id":"passata","quantity":250,"unit":"g"},{"ingredient_id":"parmesan","quantity":30,"unit":"g"},{"ingredient_id":"fresh_basil","quantity":1,"unit":"pack"},{"ingredient_id":"eggs","quantity":1,"unit":"each"}],"pantry":["breadcrumbs","plain_flour","garlic","chilli_flakes","olive_oil","neutral_oil","salt","black_pepper"]}
+    {
+      "id": "chicken_milanese_rigatoni",
+      "name": "Chicken Milanese with Tomato & Mozzarella Rigatoni",
+      "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a smooth garlic and tomato sauce, torn mozzarella, Parmesan and basil.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1550,
+        "protein_g": 100,
+        "carbs_g": 145,
+        "fat_g": 55
+      },
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "rigatoni",
+          "quantity": 125,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "mozzarella",
+          "quantity": 75,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "canned_tomatoes",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fresh_basil",
+          "quantity": 1,
+          "unit": "pack"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "bread",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        }
+      ],
+      "pantry": [
+        "plain_flour",
+        "olive_oil",
+        "neutral_oil",
+        "salt",
+        "black_pepper"
+      ],
+      "substitutions": [
+        {
+          "id": "pre_breaded_chicken",
+          "label": "Use a pre-breaded chicken breast",
+          "replaces": [
+            "chicken_breast",
+            "bread",
+            "eggs"
+          ],
+          "buy": [
+            {
+              "ingredient_id": "pre_breaded_chicken",
+              "quantity": 1,
+              "unit": "each"
+            }
+          ],
+          "omit_pantry": [
+            "plain_flour",
+            "neutral_oil"
+          ],
+          "note": "Skip the flouring and breading steps and cook the pre-breaded chicken according to its packet instructions. Keep the Parmesan for the pasta."
+        }
+      ],
+      "instructions": [
+        "Blitz the bread into breadcrumbs and mix with 15 g of the Parmesan. Flatten the chicken to an even 1.5 cm thickness, season it, dredge in 25 g plain flour, dip in the beaten egg and coat with the Parmesan breadcrumbs.",
+        "Heat 3 tbsp neutral oil in a frying pan over medium-high heat. Fry the chicken for 4\u20135 minutes on each side, until crisp and cooked through to 75\u00b0C, then rest it on a rack for 5 minutes.",
+        "Meanwhile, warm 1 tbsp olive oil in a saucepan. Cook the crushed garlic for 30 seconds, add the canned tomatoes and simmer for 10 minutes. Immersion-blend until smooth and season to taste.",
+        "Boil the rigatoni in salted water according to the packet instructions. Reserve a splash of pasta water, drain, then toss through the tomato sauce, loosening it if necessary.",
+        "Fold through the torn mozzarella, remaining 15 g Parmesan and most of the basil. Serve beside the Milanese and finish with the remaining basil, keeping the sauce off the crust."
+      ]
+    },
+    {
+      "id": "chicken_peanut_noodles",
+      "name": "Peanut Noodles with Charred Chicken Thigh & Cucumber Salad",
+      "description": "Charred soy-marinated chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1450,
+        "protein_g": 80,
+        "carbs_g": 125,
+        "fat_g": 65
+      },
+      "buy": [
+        {
+          "ingredient_id": "boneless_chicken_thighs",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat_noodles",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "cucumber",
+          "quantity": 0.5,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        }
+      ],
+      "pantry": [
+        "sesame_paste",
+        "peanut_butter",
+        "light_soy",
+        "rice_vinegar",
+        "sesame_oil",
+        "sesame_seeds",
+        "black_pepper",
+        "sugar",
+        "salt"
+      ],
+      "instructions": [
+        "Marinate the chicken for 15 minutes with 1 tbsp light soy sauce, 1 tsp sesame oil, 1 crushed garlic clove and a little black pepper.",
+        "Heat a frying pan over medium-high heat and cook the chicken for 6\u20138 minutes on each side, until charred and cooked through to 75\u00b0C. Rest for 5 minutes, then slice.",
+        "Whisk 1\u00bd tbsp sesame paste, 1\u00bd tbsp peanut butter, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil and \u00bd finely grated garlic clove. Whisk in about 60 ml hot noodle water until glossy.",
+        "Boil the noodles according to the packet instructions, drain and toss thoroughly through the sauce.",
+        "Thinly slice the cucumber, toss with \u00bc tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, \u00bd tsp sugar and the remaining \u00bd finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
+        "Plate the noodles with the sliced chicken and cucumber salad, then finish with freshly ground black pepper."
+      ]
+    },
+    {
+      "id": "pork_mustard_mash",
+      "name": "Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach",
+      "description": "Seared pork tenderloin with a shallot, white wine, Dijon and wholegrain mustard cream sauce, buttery mash and wilted spinach.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1250,
+        "protein_g": 68,
+        "carbs_g": 85,
+        "fat_g": 62
+      },
+      "buy": [
+        {
+          "ingredient_id": "pork_tenderloin",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "potatoes",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spinach",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "chicken_stock",
+          "quantity": 0.25,
+          "unit": "cubes"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 25,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "white_wine",
+          "quantity": 75,
+          "unit": "ml"
+        }
+      ],
+      "pantry": [
+        "dijon_mustard",
+        "wholegrain_mustard",
+        "olive_oil",
+        "salt",
+        "black_pepper"
+      ],
+      "instructions": [
+        "Cut the potatoes into even chunks, cover with salted water and simmer for 15\u201318 minutes until tender. Drain, steam-dry for 2 minutes, then mash with 20 g butter and season.",
+        "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Season the pork and sear for about 2 minutes on each side. Lower the heat and continue cooking, turning regularly, until the centre reaches 63\u00b0C. Rest for 8 minutes before slicing.",
+        "Dissolve \u00bc chicken stock cube in 100 ml boiling water. In the pork pan, cook the finely chopped shallot and crushed garlic with the remaining 5 g butter for 2 minutes. Add the white wine and reduce by half.",
+        "Add the prepared stock and simmer for 5 minutes. Stir in 1 tsp Dijon mustard, 1 tsp wholegrain mustard and the cream, then simmer gently for 2\u20133 minutes and season to taste.",
+        "Wilt the spinach in a covered pan with a splash of water for 2 minutes. Serve with the mash, sliced pork and mustard cream sauce."
+      ]
+    },
+    {
+      "id": "salmon_fried_rice",
+      "name": "Air-Fried Miso Salmon, Soy & Egg Fried Rice, Tenderstem",
+      "description": "Air-fried salmon glazed with white miso, light soy and sesame oil, served with egg fried jasmine rice and charred tenderstem broccoli.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1275,
+        "protein_g": 72,
+        "carbs_g": 120,
+        "fat_g": 49
+      },
+      "buy": [
+        {
+          "ingredient_id": "salmon_fillet",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jasmine_rice",
+          "quantity": 130,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "tenderstem_broccoli",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "miso_paste",
+          "quantity": 20,
+          "unit": "g"
+        }
+      ],
+      "pantry": [
+        "light_soy",
+        "dark_soy",
+        "sesame_oil",
+        "neutral_oil",
+        "salt"
+      ],
+      "instructions": [
+        "Rinse the rice, combine it with 195 ml water and bring to a simmer. Cover and cook on low for 12 minutes, then remove from the heat and rest, covered, for 10 minutes. Spread it on a plate for 10 minutes so excess steam can escape.",
+        "Preheat the air fryer to 190\u00b0C. Mix the white miso paste with 1 tbsp light soy sauce and 1 tsp sesame oil. Pat the salmon dry and spread the miso mixture over the flesh, keeping the skin mostly clean.",
+        "Lightly oil the air-fryer basket and place the salmon skin-side down. Air-fry for 8\u201310 minutes, depending on thickness, until lightly caramelised and cooked through to 63\u00b0C. Rest for 3 minutes.",
+        "Meanwhile, heat 1 tsp neutral oil in a frying pan over medium-high heat. Char the tenderstem for 5\u20136 minutes, adding a splash of water and covering briefly if necessary, then set aside.",
+        "Heat another 2 tsp neutral oil in the pan. Stir-fry the crushed garlic and sliced spring onions for 30 seconds, scramble in the eggs, then add the rice, 1 tbsp light soy sauce and 1 tsp dark soy sauce. Fry for 3\u20134 minutes and finish with 1 tsp sesame oil.",
+        "Serve the fried rice with the tenderstem and air-fried miso-soy salmon."
+      ]
+    },
+    {
+      "id": "steak_au_poivre",
+      "name": "Steak au Poivre, Frites & Dressed Salad",
+      "description": "Pan-seared ribeye with a brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.",
+      "servings": 1,
+      "active": true,
+      "macros": {
+        "calories_kcal": 1700,
+        "protein_g": 68,
+        "carbs_g": 90,
+        "fat_g": 105
+      },
+      "buy": [
+        {
+          "ingredient_id": "ribeye_steak",
+          "quantity": 227,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "frozen_chips",
+          "quantity": 350,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "salad_leaves",
+          "quantity": 80,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "shallot",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "lemon",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "beef_stock",
+          "quantity": 0.25,
+          "unit": "cubes"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 15,
+          "unit": "g"
+        }
+      ],
+      "pantry": [
+        "brandy",
+        "dijon_mustard",
+        "black_pepper",
+        "olive_oil",
+        "salt"
+      ],
+      "instructions": [
+        "Cook the frozen chips in an air fryer at 200\u00b0C for 20\u201325 minutes, shaking twice, until crisp, or follow the packet instructions.",
+        "Pat the ribeye dry and season generously with salt and 1 tsp coarsely cracked black pepper. Heat 1 tsp olive oil in a heavy frying pan over high heat and sear for 2\u20133 minutes on each side, adjusting for thickness and preferred doneness. Add 10 g butter for the final minute and baste, then rest the steak for 8 minutes.",
+        "Dissolve \u00bc beef stock cube in 100 ml boiling water. Lower the pan to medium heat and cook the finely chopped shallot in the remaining 5 g butter for 2 minutes. Add 25 ml brandy and simmer for 1 minute, scraping up the browned bits.",
+        "Add the prepared stock and reduce by half. Stir in the cream, \u00bd tsp Dijon mustard and another \u00bd tsp cracked black pepper, then simmer gently for 2\u20133 minutes.",
+        "Whisk 1 tbsp lemon juice with \u00bd tsp Dijon mustard and 1 tbsp olive oil. Toss with the salad leaves, then serve beside the chips, rested steak and peppercorn sauce."
+      ]
+    }
   ]
 }

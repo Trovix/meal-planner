@@ -1,0 +1,24 @@
+{
+  "id": "chicken_peanut_noodles",
+  "name": "Peanut Noodles with Charred Chicken Thigh & Cucumber Salad",
+  "description": "Charred soy-marinated chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
+  "servings": 1,
+  "active": true,
+  "macros": {"calories_kcal": 1450, "protein_g": 80, "carbs_g": 125, "fat_g": 65},
+  "buy": [
+    {"ingredient_id": "boneless_chicken_thighs", "quantity": 250, "unit": "g"},
+    {"ingredient_id": "wheat_noodles", "quantity": 150, "unit": "g"},
+    {"ingredient_id": "cucumber", "quantity": 0.5, "unit": "each"},
+    {"ingredient_id": "spring_onions", "quantity": 2, "unit": "each"},
+    {"ingredient_id": "garlic", "quantity": 2, "unit": "cloves"}
+  ],
+  "pantry": ["sesame_paste", "peanut_butter", "light_soy", "rice_vinegar", "sesame_oil", "sesame_seeds", "black_pepper", "sugar", "salt"],
+  "instructions": [
+    "Marinate the chicken for 15 minutes with 1 tbsp light soy sauce, 1 tsp sesame oil, 1 crushed garlic clove and a little black pepper.",
+    "Heat a frying pan over medium-high heat and cook the chicken for 6–8 minutes on each side, until charred and cooked through to 75°C. Rest for 5 minutes, then slice.",
+    "Whisk 1½ tbsp sesame paste, 1½ tbsp peanut butter, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil and ½ finely grated garlic clove. Whisk in about 60 ml hot noodle water until glossy.",
+    "Boil the noodles according to the packet instructions, drain and toss thoroughly through the sauce.",
+    "Thinly slice the cucumber, toss with ¼ tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, ½ tsp sugar and the remaining ½ finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
+    "Plate the noodles with the sliced chicken and cucumber salad, then finish with freshly ground black pepper."
+  ]
+}

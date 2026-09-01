@@ -1,6 +1,7 @@
 name = "meal-planner-publisher"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
 
 routes = [
   { pattern = "meal-api.james-platt.com", custom_domain = true }
@@ -8,3 +9,7 @@ routes = [
 
 [secrets]
 required = ["ADMIN_PASSWORD", "GITHUB_TOKEN"]
+
+[observability]
+enabled = true
+head_sampling_rate = 1

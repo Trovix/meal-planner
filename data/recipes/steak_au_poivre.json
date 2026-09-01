@@ -1,0 +1,26 @@
+{
+  "id": "steak_au_poivre",
+  "name": "Steak au Poivre, Frites & Dressed Salad",
+  "description": "Pan-seared ribeye with a brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.",
+  "servings": 1,
+  "active": true,
+  "macros": {"calories_kcal": 1700, "protein_g": 68, "carbs_g": 90, "fat_g": 105},
+  "buy": [
+    {"ingredient_id": "ribeye_steak", "quantity": 227, "unit": "g"},
+    {"ingredient_id": "frozen_chips", "quantity": 350, "unit": "g"},
+    {"ingredient_id": "salad_leaves", "quantity": 80, "unit": "g"},
+    {"ingredient_id": "double_cream", "quantity": 50, "unit": "ml"},
+    {"ingredient_id": "shallot", "quantity": 1, "unit": "each"},
+    {"ingredient_id": "lemon", "quantity": 1, "unit": "each"},
+    {"ingredient_id": "beef_stock", "quantity": 0.25, "unit": "cubes"},
+    {"ingredient_id": "butter", "quantity": 15, "unit": "g"}
+  ],
+  "pantry": ["brandy", "dijon_mustard", "black_pepper", "olive_oil", "salt"],
+  "instructions": [
+    "Cook the frozen chips in an air fryer at 200°C for 20–25 minutes, shaking twice, until crisp, or follow the packet instructions.",
+    "Pat the ribeye dry and season generously with salt and 1 tsp coarsely cracked black pepper. Heat 1 tsp olive oil in a heavy frying pan over high heat and sear for 2–3 minutes on each side, adjusting for thickness and preferred doneness. Add 10 g butter for the final minute and baste, then rest the steak for 8 minutes.",
+    "Dissolve ¼ beef stock cube in 100 ml boiling water. Lower the pan to medium heat and cook the finely chopped shallot in the remaining 5 g butter for 2 minutes. Add 25 ml brandy and simmer for 1 minute, scraping up the browned bits.",
+    "Add the prepared stock and reduce by half. Stir in the cream, ½ tsp Dijon mustard and another ½ tsp cracked black pepper, then simmer gently for 2–3 minutes.",
+    "Whisk 1 tbsp lemon juice with ½ tsp Dijon mustard and 1 tbsp olive oil. Toss with the salad leaves, then serve beside the chips, rested steak and peppercorn sauce."
+  ]
+}

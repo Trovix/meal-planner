@@ -12,6 +12,7 @@
   let ingredientsJson = "";
   let mealsRoot = null;
   let ingredientsRoot = null;
+  let pantryRoot = null;
 
   function randomSeed() {
     return globalThis.crypto?.getRandomValues
@@ -21,13 +22,14 @@
 
   async function initialise() {
     try {
-      const [mealsResponse, ingredientsResponse, wasm] = await Promise.all([
+      const [mealsResponse, ingredientsResponse, pantryResponse, wasm] = await Promise.all([
         fetch("data/meals.json", { cache: "no-store" }),
         fetch("data/ingredients.json", { cache: "no-store" }),
+        fetch("data/pantry.json", { cache: "no-store" }),
         createMealPlannerModule(),
       ]);
 
-      if (!mealsResponse.ok || !ingredientsResponse.ok) {
+      if (!mealsResponse.ok || !ingredientsResponse.ok || !pantryResponse.ok) {
         throw new Error("Could not load recipe data.");
       }
 
@@ -37,6 +39,7 @@
       ]);
       mealsRoot = JSON.parse(mealsJson);
       ingredientsRoot = JSON.parse(ingredientsJson);
+      pantryRoot = await pantryResponse.json();
       module = wasm;
       generatePlan = module.cwrap("generate_plan", "number", [
         "string",
@@ -60,7 +63,7 @@
       const meal = mealsRoot.meals.find((candidate) => candidate.id === selected.id);
       if (!meal) continue;
       mealsElement.append(
-        MealRecipeView.createRecipeCard(meal, ingredientsRoot, { headingLevel: 3 }),
+        MealRecipeView.createRecipeCard(meal, ingredientsRoot, pantryRoot, { headingLevel: 3 }),
       );
     }
 

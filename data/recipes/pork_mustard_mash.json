@@ -1,0 +1,27 @@
+{
+  "id": "pork_mustard_mash",
+  "name": "Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach",
+  "description": "Seared pork tenderloin with a shallot, white wine, Dijon and wholegrain mustard cream sauce, buttery mash and wilted spinach.",
+  "servings": 1,
+  "active": true,
+  "macros": {"calories_kcal": 1250, "protein_g": 68, "carbs_g": 85, "fat_g": 62},
+  "buy": [
+    {"ingredient_id": "pork_tenderloin", "quantity": 250, "unit": "g"},
+    {"ingredient_id": "potatoes", "quantity": 400, "unit": "g"},
+    {"ingredient_id": "spinach", "quantity": 100, "unit": "g"},
+    {"ingredient_id": "double_cream", "quantity": 50, "unit": "ml"},
+    {"ingredient_id": "shallot", "quantity": 1, "unit": "each"},
+    {"ingredient_id": "chicken_stock", "quantity": 0.25, "unit": "cubes"},
+    {"ingredient_id": "garlic", "quantity": 1, "unit": "cloves"},
+    {"ingredient_id": "butter", "quantity": 25, "unit": "g"},
+    {"ingredient_id": "white_wine", "quantity": 75, "unit": "ml"}
+  ],
+  "pantry": ["dijon_mustard", "wholegrain_mustard", "olive_oil", "salt", "black_pepper"],
+  "instructions": [
+    "Cut the potatoes into even chunks, cover with salted water and simmer for 15–18 minutes until tender. Drain, steam-dry for 2 minutes, then mash with 20 g butter and season.",
+    "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Season the pork and sear for about 2 minutes on each side. Lower the heat and continue cooking, turning regularly, until the centre reaches 63°C. Rest for 8 minutes before slicing.",
+    "Dissolve ¼ chicken stock cube in 100 ml boiling water. In the pork pan, cook the finely chopped shallot and crushed garlic with the remaining 5 g butter for 2 minutes. Add the white wine and reduce by half.",
+    "Add the prepared stock and simmer for 5 minutes. Stir in 1 tsp Dijon mustard, 1 tsp wholegrain mustard and the cream, then simmer gently for 2–3 minutes and season to taste.",
+    "Wilt the spinach in a covered pan with a splash of water for 2 minutes. Serve with the mash, sliced pork and mustard cream sauce."
+  ]
+}

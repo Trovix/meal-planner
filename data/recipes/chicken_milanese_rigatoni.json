@@ -1,0 +1,37 @@
+{
+  "id": "chicken_milanese_rigatoni",
+  "name": "Chicken Milanese with Tomato & Mozzarella Rigatoni",
+  "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a smooth garlic and tomato sauce, torn mozzarella, Parmesan and basil.",
+  "servings": 1,
+  "active": true,
+  "macros": {"calories_kcal": 1550, "protein_g": 100, "carbs_g": 145, "fat_g": 55},
+  "buy": [
+    {"ingredient_id": "chicken_breast", "quantity": 200, "unit": "g"},
+    {"ingredient_id": "rigatoni", "quantity": 125, "unit": "g"},
+    {"ingredient_id": "mozzarella", "quantity": 75, "unit": "g"},
+    {"ingredient_id": "canned_tomatoes", "quantity": 250, "unit": "g"},
+    {"ingredient_id": "parmesan", "quantity": 30, "unit": "g"},
+    {"ingredient_id": "fresh_basil", "quantity": 1, "unit": "pack"},
+    {"ingredient_id": "eggs", "quantity": 1, "unit": "each"},
+    {"ingredient_id": "bread", "quantity": 50, "unit": "g"},
+    {"ingredient_id": "garlic", "quantity": 2, "unit": "cloves"}
+  ],
+  "pantry": ["plain_flour", "olive_oil", "neutral_oil", "salt", "black_pepper"],
+  "substitutions": [
+    {
+      "id": "pre_breaded_chicken",
+      "label": "Use a pre-breaded chicken breast",
+      "replaces": ["chicken_breast", "bread", "eggs"],
+      "buy": [{"ingredient_id": "pre_breaded_chicken", "quantity": 1, "unit": "each"}],
+      "omit_pantry": ["plain_flour", "neutral_oil"],
+      "note": "Skip the flouring and breading steps and cook the pre-breaded chicken according to its packet instructions. Keep the Parmesan for the pasta."
+    }
+  ],
+  "instructions": [
+    "Blitz the bread into breadcrumbs and mix with 15 g of the Parmesan. Flatten the chicken to an even 1.5 cm thickness, season it, dredge in 25 g plain flour, dip in the beaten egg and coat with the Parmesan breadcrumbs.",
+    "Heat 3 tbsp neutral oil in a frying pan over medium-high heat. Fry the chicken for 4–5 minutes on each side, until crisp and cooked through to 75°C, then rest it on a rack for 5 minutes.",
+    "Meanwhile, warm 1 tbsp olive oil in a saucepan. Cook the crushed garlic for 30 seconds, add the canned tomatoes and simmer for 10 minutes. Immersion-blend until smooth and season to taste.",
+    "Boil the rigatoni in salted water according to the packet instructions. Reserve a splash of pasta water, drain, then toss through the tomato sauce, loosening it if necessary.",
+    "Fold through the torn mozzarella, remaining 15 g Parmesan and most of the basil. Serve beside the Milanese and finish with the remaining basil, keeping the sauce off the crust."
+  ]
+}

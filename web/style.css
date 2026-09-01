@@ -211,10 +211,32 @@ p {
 }
 
 .recipe-pantry {
+  margin: .35rem 0 0;
+  padding-left: 1.2rem;
   color: #626468;
   font-size: .92rem;
   line-height: 1.5;
 }
+
+p.recipe-pantry { padding-left: 0; }
+
+.recipe-substitutions,
+.substitution-row {
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  padding: .75rem;
+}
+
+.recipe-substitutions legend,
+.substitution-row legend {
+  padding: 0 .25rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.recipe-substitutions .checkbox + .checkbox { margin-top: .45rem; }
+
+.substitution-notes .summary { margin: .7rem 0; }
 
 .recipe-method {
   margin: .35rem 0 0;
@@ -276,6 +298,7 @@ p {
 }
 
 input[type="text"],
+input[type="search"],
 input[type="password"],
 input[type="number"],
 textarea,
@@ -322,6 +345,45 @@ textarea {
   margin-bottom: .6rem;
 }
 
+.new-pantry-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr auto;
+  gap: .5rem;
+  align-items: end;
+  margin-bottom: .6rem;
+}
+
+.new-pantry-row button { min-height: 44px; }
+
+.pantry-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .35rem .8rem;
+  margin: 0 0 1rem;
+  padding: .75rem;
+  border: 1px solid var(--border);
+  max-height: 18rem;
+  overflow-y: auto;
+}
+
+.pantry-option {
+  margin: 0;
+  font-weight: 400;
+}
+
+.substitution-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem;
+}
+
+.substitution-row input[data-field="note"],
+.substitution-row input[data-field="replaces"],
+.substitution-row input[data-field="omit"],
+.substitution-row button {
+  grid-column: 1 / -1;
+}
+
 .checkbox {
   display: flex;
   gap: .5rem;
@@ -355,6 +417,13 @@ pre.output {
 
   .new-ingredient-row { grid-template-columns: 1fr 1fr; }
   .new-ingredient-row input:nth-child(-n + 3) { grid-column: 1 / -1; }
+
+  .new-pantry-row,
+  .pantry-options,
+  .substitution-row { grid-template-columns: 1fr; }
+
+  .substitution-row input[data-field],
+  .substitution-row button { grid-column: auto; }
 
   .recipe-header { display: block; }
   .recipe-reminder { margin-top: .55rem; }
