@@ -1,0 +1,56 @@
+name: Build static WASM site
+
+on:
+  push:
+    branches: [main, wasm-webapp]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install native dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nlohmann-json3-dev
+
+      - name: Set up Emscripten
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: latest
+
+      - name: Validate recipes and build registry
+        run: |
+          mkdir -p dist/data
+          python3 tools/build_registry.py --out dist/data/meals.json
+          cp data/ingredients.json dist/data/ingredients.json
+
+      - name: Build WebAssembly planner
+        run: |
+          emcmake cmake -S . -B build-wasm
+          cmake --build build-wasm --config Release
+          cp build-wasm/mealplanner.js dist/mealplanner.js
+          cp build-wasm/mealplanner.wasm dist/mealplanner.wasm
+
+      - name: Copy web assets
+        run: cp -R web/. dist/
+
+      - name: Native tests
+        run: |
+          cmake -S . -B build-native
+          cmake --build build-native --config Release
+          ctest --test-dir build-native --output-on-failure
+
+      - name: Publish site branch
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: site
+          publish_dir: ./dist
+          force_orphan: true
