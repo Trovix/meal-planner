@@ -1,0 +1,61 @@
+{
+  "id": "smoked_salmon_scrambled_eggs",
+  "name": "Smoked Salmon & Scrambled Eggs on Sourdough",
+  "description": "Soft buttery scrambled eggs and smoked salmon piled over toasted sourdough, finished with chives, black pepper and fresh lemon.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "breakfast"
+  ],
+  "macros": {
+    "calories_kcal": 680,
+    "protein_g": 40,
+    "carbs_g": 55,
+    "fat_g": 33
+  },
+  "buy": [
+    {
+      "ingredient_id": "eggs",
+      "quantity": 3,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "smoked_salmon",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "sourdough_bread",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 15,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "fresh_chives",
+      "quantity": 0.5,
+      "unit": "pack"
+    },
+    {
+      "ingredient_id": "lemon",
+      "quantity": 0.25,
+      "unit": "each"
+    }
+  ],
+  "pantry": [
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Toast the sourdough until golden and crisp.",
+    "Crack the eggs into a bowl, season lightly with salt and beat until combined.",
+    "Melt 10 g butter in a non-stick pan over medium-low heat. Add the eggs and cook gently, stirring and folding continuously until softly scrambled and still slightly glossy.",
+    "Remove from the heat and stir through the remaining 5 g butter.",
+    "Place the toast on a plate and spoon the scrambled eggs over it.",
+    "Fold the smoked salmon loosely over the eggs.",
+    "Finish with chopped chives, black pepper and a squeeze of lemon."
+  ]
+}
