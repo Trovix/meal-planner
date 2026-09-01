@@ -10,7 +10,7 @@ if (!ingredientsPath) {
 }
 
 const glue = fs.readFileSync(gluePath, "utf8");
-const createMealPlannerModule = vm.runInThisContext(`${glue}\ncreateMealPlannerModule;`);
+const moduleFactory = vm.runInThisContext(`${glue}\ncreateMealPlannerModule;`);
 const mealsJson = fs.readFileSync(mealsPath, "utf8");
 const ingredientsJson = fs.readFileSync(ingredientsPath, "utf8");
 const mealsRoot = JSON.parse(mealsJson);
@@ -22,7 +22,7 @@ function activeCount(mealType) {
 }
 
 async function main() {
-  const module = await createMealPlannerModule({
+  const module = await moduleFactory({
     locateFile: () => path.resolve(wasmPath),
   });
   const generate = module.cwrap("generate_plan_for_type", "number", [
