@@ -4,8 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       meals:
-        description: 'Comma-separated meal IDs'
-        required: true
+        description: 'Optional comma-separated meal IDs. Leave blank for random selection.'
+        required: false
+        default: ''
+        type: string
+      random_count:
+        description: 'Number of random unique meals when meals is blank'
+        required: false
+        default: '3'
         type: string
       request_id:
         description: 'Unique request ID from Shortcut'
@@ -37,7 +43,16 @@ jobs:
           cmake --build build --config Release
 
       - name: Generate shopping list
-        run: ./build/mealplanner "${{ inputs.meals }}" "${{ inputs.request_id }}"
+        env:
+          MEALS: ${{ inputs.meals }}
+          RANDOM_COUNT: ${{ inputs.random_count }}
+          REQUEST_ID: ${{ inputs.request_id }}
+        run: |
+          if [ -n "$MEALS" ]; then
+            ./build/mealplanner "$MEALS" "$REQUEST_ID"
+          else
+            ./build/mealplanner --random-count "$RANDOM_COUNT" "$REQUEST_ID"
+          fi
 
       - name: Commit latest result
         env:
