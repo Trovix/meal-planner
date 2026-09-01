@@ -1,0 +1,51 @@
+name: Build shopping list
+
+on:
+  workflow_dispatch:
+    inputs:
+      meals:
+        description: 'Comma-separated meal IDs'
+        required: true
+        type: string
+      request_id:
+        description: 'Unique request ID from Shortcut'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shopping-list
+  cancel-in-progress: false
+
+jobs:
+  build-shopping-list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nlohmann-json3-dev
+
+      - name: Build C++ engine
+        run: |
+          cmake -S . -B build
+          cmake --build build --config Release
+
+      - name: Generate shopping list
+        run: ./build/mealplanner "${{ inputs.meals }}" "${{ inputs.request_id }}"
+
+      - name: Commit latest result
+        env:
+          REQUEST_ID: ${{ inputs.request_id }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/latest.json
+          git commit -m "Generate shopping list ${REQUEST_ID}"
+          git pull --rebase origin main
+          git push origin HEAD:main
