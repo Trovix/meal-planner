@@ -1,0 +1,102 @@
+{
+  "id": "chicken_katsu_curry",
+  "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Cabbage",
+  "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded cabbage and a smooth, mild Japanese-style curry sauce.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 1300,
+    "protein_g": 75,
+    "carbs_g": 165,
+    "fat_g": 38
+  },
+  "buy": [
+    {
+      "ingredient_id": "chicken_breast",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "jasmine_rice",
+      "quantity": 130,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "panko_breadcrumbs",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "eggs",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "onion",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "carrots",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "white_cabbage",
+      "quantity": 0.25,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 1,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "fresh_ginger",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "chicken_stock",
+      "quantity": 0.5,
+      "unit": "cubes"
+    }
+  ],
+  "pantry": [
+    "black_pepper",
+    "honey",
+    "light_soy",
+    "neutral_oil",
+    "plain_flour",
+    "rice_vinegar",
+    "salt",
+    "mild_curry_powder",
+    "turmeric",
+    "garam_masala"
+  ],
+  "instructions": [
+    "Rinse the jasmine rice until the water runs mostly clear. Add it to a small saucepan with 195 ml water and a pinch of salt, bring to a boil, cover and simmer on the lowest heat for 12 minutes. Remove from the heat and leave covered for 10 minutes.",
+    "For the curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8–10 minutes until soft but not browned.",
+    "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 2 tsp mild curry powder, 1/4 tsp ground turmeric and 1/2 tsp garam masala, then cook for another 30 seconds.",
+    "Stir 10 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 300 ml prepared chicken stock, then add 1 tsp light soy sauce and 1 tsp honey. Simmer gently for 12–15 minutes.",
+    "Immersion-blend the sauce until smooth, stir in 1 tsp rice vinegar and season with salt and black pepper. Keep warm over a very low heat, adding a splash of water if it becomes too thick.",
+    "Butterfly the chicken breast and flatten it to an even 1.5 cm thickness. Season both sides with salt and black pepper.",
+    "Put 20 g plain flour, the beaten egg and the panko breadcrumbs in three separate shallow dishes. Coat the chicken in flour, then egg, then panko, pressing the crumbs on firmly.",
+    "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200°C for 10–12 minutes, turning halfway, until crisp and the centre reaches 75°C. Rest for 3 minutes, then slice.",
+    "Finely shred the white cabbage. Fluff the rice and serve it with the cabbage, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+  ],
+  "make_ahead": {
+    "component": "Curry sauce",
+    "max_refrigerated_hours": 48,
+    "instructions": [
+      "Cook the onion and carrot in neutral oil, then add the garlic, ginger and spices.",
+      "Stir in 10 g plain flour, gradually add the prepared chicken stock, light soy sauce and honey, then simmer for 12–15 minutes.",
+      "Immersion-blend until smooth, finish with the rice vinegar and season to taste."
+    ],
+    "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+    "day_of": [
+      "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+      "Cook the rice, bread and air-fry the chicken, and shred the cabbage fresh."
+    ]
+  }
+}
