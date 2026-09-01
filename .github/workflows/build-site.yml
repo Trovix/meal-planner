@@ -3,6 +3,9 @@ name: Build static WASM site
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - data/ingredients.json
+      - data/pantry.json
   pull_request:
     branches: [main]
   workflow_dispatch:
