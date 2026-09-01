@@ -4,6 +4,9 @@
   "description": "Seared pork tenderloin with a shallot, white wine, Dijon and wholegrain mustard cream sauce, buttery mash and wilted spinach.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {"calories_kcal": 1250, "protein_g": 68, "carbs_g": 85, "fat_g": 62},
   "buy": [
     {"ingredient_id": "pork_tenderloin", "quantity": 250, "unit": "g"},

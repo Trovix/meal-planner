@@ -4,6 +4,9 @@
   "description": "Pan-seared ribeye with a brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {"calories_kcal": 1700, "protein_g": 68, "carbs_g": 90, "fat_g": 105},
   "buy": [
     {"ingredient_id": "ribeye_steak", "quantity": 227, "unit": "g"},

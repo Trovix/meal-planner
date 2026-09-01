@@ -25,7 +25,7 @@ if(EMSCRIPTEN)
     "-sMODULARIZE=1"
     "-sEXPORT_NAME=createMealPlannerModule"
     "-sALLOW_MEMORY_GROWTH=1"
-    "-sEXPORTED_FUNCTIONS=['_generate_plan','_validate_recipe','_free_result']"
+    "-sEXPORTED_FUNCTIONS=['_generate_plan','_generate_plan_for_type','_validate_recipe','_free_result']"
     "-sEXPORTED_RUNTIME_METHODS=['cwrap','UTF8ToString']"
   )
 else()

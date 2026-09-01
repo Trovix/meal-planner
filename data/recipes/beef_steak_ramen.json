@@ -4,6 +4,9 @@
   "description": "Seared rump steak, wheat noodles, pak choi and spring onions in a beef, soy, garlic and ginger broth, topped with a soft-boiled egg.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 920,
     "protein_g": 67,

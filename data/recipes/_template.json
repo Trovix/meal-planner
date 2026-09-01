@@ -4,6 +4,7 @@
   "description":"One-line description.",
   "servings":1,
   "active":true,
+  "meal_types":["dinner"],
   "macros":{"calories_kcal":0,"protein_g":0,"carbs_g":0,"fat_g":0},
   "buy":[{"ingredient_id":"ingredient_id","quantity":1,"unit":"g"}],
   "pantry":["salt"],

@@ -4,6 +4,9 @@
   "description": "Air-fried salmon glazed with white miso, light soy and sesame oil, served with egg fried jasmine rice and charred tenderstem broccoli.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {"calories_kcal": 1275, "protein_g": 72, "carbs_g": 120, "fat_g": 49},
   "buy": [
     {"ingredient_id": "salmon_fillet", "quantity": 220, "unit": "g"},

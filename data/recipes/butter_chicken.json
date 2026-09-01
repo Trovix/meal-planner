@@ -4,6 +4,9 @@
   "description": "Charred yoghurt-marinated chicken thighs in a rich, smooth tomato, butter and cream sauce with garlic, ginger and warming spices, served with basmati rice.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 1050,
     "protein_g": 56,

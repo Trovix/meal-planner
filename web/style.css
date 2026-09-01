@@ -112,6 +112,23 @@ p {
   margin: 1.5rem 0;
 }
 
+.planner-meal-type { max-width: 15rem; }
+
+.filter-controls {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.filter-controls .button { padding: .5rem .7rem; }
+
+.filter-controls .is-active {
+  border-color: var(--text);
+  background: var(--text);
+  color: var(--bg);
+}
+
 .button {
   appearance: none;
   border: 1px solid var(--text);
@@ -176,6 +193,21 @@ p {
   color: #626468;
   font-size: .95rem;
   line-height: 1.5;
+}
+
+.meal-type-tags {
+  display: flex;
+  gap: .35rem;
+  flex-wrap: wrap;
+  margin-top: .45rem;
+}
+
+.meal-type-tag {
+  padding: .08rem .4rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: .72rem;
+  text-transform: uppercase;
 }
 
 .recipe-reminder {
@@ -407,6 +439,25 @@ textarea {
   margin: 2rem 0 1rem;
   border: 1px solid var(--border);
   padding: 1rem;
+}
+
+.meal-type-editor {
+  margin: 0 0 1rem;
+  border: 1px solid var(--border);
+  padding: .75rem 1rem;
+}
+
+.meal-type-editor legend {
+  padding: 0 .25rem;
+  font-weight: 600;
+}
+
+.meal-type-editor p { margin-bottom: .5rem; }
+
+.meal-type-options {
+  display: flex;
+  gap: .5rem 1rem;
+  flex-wrap: wrap;
 }
 
 .make-ahead-editor legend {

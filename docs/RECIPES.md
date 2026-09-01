@@ -11,6 +11,8 @@ Open `/add-recipe.html` and complete the recipe form. Shopping ingredients and p
 
 Pantry ingredients are selected from the searchable central catalogue in `data/pantry.json`. The form validates the recipe and shows a real recipe-card preview before publishing.
 
+Every recipe must select one or more `meal_types` values from `breakfast`, `lunch`, `dinner` and `snack`. Recipes can belong to multiple meal types; the planner and registry include a recipe when it matches the selected type.
+
 ## New shopping ingredients
 
 If an ingredient is absent from `data/ingredients.json`, define its display name, shopping category, normal pack quantity and unit in the form. Publishing adds it to the central catalogue before saving the recipe.
@@ -44,4 +46,4 @@ python3 tools/build_registry.py \
   --pantry-out /tmp/pantry.json
 ```
 
-CI rejects malformed recipes, duplicate or unknown IDs, conflicting pantry/shopping selections, non-positive quantities, unit mismatches and invalid substitutions.
+CI rejects malformed recipes, missing or invalid meal types, duplicate or unknown IDs, conflicting pantry/shopping selections, non-positive quantities, unit mismatches and invalid substitutions.

@@ -1,11 +1,202 @@
 {
   "meals": [
     {
+      "id": "beef_steak_ramen",
+      "name": "Beef Steak Ramen with Soft-Boiled Egg",
+      "description": "Seared rump steak, wheat noodles, pak choi and spring onions in a beef, soy, garlic and ginger broth, topped with a soft-boiled egg.",
+      "servings": 1,
+      "active": true,
+      "meal_types": [
+        "dinner"
+      ],
+      "macros": {
+        "calories_kcal": 920,
+        "protein_g": 67,
+        "carbs_g": 82,
+        "fat_g": 31
+      },
+      "buy": [
+        {
+          "ingredient_id": "rump_steak",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "wheat_noodles",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "beef_stock",
+          "quantity": 1,
+          "unit": "cubes"
+        },
+        {
+          "ingredient_id": "pak_choi",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "spring_onions",
+          "quantity": 2,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "fresh_ginger",
+          "quantity": 10,
+          "unit": "g"
+        }
+      ],
+      "pantry": [
+        "light_soy",
+        "dark_soy",
+        "honey",
+        "rice_vinegar",
+        "sesame_oil",
+        "neutral_oil",
+        "salt",
+        "black_pepper"
+      ],
+      "instructions": [
+        "Bring a small saucepan of water to the boil. Carefully lower in the egg and cook for 6\u00bd minutes. Transfer it immediately to cold water, then peel and halve it.",
+        "Pat the steak dry and season it with salt and black pepper. Heat 1 tsp neutral oil in a frying pan over high heat and sear the steak for approximately 2\u20133 minutes per side, depending on its thickness and your preferred doneness.",
+        "Transfer the steak to a board and rest it for at least 5 minutes. For medium-rare steak, aim for approximately 52\u201354\u00b0C after resting.",
+        "Add 500 ml water and the beef stock cube to the saucepan. Add the crushed garlic, grated ginger, 1 tbsp light soy sauce, 1 tsp dark soy sauce and 1 tsp honey. Simmer gently for 8\u201310 minutes.",
+        "Add the noodles and cook according to their packet instructions. Halve the pak choi lengthways and add it for the final 2 minutes.",
+        "Remove the broth from the heat and stir in 1 tsp rice vinegar and 1 tsp sesame oil. Taste before adding any extra salt.",
+        "Slice the rested steak thinly against the grain. Divide the noodles, pak choi and broth into a deep bowl, then arrange the steak and soft-boiled egg on top. Finish with finely sliced spring onions, black pepper and the steak's resting juices."
+      ],
+      "substitutions": [
+        {
+          "id": "ribeye_upgrade",
+          "label": "Use ribeye steak",
+          "replaces": [
+            "rump_steak"
+          ],
+          "buy": [
+            {
+              "ingredient_id": "ribeye_steak",
+              "quantity": 200,
+              "unit": "g"
+            }
+          ],
+          "omit_pantry": [],
+          "note": "Cook the ribeye exactly as described for the rump steak, adjusting the frying time for its thickness."
+        }
+      ]
+    },
+    {
+      "id": "butter_chicken",
+      "name": "Butter Chicken with Basmati Rice",
+      "description": "Charred yoghurt-marinated chicken thighs in a rich, smooth tomato, butter and cream sauce with garlic, ginger and warming spices, served with basmati rice.",
+      "servings": 1,
+      "active": true,
+      "meal_types": [
+        "dinner"
+      ],
+      "macros": {
+        "calories_kcal": 1050,
+        "protein_g": 56,
+        "carbs_g": 94,
+        "fat_g": 48
+      },
+      "buy": [
+        {
+          "ingredient_id": "boneless_chicken_thighs",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "basmati_rice",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "greek_yoghurt",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "canned_tomatoes",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "butter",
+          "quantity": 25,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "fresh_ginger",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "fresh_coriander",
+          "quantity": 0.5,
+          "unit": "pack"
+        }
+      ],
+      "pantry": [
+        "garam_masala",
+        "turmeric",
+        "mild_curry_powder",
+        "neutral_oil",
+        "salt",
+        "sugar"
+      ],
+      "instructions": [
+        "Mix the chicken thighs with the Greek yoghurt, 1 tsp garam masala, \u00bd tsp turmeric, \u00bd tsp mild curry powder, half the grated ginger, 1 crushed garlic clove and \u00bd tsp salt. Leave to marinate for at least 20 minutes, or refrigerate for up to 24 hours.",
+        "Rinse the basmati rice until the water runs mostly clear. Cook the 100 g rice according to the packet instructions, then cover and keep warm.",
+        "Heat 1 tsp neutral oil in a frying pan over high heat. Shake excess marinade from the chicken and cook for 3-4 minutes per side until well browned and lightly charred. It does not need to be completely cooked through yet. Transfer to a plate.",
+        "Reduce the heat to medium and melt 15 g butter in the same pan. Add the remaining garlic and ginger and cook for about 30 seconds.",
+        "Add 1 tsp garam masala and \u00bd tsp mild curry powder and cook for another 30 seconds until fragrant.",
+        "Add the canned tomatoes, \u00bd tsp sugar and a pinch of salt. Simmer for 8-10 minutes until reduced and slightly darkened.",
+        "Blend the sauce until completely smooth with an immersion blender, then return it to the pan over low heat.",
+        "Stir in the double cream and remaining 10 g butter. Return the chicken and any resting juices to the sauce and simmer gently for 5-7 minutes, until the chicken reaches 75\u00b0C in the centre and the sauce is thick and glossy. Add a splash of water if it becomes too thick.",
+        "Taste and adjust the salt and sugar if necessary. Serve over the basmati rice and finish with roughly chopped fresh coriander."
+      ],
+      "make_ahead": {
+        "component": "Butter Chicken Sauce",
+        "max_refrigerated_hours": 48,
+        "instructions": [
+          "Cook the garlic, ginger and spices in 15 g butter, then add the canned tomatoes, sugar and salt and simmer for 8-10 minutes. Blend until completely smooth. Stir in the double cream and remaining butter and bring briefly back to a simmer."
+        ],
+        "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+        "day_of": [
+          "Marinate and char the chicken, then reheat the prepared sauce until steaming. Add the chicken and its resting juices and simmer until the chicken reaches 75\u00b0C. Cook the basmati rice fresh and serve with chopped coriander."
+        ]
+      }
+    },
+    {
       "id": "cashew_chicken",
       "name": "Cashew Chicken",
       "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 470,
         "protein_g": 29,
@@ -73,11 +264,119 @@
       ]
     },
     {
+      "id": "chicken_katsu_curry",
+      "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Cabbage",
+      "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded cabbage and a smooth, mild Japanese-style curry sauce.",
+      "servings": 1,
+      "active": true,
+      "meal_types": [
+        "dinner"
+      ],
+      "macros": {
+        "calories_kcal": 1300,
+        "protein_g": 75,
+        "carbs_g": 165,
+        "fat_g": 38
+      },
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jasmine_rice",
+          "quantity": 130,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "panko_breadcrumbs",
+          "quantity": 60,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "eggs",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "carrots",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "white_cabbage",
+          "quantity": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "fresh_ginger",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "chicken_stock",
+          "quantity": 0.5,
+          "unit": "cubes"
+        }
+      ],
+      "pantry": [
+        "black_pepper",
+        "honey",
+        "light_soy",
+        "neutral_oil",
+        "plain_flour",
+        "rice_vinegar",
+        "salt",
+        "mild_curry_powder",
+        "turmeric",
+        "garam_masala"
+      ],
+      "instructions": [
+        "Rinse the jasmine rice until the water runs mostly clear. Add it to a small saucepan with 195 ml water and a pinch of salt, bring to a boil, cover and simmer on the lowest heat for 12 minutes. Remove from the heat and leave covered for 10 minutes.",
+        "For the curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8\u201310 minutes until soft but not browned.",
+        "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 2 tsp mild curry powder, 1/4 tsp ground turmeric and 1/2 tsp garam masala, then cook for another 30 seconds.",
+        "Stir 10 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 300 ml prepared chicken stock, then add 1 tsp light soy sauce and 1 tsp honey. Simmer gently for 12\u201315 minutes.",
+        "Immersion-blend the sauce until smooth, stir in 1 tsp rice vinegar and season with salt and black pepper. Keep warm over a very low heat, adding a splash of water if it becomes too thick.",
+        "Butterfly the chicken breast and flatten it to an even 1.5 cm thickness. Season both sides with salt and black pepper.",
+        "Put 20 g plain flour, the beaten egg and the panko breadcrumbs in three separate shallow dishes. Coat the chicken in flour, then egg, then panko, pressing the crumbs on firmly.",
+        "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200\u00b0C for 10\u201312 minutes, turning halfway, until crisp and the centre reaches 75\u00b0C. Rest for 3 minutes, then slice.",
+        "Finely shred the white cabbage. Fluff the rice and serve it with the cabbage, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+      ],
+      "make_ahead": {
+        "component": "Curry sauce",
+        "max_refrigerated_hours": 48,
+        "instructions": [
+          "Cook the onion and carrot in neutral oil, then add the garlic, ginger and spices.",
+          "Stir in 10 g plain flour, gradually add the prepared chicken stock, light soy sauce and honey, then simmer for 12\u201315 minutes.",
+          "Immersion-blend until smooth, finish with the rice vinegar and season to taste."
+        ],
+        "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+        "day_of": [
+          "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+          "Cook the rice, bread and air-fry the chicken, and shred the cabbage fresh."
+        ]
+      }
+    },
+    {
       "id": "chicken_leek_carrot_celery_pie",
       "name": "Chicken, Leek, Carrot & Celery Pie",
       "description": "Flour-coated chicken breast with leek, carrot and celery in a light cream and mustard sauce beneath crisp shortcrust pastry.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1250,
         "protein_g": 65,
@@ -171,6 +470,9 @@
       "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a smooth garlic and tomato sauce, torn mozzarella, Parmesan and basil.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1550,
         "protein_g": 100,
@@ -281,6 +583,9 @@
       "description": "Charred soy-marinated chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1450,
         "protein_g": 80,
@@ -335,11 +640,86 @@
       ]
     },
     {
+      "id": "creamy_pesto_chicken_pasta",
+      "name": "Creamy Pesto Pasta with Chicken, Sun-Dried Tomatoes & Crispy Serrano Ham",
+      "description": "Chicken breast and rigatoni in a creamy basil-pesto and Parmesan sauce with sun-dried tomatoes and crisp fried Serrano ham.",
+      "servings": 1,
+      "active": true,
+      "meal_types": [
+        "dinner"
+      ],
+      "macros": {
+        "calories_kcal": 1500,
+        "protein_g": 95,
+        "carbs_g": 125,
+        "fat_g": 65
+      },
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "rigatoni",
+          "quantity": 125,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "green_pesto",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "sun_dried_tomatoes",
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "serrano_ham",
+          "quantity": 50,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "double_cream",
+          "quantity": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 25,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 1,
+          "unit": "cloves"
+        }
+      ],
+      "pantry": [
+        "olive_oil",
+        "salt",
+        "black_pepper"
+      ],
+      "instructions": [
+        "Boil the rigatoni in well-salted water until al dente. Reserve about 150 ml pasta water, then drain.",
+        "Meanwhile, tear the Serrano ham into rough strips. Lay them in a dry frying pan over medium heat and fry for 2\u20133 minutes, turning, until crisp. Transfer to a plate lined with kitchen paper.",
+        "Cut the chicken breast into bite-sized strips and season with salt and black pepper. Add 1 tsp olive oil to the same pan and cook the chicken over medium-high heat for 6\u20138 minutes until golden and the centre reaches 75\u00b0C. Transfer it to a plate.",
+        "Reduce the heat to medium-low. Add the crushed garlic and sliced sun-dried tomatoes to the pan and cook for 30 seconds.",
+        "Stir in the double cream and green pesto and warm gently for 1\u20132 minutes. Add the Parmesan and enough reserved pasta water to make a smooth, glossy sauce; do not boil the pesto hard.",
+        "Return the chicken and its resting juices to the pan, add the drained rigatoni and toss until everything is evenly coated and steaming throughout. Loosen with more pasta water if needed.",
+        "Serve immediately with plenty of black pepper and scatter the crisp Serrano ham over the top so it stays crunchy."
+      ]
+    },
+    {
       "id": "pork_mustard_mash",
       "name": "Pork Tenderloin, Mustard Cream Sauce, Mash & Spinach",
       "description": "Seared pork tenderloin with a shallot, white wine, Dijon and wholegrain mustard cream sauce, buttery mash and wilted spinach.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1250,
         "protein_g": 68,
@@ -414,6 +794,9 @@
       "description": "Air-fried salmon glazed with white miso, light soy and sesame oil, served with egg fried jasmine rice and charred tenderstem broccoli.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1275,
         "protein_g": 72,
@@ -474,11 +857,112 @@
       ]
     },
     {
+      "id": "spaghetti_bolognese",
+      "name": "Spaghetti Bolognese",
+      "description": "A rich beef Bolognese with onion, carrot and celery, tossed with spaghetti and finished with Parmesan.",
+      "servings": 1,
+      "active": true,
+      "meal_types": [
+        "dinner"
+      ],
+      "macros": {
+        "calories_kcal": 1200,
+        "protein_g": 72,
+        "carbs_g": 125,
+        "fat_g": 42
+      },
+      "buy": [
+        {
+          "ingredient_id": "beef_mince",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "spaghetti",
+          "quantity": 125,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "onion",
+          "quantity": 1,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "carrots",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "celery",
+          "quantity": 0.25,
+          "unit": "each"
+        },
+        {
+          "ingredient_id": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "ingredient_id": "canned_tomatoes",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "tomato_puree",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "beef_stock",
+          "quantity": 0.5,
+          "unit": "cubes"
+        },
+        {
+          "ingredient_id": "parmesan",
+          "quantity": 30,
+          "unit": "g"
+        }
+      ],
+      "pantry": [
+        "olive_oil",
+        "salt",
+        "black_pepper",
+        "dried_oregano",
+        "worcestershire_sauce"
+      ],
+      "instructions": [
+        "Finely dice the onion, carrot and celery. Heat 1 tbsp olive oil in a saucepan over medium heat and cook the vegetables for 8\u201310 minutes until soft and lightly golden.",
+        "Add the crushed garlic and 1 tsp dried oregano and cook for 30 seconds. Stir in the tomato pur\u00e9e and cook for 2 minutes until it darkens slightly.",
+        "Increase the heat to medium-high, add the beef mince and season with salt and black pepper. Cook for 6\u20138 minutes, breaking it up thoroughly, until well browned with no pink remaining.",
+        "Add the canned tomatoes, 200 ml prepared beef stock and 2 tsp Worcestershire sauce. Bring to a simmer, then cook uncovered over low heat for 30\u201340 minutes, stirring occasionally, until rich and thick.",
+        "Boil the spaghetti in well-salted water until al dente. Reserve a mugful of pasta water, then drain.",
+        "Taste and season the Bolognese. Toss the spaghetti through the sauce, adding a splash of pasta water if needed so the sauce coats it evenly.",
+        "Serve immediately with the grated Parmesan and plenty of black pepper."
+      ],
+      "make_ahead": {
+        "component": "Bolognese sauce",
+        "max_refrigerated_hours": 48,
+        "instructions": [
+          "Cook the onion, carrot and celery in olive oil until soft, then add the garlic, dried oregano and tomato pur\u00e9e.",
+          "Brown the beef mince thoroughly, breaking it up well, until no pink remains.",
+          "Add the canned tomatoes, prepared beef stock and Worcestershire sauce. Simmer uncovered for 30\u201340 minutes until rich and thick, then season to taste."
+        ],
+        "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
+        "day_of": [
+          "Reheat the Bolognese sauce until steaming throughout, stirring frequently and adding a splash of water if it has thickened.",
+          "Boil the spaghetti fresh, toss it through the reheated sauce and finish with Parmesan and black pepper."
+        ]
+      }
+    },
+    {
       "id": "steak_au_poivre",
       "name": "Steak au Poivre, Frites & Dressed Salad",
       "description": "Pan-seared ribeye with a brandy peppercorn cream sauce, crispy air-fryer chips and a lemon-Dijon dressed side salad.",
       "servings": 1,
       "active": true,
+      "meal_types": [
+        "dinner"
+      ],
       "macros": {
         "calories_kcal": 1700,
         "protein_g": 68,

@@ -20,6 +20,8 @@ struct Quantity {
     std::string unit;
 };
 
+const std::set<std::string> meal_types{"breakfast", "lunch", "dinner", "snack"};
+
 const json& ingredient_catalogue(const json& root) {
     if (!root.contains("ingredients") || !root["ingredients"].is_object()) {
         throw std::runtime_error("ingredients.json must contain an ingredients object");
@@ -123,7 +125,7 @@ void validate_substitutions(
 }
 
 void validate_recipe(const json& recipe, const json& ingredients, const json* pantry) {
-    for (const auto* key : {"id", "name", "description", "servings", "active", "macros", "buy", "pantry", "instructions"}) {
+    for (const auto* key : {"id", "name", "description", "servings", "active", "meal_types", "macros", "buy", "pantry", "instructions"}) {
         if (!recipe.contains(key)) {
             throw std::runtime_error(std::string("Recipe is missing '") + key + "'");
         }
@@ -139,6 +141,19 @@ void validate_recipe(const json& recipe, const json& ingredients, const json* pa
     }
     if (!recipe["active"].is_boolean()) {
         throw std::runtime_error("Recipe active must be true or false");
+    }
+    if (!recipe["meal_types"].is_array() || recipe["meal_types"].empty()) {
+        throw std::runtime_error("Recipe meal_types must be a non-empty array");
+    }
+    std::set<std::string> recipe_meal_types;
+    for (const auto& meal_type_json : recipe["meal_types"]) {
+        if (!meal_type_json.is_string()) {
+            throw std::runtime_error("Every recipe meal type must be a string");
+        }
+        const std::string meal_type = meal_type_json;
+        if (!meal_types.contains(meal_type) || !recipe_meal_types.insert(meal_type).second) {
+            throw std::runtime_error("Recipe meal types must be unique breakfast, lunch, dinner or snack values");
+        }
     }
     for (const auto* key : {"calories_kcal", "protein_g", "carbs_g", "fat_g"}) {
         if (!recipe["macros"].contains(key) || !recipe["macros"][key].is_number() ||
@@ -230,7 +245,8 @@ std::string generate_plan_json(
     const std::string& meals_json,
     const std::string& ingredients_json,
     int count,
-    std::uint32_t seed
+    std::uint32_t seed,
+    const std::string& meal_type
 ) {
     const json meals_root = json::parse(meals_json);
     const json ingredient_root = json::parse(ingredients_json);
@@ -239,10 +255,16 @@ std::string generate_plan_json(
         throw std::runtime_error("meals.json must contain a meals array");
     }
 
+    if (!meal_type.empty() && !meal_types.contains(meal_type)) {
+        throw std::runtime_error("Meal type must be breakfast, lunch, dinner or snack");
+    }
+
     std::vector<json> active;
     for (const auto& meal : meals_root["meals"]) {
         validate_recipe(meal, ingredients, nullptr);
-        if (meal.value("active", true)) {
+        const bool matches_meal_type = meal_type.empty() ||
+            std::find(meal["meal_types"].begin(), meal["meal_types"].end(), meal_type) != meal["meal_types"].end();
+        if (meal.value("active", true) && matches_meal_type) {
             active.push_back(meal);
         }
     }
@@ -250,7 +272,11 @@ std::string generate_plan_json(
         throw std::runtime_error("Meal count must be greater than zero");
     }
     if (static_cast<std::size_t>(count) > active.size()) {
-        throw std::runtime_error("Not enough active recipes for requested meal count");
+        throw std::runtime_error(
+            meal_type.empty()
+                ? "Not enough active recipes for requested meal count"
+                : "Not enough active " + meal_type + " recipes for requested meal count"
+        );
     }
 
     std::vector<std::size_t> indexes(active.size());
@@ -268,6 +294,7 @@ std::string generate_plan_json(
             {"id", meal["id"]},
             {"name", meal["name"]},
             {"description", meal["description"]},
+            {"meal_types", meal["meal_types"]},
             {"macros", meal["macros"]}
         });
         for (const auto* key : {"calories_kcal", "protein_g", "carbs_g", "fat_g"}) {

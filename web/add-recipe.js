@@ -345,6 +345,8 @@
       description: document.querySelector("#description").value.trim(),
       servings: Number(document.querySelector("#servings").value),
       active: document.querySelector("#active").checked,
+      meal_types: [...document.querySelectorAll('input[name="meal-type"]:checked')]
+        .map((checkbox) => checkbox.value),
       macros: {
         calories_kcal: Number(document.querySelector("#kcal").value),
         protein_g: Number(document.querySelector("#protein").value),
@@ -495,6 +497,7 @@
     try {
       if (!form.reportValidity()) return;
       const currentRecipe = recipe();
+      if (!currentRecipe.meal_types.length) throw new Error("Choose at least one meal type.");
       if (!currentRecipe.buy.length) throw new Error("Add at least one shopping ingredient.");
       if (!currentRecipe.instructions.length) throw new Error("Add at least one instruction.");
       validate(currentRecipe);

@@ -21,8 +21,18 @@
 
     <div class="fade" id="content">
       <h1>Meal Planner</h1>
+      <div class="field planner-meal-type">
+        <label for="meal-type">Recipes to roll</label>
+        <select id="meal-type">
+          <option value="dinner" selected>Dinner</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="snack">Snack</option>
+          <option value="">All meal types</option>
+        </select>
+      </div>
       <div class="controls">
-        <button class="button" id="generate" disabled>Roll for three meals</button>
+        <button class="button" id="generate" disabled>Roll for three dinners</button>
         <a class="button secondary" href="registry.html">View full registry</a>
       </div>
       <p class="muted">
@@ -32,7 +42,7 @@
       <p class="status" id="status" aria-live="polite">Loading C++ planner…</p>
 
       <section id="result" class="hidden">
-        <h2>Dinners</h2>
+        <h2 id="result-heading">Dinners</h2>
         <div class="recipe-list" id="meals"></div>
         <div class="summary" id="macro-summary"></div>
       </section>

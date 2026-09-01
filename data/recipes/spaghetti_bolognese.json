@@ -4,6 +4,9 @@
   "description": "A rich beef Bolognese with onion, carrot and celery, tossed with spaghetti and finished with Parmesan.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 1200,
     "protein_g": 72,

@@ -4,6 +4,9 @@
   "description": "Charred soy-marinated chicken thighs over rich sesame-peanut noodles with a cold cucumber salad.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {"calories_kcal": 1450, "protein_g": 80, "carbs_g": 125, "fat_g": 65},
   "buy": [
     {"ingredient_id": "boneless_chicken_thighs", "quantity": 250, "unit": "g"},

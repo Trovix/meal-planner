@@ -4,6 +4,9 @@
   "description": "Crisp Parmesan-breaded chicken breast with rigatoni in a smooth garlic and tomato sauce, torn mozzarella, Parmesan and basil.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {"calories_kcal": 1550, "protein_g": 100, "carbs_g": 145, "fat_g": 55},
   "buy": [
     {"ingredient_id": "chicken_breast", "quantity": 200, "unit": "g"},

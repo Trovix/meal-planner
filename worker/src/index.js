@@ -7,6 +7,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const MAX_BODY_BYTES = 100_000;
 const MAX_GITHUB_RESPONSE_BYTES = 500_000;
+const MEAL_TYPES = new Set(["breakfast", "lunch", "dinner", "snack"]);
 
 function cors(origin) {
   return {
@@ -138,6 +139,15 @@ function validateRecipeShape(recipe) {
   }
   if (typeof recipe.active !== "boolean") throw new Error("Active must be true or false.");
   if (
+    !Array.isArray(recipe.meal_types) ||
+    recipe.meal_types.length < 1 ||
+    recipe.meal_types.length > MEAL_TYPES.size ||
+    new Set(recipe.meal_types).size !== recipe.meal_types.length ||
+    recipe.meal_types.some((mealType) => !MEAL_TYPES.has(mealType))
+  ) {
+    throw new Error("Meal types must contain unique breakfast, lunch, dinner or snack values.");
+  }
+  if (
     !recipe.macros ||
     !finite(recipe.macros.calories_kcal, 0, 10_000) ||
     !finite(recipe.macros.protein_g, 0, 1000) ||
@@ -252,6 +262,7 @@ function validateRecipeShape(recipe) {
     "description",
     "servings",
     "active",
+    "meal_types",
     "macros",
     "buy",
     "pantry",

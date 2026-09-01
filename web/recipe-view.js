@@ -150,6 +150,16 @@
 
     const description = text(document.createElement("p"), meal.description);
     description.className = "recipe-description";
+    const mealTypes = document.createElement("div");
+    mealTypes.className = "meal-type-tags";
+    for (const mealType of meal.meal_types || []) {
+      const tag = text(
+        document.createElement("span"),
+        `${mealType[0].toUpperCase()}${mealType.slice(1)}`,
+      );
+      tag.className = "meal-type-tag mono";
+      mealTypes.append(tag);
+    }
     const macros = meal.macros;
     const macroSummary = text(
       document.createElement("div"),
@@ -269,7 +279,7 @@
 
     renderIngredients();
     details.append(summary, detailsBody);
-    article.append(header, description, macroSummary);
+    article.append(header, description, mealTypes, macroSummary);
     if (makeAheadSummary) article.append(makeAheadSummary);
     article.append(details);
     return article;

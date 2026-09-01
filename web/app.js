@@ -4,9 +4,11 @@
   const result = document.querySelector("#result");
   const mealsElement = document.querySelector("#meals");
   const macroElement = document.querySelector("#macro-summary");
+  const mealTypeSelect = document.querySelector("#meal-type");
+  const resultHeading = document.querySelector("#result-heading");
 
   let module;
-  let generatePlan;
+  let generatePlanForType;
   let freeResult;
   let mealsJson = "";
   let ingredientsJson = "";
@@ -41,11 +43,12 @@
       ingredientsRoot = JSON.parse(ingredientsJson);
       pantryRoot = await pantryResponse.json();
       module = wasm;
-      generatePlan = module.cwrap("generate_plan", "number", [
+      generatePlanForType = module.cwrap("generate_plan_for_type", "number", [
         "string",
         "string",
         "number",
         "number",
+        "string",
       ]);
       freeResult = module.cwrap("free_result", null, ["number"]);
       generateButton.disabled = false;
@@ -67,6 +70,14 @@
       );
     }
 
+    const mealType = mealTypeSelect.value;
+    const pluralLabels = {
+      breakfast: "Breakfasts",
+      lunch: "Lunches",
+      dinner: "Dinners",
+      snack: "Snacks",
+    };
+    resultHeading.textContent = pluralLabels[mealType] || "Meals";
     const macros = plan.macro_totals;
     macroElement.replaceChildren(
       Object.assign(document.createElement("p"), {
@@ -77,7 +88,7 @@
           `${Math.round(macros.fat_g)} g fat`,
       }),
       Object.assign(document.createElement("p"), {
-        textContent: "Totals for the three rolled dinners.",
+        textContent: `Totals for the three rolled ${mealType ? `${mealType} recipes` : "recipes"}.`,
       }),
     );
     result.classList.remove("hidden");
@@ -89,20 +100,38 @@
     let pointer = 0;
 
     try {
-      pointer = generatePlan(mealsJson, ingredientsJson, 3, randomSeed());
+      pointer = generatePlanForType(
+        mealsJson,
+        ingredientsJson,
+        3,
+        randomSeed(),
+        mealTypeSelect.value,
+      );
       if (!pointer) throw new Error("C++ planner returned no result.");
 
       const plan = JSON.parse(module.UTF8ToString(pointer));
       if (plan.error) throw new Error(plan.error);
 
       renderPlan(plan);
-      status.textContent = "Three meals rolled.";
+      status.textContent = `Three ${mealTypeSelect.value ? `${mealTypeSelect.value} recipes` : "recipes"} rolled.`;
     } catch (error) {
       status.textContent = error.message || "Could not generate a meal plan.";
       status.classList.add("error");
     } finally {
       if (pointer) freeResult(pointer);
     }
+  });
+
+  mealTypeSelect.addEventListener("change", () => {
+    const labels = {
+      breakfast: "breakfasts",
+      lunch: "lunches",
+      dinner: "dinners",
+      snack: "snacks",
+    };
+    generateButton.textContent = `Roll for three ${labels[mealTypeSelect.value] || "meals"}`;
+    result.classList.add("hidden");
+    status.textContent = "";
   });
 
   initialise();

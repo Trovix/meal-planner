@@ -4,6 +4,9 @@
   "description": "Flour-coated chicken breast with leek, carrot and celery in a light cream and mustard sauce beneath crisp shortcrust pastry.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 1250,
     "protein_g": 65,

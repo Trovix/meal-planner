@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 MACRO_FIELDS = ("calories_kcal", "protein_g", "carbs_g", "fat_g")
+MEAL_TYPES = {"breakfast", "lunch", "dinner", "snack"}
 SAFE_ID = re.compile(r"^[a-z0-9_]{1,64}$")
 
 
@@ -110,7 +111,7 @@ def validate_substitutions(recipe, path, ingredients, pantry):
 def validate_recipe(recipe, path, ingredients, pantry):
     if not isinstance(recipe, dict):
         fail(f"{path}: recipe must be an object")
-    for key in ("id", "name", "description", "servings", "active", "macros", "buy", "pantry", "instructions"):
+    for key in ("id", "name", "description", "servings", "active", "meal_types", "macros", "buy", "pantry", "instructions"):
         if key not in recipe:
             fail(f"{path}: missing '{key}'")
     if not valid_id(recipe["id"]):
@@ -123,6 +124,14 @@ def validate_recipe(recipe, path, ingredients, pantry):
         fail(f"{path}: servings must be between 1 and 20")
     if not isinstance(recipe["active"], bool):
         fail(f"{path}: active must be true or false")
+    if (
+        not isinstance(recipe["meal_types"], list)
+        or not recipe["meal_types"]
+        or any(not isinstance(meal_type, str) for meal_type in recipe["meal_types"])
+        or len(recipe["meal_types"]) != len(set(recipe["meal_types"]))
+        or any(meal_type not in MEAL_TYPES for meal_type in recipe["meal_types"])
+    ):
+        fail(f"{path}: meal_types must contain unique breakfast, lunch, dinner or snack values")
     if not isinstance(recipe["macros"], dict):
         fail(f"{path}: macros must be an object")
     for key in MACRO_FIELDS:

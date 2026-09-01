@@ -4,6 +4,9 @@
   "description": "Chicken breast and rigatoni in a creamy basil-pesto and Parmesan sauce with sun-dried tomatoes and crisp fried Serrano ham.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 1500,
     "protein_g": 95,

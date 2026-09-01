@@ -4,6 +4,9 @@
   "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded cabbage and a smooth, mild Japanese-style curry sauce.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 1300,
     "protein_g": 75,

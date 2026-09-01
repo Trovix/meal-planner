@@ -4,6 +4,9 @@
   "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman.",
   "servings": 1,
   "active": true,
+  "meal_types": [
+    "dinner"
+  ],
   "macros": {
     "calories_kcal": 470,
     "protein_g": 29,
