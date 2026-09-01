@@ -1,0 +1,69 @@
+{
+  "id": "creamy_pesto_chicken_pasta",
+  "name": "Creamy Pesto Pasta with Chicken, Sun-Dried Tomatoes & Crispy Serrano Ham",
+  "description": "Chicken breast and rigatoni in a creamy basil-pesto and Parmesan sauce with sun-dried tomatoes and crisp fried Serrano ham.",
+  "servings": 1,
+  "active": true,
+  "macros": {
+    "calories_kcal": 1500,
+    "protein_g": 95,
+    "carbs_g": 125,
+    "fat_g": 65
+  },
+  "buy": [
+    {
+      "ingredient_id": "chicken_breast",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "rigatoni",
+      "quantity": 125,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "green_pesto",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "sun_dried_tomatoes",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "serrano_ham",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "double_cream",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "parmesan",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 1,
+      "unit": "cloves"
+    }
+  ],
+  "pantry": [
+    "olive_oil",
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Boil the rigatoni in well-salted water until al dente. Reserve about 150 ml pasta water, then drain.",
+    "Meanwhile, tear the Serrano ham into rough strips. Lay them in a dry frying pan over medium heat and fry for 2–3 minutes, turning, until crisp. Transfer to a plate lined with kitchen paper.",
+    "Cut the chicken breast into bite-sized strips and season with salt and black pepper. Add 1 tsp olive oil to the same pan and cook the chicken over medium-high heat for 6–8 minutes until golden and the centre reaches 75°C. Transfer it to a plate.",
+    "Reduce the heat to medium-low. Add the crushed garlic and sliced sun-dried tomatoes to the pan and cook for 30 seconds.",
+    "Stir in the double cream and green pesto and warm gently for 1–2 minutes. Add the Parmesan and enough reserved pasta water to make a smooth, glossy sauce; do not boil the pesto hard.",
+    "Return the chicken and its resting juices to the pan, add the drained rigatoni and toss until everything is evenly coated and steaming throughout. Loosen with more pasta water if needed.",
+    "Serve immediately with plenty of black pepper and scatter the crisp Serrano ham over the top so it stays crunchy."
+  ]
+}
