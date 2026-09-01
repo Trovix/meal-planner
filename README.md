@@ -1,61 +1,24 @@
-# Meal Planner
+# iPhone Shortcut Setup
 
-A small C++ meal-planning engine compiled to WebAssembly and served as a static site.
+1. Open **Shortcuts** on your iPhone and tap **+**.
+2. Name the shortcut exactly **Add Shopping List**.
+3. Add the **Split Text** action:
+   - Set the text to **Shortcut Input**.
+   - Set the separator to **New Lines**.
+4. Add **Repeat with Each**, using the result from **Split Text**.
+5. Inside the repeat block, add **Add New Reminder**:
+   - Set the reminder title to **Repeat Item**.
+   - Select your preferred Reminders list, such as **Shopping**.
+6. Optionally add **Open Reminders** after the repeat block.
+7. Tap **Done**.
 
-```text
-meal.james-platt.com
-        ↓
-C++ WASM selects three active recipes
-        ↓
-ingredients are aggregated and rounded to pack sizes
-        ↓
-Apple Shortcut receives newline-separated shopping items
-        ↓
-Apple Reminders
-```
-
-There is no application server and no runtime API key. GitHub Actions is used only for build/test/deployment.
-
-## Repository layout
+The finished shortcut should look like this:
 
 ```text
-data/recipes/         source recipe files
-data/ingredients.json purchasing catalogue
-include/              C++ public headers
-src/                  C++ planner + native CLI
-wasm/                 Emscripten C interface
-web/                  static UI and recipe editor
-tools/                registry validation/build script
-tests/                native tests
-docs/                 deployment and recipe docs
+Split Shortcut Input by New Lines
+Repeat with Each item in Split Text
+    Add Repeat Item to Shopping
+End Repeat
 ```
 
-## Native development
-
-Requirements: CMake, a C++20 compiler, Python 3 and nlohmann/json.
-
-```bash
-python3 tools/build_registry.py --out build/meals.json
-cmake -S . -B build
-cmake --build build
-ctest --test-dir build --output-on-failure
-./build/mealplanner build/meals.json data/ingredients.json 3
-```
-
-## WebAssembly development
-
-Install Emscripten, then:
-
-```bash
-mkdir -p dist/data
-python3 tools/build_registry.py --out dist/data/meals.json
-cp data/ingredients.json dist/data/ingredients.json
-cp -R web/. dist/
-emcmake cmake -S . -B build-wasm
-cmake --build build-wasm
-cp build-wasm/mealplanner.js build-wasm/mealplanner.wasm dist/
-```
-
-Serve `dist/` with a local HTTP server. Do not open `index.html` directly from `file://` because browsers restrict WASM/fetch there.
-
-See `docs/DEPLOYMENT.md` and `docs/RECIPES.md`.
+Open [meal.james-platt.com](https://meal.james-platt.com/) in Safari, expand a recipe and tap **Add to Reminders**. The first time it runs, approve **Open in Shortcuts** and allow access to Reminders.
