@@ -209,6 +209,24 @@
       "category": "Produce",
       "pack_quantity": 1,
       "pack_unit": "each"
+    },
+    "shortcrust_pastry": {
+      "name": "Ready-rolled shortcrust pastry",
+      "category": "Chilled",
+      "pack_quantity": 320,
+      "pack_unit": "g"
+    },
+    "leek": {
+      "name": "Leeks",
+      "category": "Produce",
+      "pack_quantity": 3,
+      "pack_unit": "each"
+    },
+    "carrots": {
+      "name": "Carrots",
+      "category": "Produce",
+      "pack_quantity": 1000,
+      "pack_unit": "g"
     }
   }
 }
