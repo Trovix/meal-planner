@@ -371,6 +371,12 @@
       "category": "Dairy",
       "pack_quantity": 200,
       "pack_unit": "g"
+    },
+    "precooked_chicken": {
+      "name": "Pre-cooked chicken breast",
+      "category": "Meat & Fish",
+      "pack_quantity": 150,
+      "pack_unit": "g"
     }
   }
 }
