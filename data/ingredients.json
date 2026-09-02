@@ -377,6 +377,18 @@
       "category": "Meat & Fish",
       "pack_quantity": 150,
       "pack_unit": "g"
+    },
+    "panini_roll": {
+      "name": "Panini Roll",
+      "category": "Bakery",
+      "pack_quantity": 1,
+      "pack_unit": "roll"
+    },
+    "chorizo": {
+      "name": "Chorizo",
+      "category": "Deli",
+      "pack_quantity": 1,
+      "pack_unit": "pack"
     }
   }
 }
