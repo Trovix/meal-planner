@@ -55,14 +55,14 @@ int main() {
         assert(selected_ids.size() == 3);
     }
 
-    bool empty_category_rejected = false;
+    bool invalid_meal_type_rejected = false;
     try {
-        mealplanner::generate_plan_json(meals, ingredients, 3, 42, "snack");
+        mealplanner::generate_plan_json(meals, ingredients, 3, 42, "supper");
     } catch (const std::exception& error) {
-        empty_category_rejected = std::string(error.what()) ==
-            "Not enough active snack recipes for requested meal count";
+        invalid_meal_type_rejected = std::string(error.what()) ==
+            "Meal type must be breakfast, lunch or dinner";
     }
-    assert(empty_category_rejected);
+    assert(invalid_meal_type_rejected);
 
     const auto first_recipe = json::parse(meals)["meals"][0];
     const auto validation = json::parse(

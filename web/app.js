@@ -21,7 +21,6 @@
     breakfast: { singular: "breakfast", plural: "breakfasts", heading: "Breakfasts" },
     lunch: { singular: "lunch", plural: "lunches", heading: "Lunches" },
     dinner: { singular: "dinner", plural: "dinners", heading: "Dinners" },
-    snack: { singular: "snack", plural: "snacks", heading: "Snacks" },
   };
 
   function randomSeed() {

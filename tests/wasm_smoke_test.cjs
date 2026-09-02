@@ -66,17 +66,14 @@ async function main() {
     }
   }
 
-  for (const mealType of ["lunch", "snack"]) {
-    if (activeCount(mealType) !== 0) continue;
-    const plan = roll(mealType, 0);
-    if (!plan.error?.includes(`active ${mealType} recipes`)) {
-      throw new Error(`${mealType}: empty category did not return a useful error`);
-    }
+  const invalidMealTypePlan = roll("supper", 0);
+  if (!invalidMealTypePlan.error?.includes("Meal type must be breakfast, lunch or dinner")) {
+    throw new Error("Invalid meal type did not return a useful error");
   }
 
   const finalPlan = roll("dinner", 101);
   if (finalPlan.error || finalPlan.selected_meals?.length !== 3) {
-    throw new Error("Planner was not usable after handling an empty category");
+    throw new Error("Planner was not usable after handling an invalid meal type");
   }
 
   console.log("WebAssembly planner smoke test passed");

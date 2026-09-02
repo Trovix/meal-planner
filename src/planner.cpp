@@ -20,7 +20,7 @@ struct Quantity {
     std::string unit;
 };
 
-const std::set<std::string> meal_types{"breakfast", "lunch", "dinner", "snack"};
+const std::set<std::string> meal_types{"breakfast", "lunch", "dinner"};
 
 const json& ingredient_catalogue(const json& root) {
     if (!root.contains("ingredients") || !root["ingredients"].is_object()) {
@@ -152,7 +152,7 @@ void validate_recipe(const json& recipe, const json& ingredients, const json* pa
         }
         const std::string meal_type = meal_type_json;
         if (!meal_types.contains(meal_type) || !recipe_meal_types.insert(meal_type).second) {
-            throw std::runtime_error("Recipe meal types must be unique breakfast, lunch, dinner or snack values");
+            throw std::runtime_error("Recipe meal types must be unique breakfast, lunch or dinner values");
         }
     }
     for (const auto* key : {"calories_kcal", "protein_g", "carbs_g", "fat_g"}) {
@@ -256,7 +256,7 @@ std::string generate_plan_json(
     }
 
     if (!meal_type.empty() && !meal_types.contains(meal_type)) {
-        throw std::runtime_error("Meal type must be breakfast, lunch, dinner or snack");
+        throw std::runtime_error("Meal type must be breakfast, lunch or dinner");
     }
 
     std::vector<json> active;

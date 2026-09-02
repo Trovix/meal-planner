@@ -11,7 +11,7 @@ Open `/add-recipe.html` and complete the recipe form. Shopping ingredients and p
 
 Pantry ingredients are selected from the searchable central catalogue in `data/pantry.json`. The form validates the recipe and shows a real recipe-card preview before publishing.
 
-Every recipe must select one or more `meal_types` values from `breakfast`, `lunch`, `dinner` and `snack`. Recipes can belong to multiple meal types; the planner and registry include a recipe when it matches the selected type.
+Every recipe must select one or more `meal_types` values from `breakfast`, `lunch` and `dinner`. Recipes can belong to multiple meal types; the planner and registry include a recipe when it matches the selected type.
 
 ## New shopping ingredients
 

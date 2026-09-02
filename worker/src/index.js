@@ -7,7 +7,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const MAX_BODY_BYTES = 100_000;
 const MAX_GITHUB_RESPONSE_BYTES = 500_000;
-const MEAL_TYPES = new Set(["breakfast", "lunch", "dinner", "snack"]);
+const MEAL_TYPES = new Set(["breakfast", "lunch", "dinner"]);
 
 function cors(origin) {
   return {
@@ -145,7 +145,7 @@ function validateRecipeShape(recipe) {
     new Set(recipe.meal_types).size !== recipe.meal_types.length ||
     recipe.meal_types.some((mealType) => !MEAL_TYPES.has(mealType))
   ) {
-    throw new Error("Meal types must contain unique breakfast, lunch, dinner or snack values.");
+    throw new Error("Meal types must contain unique breakfast, lunch or dinner values.");
   }
   if (
     !recipe.macros ||

@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 MACRO_FIELDS = ("calories_kcal", "protein_g", "carbs_g", "fat_g")
-MEAL_TYPES = {"breakfast", "lunch", "dinner", "snack"}
+MEAL_TYPES = {"breakfast", "lunch", "dinner"}
 SAFE_ID = re.compile(r"^[a-z0-9_]{1,64}$")
 
 
@@ -131,7 +131,7 @@ def validate_recipe(recipe, path, ingredients, pantry):
         or len(recipe["meal_types"]) != len(set(recipe["meal_types"]))
         or any(meal_type not in MEAL_TYPES for meal_type in recipe["meal_types"])
     ):
-        fail(f"{path}: meal_types must contain unique breakfast, lunch, dinner or snack values")
+        fail(f"{path}: meal_types must contain unique breakfast, lunch or dinner values")
     if not isinstance(recipe["macros"], dict):
         fail(f"{path}: macros must be an object")
     for key in MACRO_FIELDS:
