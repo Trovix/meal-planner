@@ -190,18 +190,18 @@
     },
     {
       "id": "cashew_chicken",
-      "name": "Cashew Chicken",
-      "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman.",
+      "name": "Cashew Chicken with Jasmine Rice",
+      "description": "Quick wok-seared chicken thighs with toasted cashews, celery, green pepper and a glossy sweet-savoury soy sauce, adapted from Joshua Weissman and served with jasmine rice",
       "servings": 1,
       "active": true,
       "meal_types": [
         "dinner"
       ],
       "macros": {
-        "calories_kcal": 470,
-        "protein_g": 29,
-        "carbs_g": 27,
-        "fat_g": 30
+        "calories_kcal": 820,
+        "protein_g": 36,
+        "carbs_g": 105,
+        "fat_g": 31
       },
       "buy": [
         {
@@ -212,6 +212,11 @@
         {
           "ingredient_id": "raw_cashews",
           "quantity": 34,
+          "unit": "g"
+        },
+        {
+          "ingredient_id": "jasmine_rice",
+          "quantity": 100,
           "unit": "g"
         },
         {
@@ -256,6 +261,7 @@
         "cornflour"
       ],
       "instructions": [
+        "Cook jasmine rice in a rice cooker or saucepan."
         "Whisk together 1 tsp dark soy sauce, 1 tsp light soy sauce, 20 ml prepared chicken stock, 2 tsp rice vinegar, 2 tsp honey, 3/4 tsp cornflour and a pinch of black pepper until smooth.",
         "Toast the raw cashews in a dry frying pan over medium heat for 5-8 minutes, stirring often, until lightly golden and fragrant, then set aside.",
         "Season the chicken thigh pieces with salt. Heat 1 tsp neutral oil in a wok over high heat and sear the chicken for 6-8 minutes, turning often, until evenly browned and cooked through to 75\u00b0C. Transfer to a plate.",
