@@ -1,0 +1,76 @@
+{
+  "id": "croque_madame",
+  "name": "Croque Madame",
+  "description": "Buttered sourdough layered with Dijon, cooked ham, Gruyère and creamy béchamel, grilled until bubbling and topped with a fried egg, served with a sharp dressed salad.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "lunch"
+  ],
+  "macros": {
+    "calories_kcal": 950,
+    "protein_g": 50,
+    "carbs_g": 65,
+    "fat_g": 53
+  },
+  "buy": [
+    {
+      "ingredient_id": "sourdough_bread",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "cooked_ham",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "gruyere",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "eggs",
+      "quantity": 1,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "semi_skimmed_milk",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "salad_leaves",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "lemon",
+      "quantity": 0.5,
+      "unit": "each"
+    }
+  ],
+  "pantry": [
+    "dijon_mustard",
+    "olive_oil",
+    "plain_flour",
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Heat the grill to high and line a baking tray.",
+    "Melt 15 g butter in a small saucepan over medium heat. Stir in 15 g plain flour and cook for 1 minute.",
+    "Gradually whisk in the semi-skimmed milk, then simmer for 2–3 minutes until the béchamel is smooth and thick enough to coat a spoon. Season with salt and black pepper.",
+    "Lightly toast both sides of the sourdough under the grill, then spread 5 g butter over the outward-facing sides.",
+    "Spread the Dijon mustard over one inward-facing side. Layer on the cooked ham and half of the Gruyère, then close the sandwich.",
+    "Put the sandwich on the lined tray. Spoon the béchamel over the top, scatter over the remaining Gruyère and grill for 3–5 minutes until deeply golden and bubbling.",
+    "Heat the remaining 5 g butter in a non-stick frying pan and fry the egg until the white is set but the yolk remains runny.",
+    "Toss the salad leaves with a squeeze of lemon, 1 tsp olive oil and a pinch of salt.",
+    "Top the grilled sandwich with the fried egg, finish with black pepper and serve immediately with the dressed salad."
+  ]
+}
