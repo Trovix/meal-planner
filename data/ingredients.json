@@ -359,6 +359,18 @@
       "category": "Cupboard",
       "pack_quantity": 1000,
       "pack_unit": "g"
+    },
+    "cooked_ham": {
+      "name": "Cooked ham",
+      "category": "Meat & Fish",
+      "pack_quantity": 200,
+      "pack_unit": "g"
+    },
+    "gruyere": {
+      "name": "Gruyère",
+      "category": "Dairy",
+      "pack_quantity": 200,
+      "pack_unit": "g"
     }
   }
 }
