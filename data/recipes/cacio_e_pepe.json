@@ -1,0 +1,47 @@
+{
+  "id": "cacio_e_pepe",
+  "name": "10-min Chicken Cacio e Pepe",
+  "description": "A Blazingly fast Cacio e Pepe with pre-cooked chicken.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "lunch",
+    "dinner"
+  ],
+  "macros": {
+    "calories_kcal": 705,
+    "protein_g": 62,
+    "carbs_g": 74,
+    "fat_g": 18
+  },
+  "buy": [
+    {
+      "ingredient_id": "spaghetti",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "precooked_chicken",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "parmesan",
+      "quantity": 35,
+      "unit": "g"
+    }
+  ],
+  "pantry": [
+    "black_pepper",
+    "olive_oil"
+  ],
+  "instructions": [
+    "Bring a small pan of well-salted water to the boil and cook the spaghetti until al dente.",
+    "Meanwhile, finely grate the Pecorino Romano and grind plenty of black pepper into a large frying pan over medium-low heat.",
+    "Add roughly 60 ml of pasta water to the pepper and stir.",
+    "Drain the pasta, reserving plenty of pasta water, and add the spaghetti to the frying pan.",
+    "Remove the pan from the heat and gradually add the Pecorino, tossing vigorously and adding small splashes of pasta water until glossy and creamy.",
+    "Add the pre-cooked chicken and toss for 30-60 seconds until just heated through.",
+    "Finish with more black pepper and Pecorino and serve immediately."
+  ]
+}
