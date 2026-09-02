@@ -5,7 +5,8 @@
   "servings": 1,
   "active": true,
   "meal_types": [
-    "dinner"
+    "dinner",
+    "lunch"
   ],
   "macros": {
     "calories_kcal": 1500,
@@ -70,3 +71,4 @@
     "Serve immediately with plenty of black pepper and scatter the crisp Serrano ham over the top so it stays crunchy."
   ]
 }
+
