@@ -1,0 +1,72 @@
+{
+  "id": "chicken_chorizo_panini",
+  "name": "Chicken, Chorizo, Pesto & Mozzarella Panini",
+  "description": "Crispy toasted ciabatta filled with chicken, chorizo, pesto and melted mozzarella. Use pre-cooked chicken for a 10-minute meal, or cook the chicken fresh with the chorizo and spices.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "lunch"
+  ],
+  "macros": {
+    "calories_kcal": 730,
+    "protein_g": 52,
+    "carbs_g": 65,
+    "fat_g": 29
+  },
+  "buy": [
+    {
+      "ingredient_id": "green_pesto",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "precooked_chicken",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "chorizo",
+      "quantity": 1,
+      "unit": "pack"
+    },
+    {
+      "ingredient_id": "mozzarella",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "panini_roll",
+      "quantity": 1,
+      "unit": "roll"
+    }
+  ],
+  "pantry": [
+    "black_pepper",
+    "olive_oil"
+  ],
+  "instructions": [
+    "Slice the chorizo and fry over medium-high heat for 2-3 minutes until lightly crisp and the fat begins to render.",
+    "Slice the pre-cooked chicken and toss through the chorizo for 1-2 minutes until hot.",
+    "Split the ciabatta and spread the pesto over both cut sides.",
+    "Fill with the chicken, chorizo and mozzarella and season with black pepper.",
+    "Close the panini and toast in a panini press until the bread is crisp and the mozzarella has melted."
+  ],
+  "substitutions": [
+    {
+      "id": "fresh_chicken",
+      "label": "Cook the chicken fresh",
+      "replaces": [
+        "precooked_chicken"
+      ],
+      "buy": [
+        {
+          "ingredient_id": "chicken_breast",
+          "quantity": 100,
+          "unit": "g"
+        }
+      ],
+      "omit_pantry": [],
+      "note": "Dice the chicken, season with smoked paprika, garlic powder, dried oregano and black pepper, then fry with the chorizo until cooked through. Continue with the recipe as normal."
+    }
+  ]
+}
