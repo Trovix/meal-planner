@@ -1,6 +1,5 @@
 const fs = require("node:fs");
 const path = require("node:path");
-const vm = require("node:vm");
 
 const [gluePath, wasmPath, mealsPath, ingredientsPath] = process.argv.slice(2);
 if (!ingredientsPath) {
@@ -10,7 +9,14 @@ if (!ingredientsPath) {
 }
 
 const glue = fs.readFileSync(gluePath, "utf8");
-const moduleFactory = vm.runInThisContext(`${glue}\ncreateMealPlannerModule;`);
+const loadFactory = new Function(
+  "require",
+  "__filename",
+  "__dirname",
+  `${glue}\nreturn createMealPlannerModule;`,
+);
+const absoluteGluePath = path.resolve(gluePath);
+const moduleFactory = loadFactory(require, absoluteGluePath, path.dirname(absoluteGluePath));
 const mealsJson = fs.readFileSync(mealsPath, "utf8");
 const ingredientsJson = fs.readFileSync(ingredientsPath, "utf8");
 const mealsRoot = JSON.parse(mealsJson);
