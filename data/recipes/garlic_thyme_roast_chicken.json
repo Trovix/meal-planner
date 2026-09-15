@@ -1,0 +1,42 @@
+{
+  "id": "garlic_thyme_roast_chicken",
+  "name": "Garlic & Thyme Roast Chicken, Buttery Mash, Tenderstem & Light Cream Gravy",
+  "description": "Pan-seared boneless chicken thighs finished in the oven, with buttery mash, tenderstem broccoli and a light shallot, chicken stock and cream gravy made in the roasting pan. Uses one ovenproof frying pan and one saucepan. Approximate macros use skinless thighs; skin-on thighs also work.",
+  "servings": 1,
+  "active": true,
+  "meal_types": ["dinner"],
+  "macros": {
+    "calories_kcal": 1050,
+    "protein_g": 65,
+    "carbs_g": 75,
+    "fat_g": 55
+  },
+  "buy": [
+    {"ingredient_id": "boneless_chicken_thighs", "quantity": 250, "unit": "g"},
+    {"ingredient_id": "potatoes", "quantity": 300, "unit": "g"},
+    {"ingredient_id": "butter", "quantity": 15, "unit": "g"},
+    {"ingredient_id": "semi_skimmed_milk", "quantity": 50, "unit": "ml"},
+    {"ingredient_id": "tenderstem_broccoli", "quantity": 150, "unit": "g"},
+    {"ingredient_id": "shallot", "quantity": 1, "unit": "each"},
+    {"ingredient_id": "chicken_stock", "quantity": 0.25, "unit": "cubes"},
+    {"ingredient_id": "double_cream", "quantity": 25, "unit": "ml"},
+    {"ingredient_id": "garlic", "quantity": 1, "unit": "cloves"}
+  ],
+  "pantry": [
+    "dried_thyme",
+    "dijon_mustard",
+    "olive_oil",
+    "salt",
+    "black_pepper"
+  ],
+  "instructions": [
+    "Heat the oven to 200°C fan (220°C conventional). Use a frying pan whose handle and coating are oven-safe at this temperature. Cut the potatoes into even 2-3 cm chunks, place in a saucepan, cover with cold salted water and bring to the boil. Simmer for 15-18 minutes until tender, leaving room to add the broccoli later.",
+    "Pat the boneless chicken thighs dry, open them out and season with salt and black pepper. Heat 1 tsp olive oil in the ovenproof frying pan over medium-high heat. Sear the smooth side, or skin side if using skin-on thighs, for 4-5 minutes until golden, then turn and sear for 1-2 minutes. For skin-on thighs, use medium heat and allow 5-7 minutes on the skin side to render the fat.",
+    "Lightly crush the peeled garlic clove and add it to the pan with 1/2 tsp dried thyme. Turn the thighs golden side up and transfer the pan to the oven. Roast for about 10-15 minutes, depending on thickness, until the thickest part reaches 75°C. Begin checking smaller thighs earlier.",
+    "While the chicken roasts, finely chop the shallot. Dissolve 1/4 chicken stock cube in 100 ml hot water, adjusting the amount of cube to the packet dilution if needed. Add the tenderstem broccoli to the potato saucepan for the final 3-4 minutes, until just tender. Lift it out with tongs onto the serving plate and keep warm.",
+    "Drain the potatoes using the saucepan lid, let them steam-dry for 1-2 minutes, then mash in the same saucepan with 15 g butter and 50 ml milk. Season to taste and cover to keep warm.",
+    "Using an oven glove, remove the chicken pan from the oven and transfer the thighs to the serving plate to rest for 5 minutes. Keep the hot pan handle covered with a dry oven glove while making the gravy. Leave about 1 tsp fat and the browned juices in the pan, spooning away excess fat if necessary.",
+    "Set the frying pan over medium-low heat and soften the chopped shallot for 2-3 minutes, adding a splash of water if the pan is dry. Mash the roasted garlic into the pan juices. Pour in the prepared chicken stock, scrape up the browned bits and simmer for 2-3 minutes until slightly reduced.",
+    "Stir in 25 ml double cream, 1/2 tsp Dijon mustard and any chicken resting juices. Simmer gently for 1-2 minutes, keeping the gravy light and pourable; loosen with a splash of water if needed. Taste before adding salt and pepper. Serve the chicken with the mash, broccoli and gravy, spooning the gravy around the chicken if keeping crisp skin."
+  ]
+}
