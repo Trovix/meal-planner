@@ -1,0 +1,41 @@
+{
+  "id": "pork_blanket_dumplings",
+  "name": "Pork Blanket Dumplings, Jasmine Rice & Steamed Pak Choi",
+  "description": "Eight no-fold pork, ginger and spring onion dumplings with crisp bases, jasmine rice, soy-sesame pak choi and a chilli-vinegar dipping sauce. Approximate macros use 15% fat pork mince and eight wrappers weighing about 80 g in total.",
+  "servings": 1,
+  "active": true,
+  "meal_types": ["dinner"],
+  "macros": {
+    "calories_kcal": 1080,
+    "protein_g": 53,
+    "carbs_g": 117,
+    "fat_g": 44
+  },
+  "buy": [
+    {"ingredient_id": "pork_mince", "quantity": 200, "unit": "g"},
+    {"ingredient_id": "dumpling_wrappers", "quantity": 8, "unit": "each"},
+    {"ingredient_id": "spring_onions", "quantity": 2, "unit": "each"},
+    {"ingredient_id": "garlic", "quantity": 1, "unit": "cloves"},
+    {"ingredient_id": "fresh_ginger", "quantity": 10, "unit": "g"},
+    {"ingredient_id": "jasmine_rice", "quantity": 75, "unit": "g"},
+    {"ingredient_id": "pak_choi", "quantity": 1, "unit": "each"}
+  ],
+  "pantry": [
+    "light_soy",
+    "sesame_oil",
+    "cornflour",
+    "white_pepper",
+    "rice_vinegar",
+    "chilli_crisp",
+    "neutral_oil"
+  ],
+  "instructions": [
+    "Cook 75 g dry jasmine rice according to the packet instructions. Thaw the dumpling wrappers first if frozen, keeping them covered so they do not dry out.",
+    "Finely slice the spring onions, reserving a little of the green tops for serving. Crush the garlic and finely grate the ginger. Mix the pork mince with the remaining spring onions, garlic, ginger, 2 tsp light soy sauce, 1 tsp sesame oil, 1 tsp cornflour, a pinch of white pepper and 1 tbsp cold water. Stir firmly until the filling becomes sticky.",
+    "Divide the filling into eight equal portions and flatten slightly to about 1.5 cm thick. Brush a large, cold non-stick frying pan with 1 tsp neutral oil and space the portions apart. Lightly moisten each wrapper with water and drape one over each portion, gently pressing it against the meat without folding or sealing underneath.",
+    "Place the pan over medium heat and cook for 3-4 minutes until the pork bases begin to brown. Carefully pour about 80 ml water into the spaces between the dumplings and immediately cover with a close-fitting lid. Steam gently for 8-10 minutes, adding a little more water if the pan dries out before the pork is cooked. Check the centre of the thickest dumpling reaches 75°C and the wrappers are tender; continue steaming if needed.",
+    "Meanwhile, mix 2 tsp light soy sauce, 2 tsp rice vinegar, 1 tsp chilli crisp and 1-2 tsp water in a small dipping bowl.",
+    "Wash and halve one pak choi lengthways, aiming for roughly 150-200 g, and steam separately for 4-5 minutes until the stalks are tender but retain a little bite. Dress with 1/2 tsp light soy sauce and 1/2 tsp sesame oil.",
+    "Once the dumplings are cooked through, remove the lid and let the remaining water evaporate. Fry for another 1-2 minutes until the bases are crisp, then lift out carefully with a thin spatula. Serve immediately with the rice, pak choi, dipping sauce and reserved spring onion tops."
+  ]
+}

@@ -384,6 +384,18 @@
       "pack_quantity": 1,
       "pack_unit": "roll"
     },
+    "pork_mince": {
+      "name": "Pork mince (15% fat)",
+      "category": "Meat & Fish",
+      "pack_quantity": 500,
+      "pack_unit": "g"
+    },
+    "dumpling_wrappers": {
+      "name": "Dumpling wrappers",
+      "category": "Chilled",
+      "pack_quantity": 30,
+      "pack_unit": "each"
+    },
     "chorizo": {
       "name": "Chorizo",
       "category": "Deli",
