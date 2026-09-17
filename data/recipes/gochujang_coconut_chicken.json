@@ -1,0 +1,34 @@
+{
+  "id": "gochujang_coconut_chicken",
+  "name": "Gochujang Coconut Chicken with Jasmine Rice & Spinach",
+  "description": "Golden chicken thigh pieces in a spicy, savoury coconut and gochujang sauce, with spinach wilted straight into the sauce and lime to finish. Served with jasmine rice; uses one frying pan and one saucepan, with no separate sauce bowl. Approximate macros use skinless thighs and full-fat coconut milk.",
+  "servings": 1,
+  "active": true,
+  "meal_types": ["dinner"],
+  "macros": {
+    "calories_kcal": 1040,
+    "protein_g": 58,
+    "carbs_g": 96,
+    "fat_g": 47
+  },
+  "buy": [
+    {"ingredient_id": "boneless_chicken_thighs", "quantity": 250, "unit": "g"},
+    {"ingredient_id": "jasmine_rice", "quantity": 90, "unit": "g"},
+    {"ingredient_id": "spinach", "quantity": 100, "unit": "g"},
+    {"ingredient_id": "coconut_milk", "quantity": 100, "unit": "ml"},
+    {"ingredient_id": "gochujang", "quantity": 20, "unit": "g"},
+    {"ingredient_id": "garlic", "quantity": 1, "unit": "cloves"},
+    {"ingredient_id": "fresh_ginger", "quantity": 5, "unit": "g"},
+    {"ingredient_id": "lime", "quantity": 0.5, "unit": "each"}
+  ],
+  "pantry": ["light_soy", "honey", "neutral_oil"],
+  "instructions": [
+    "Start the 90 g dry jasmine rice in a saucepan, using the packet's water quantity and cooking time. Once cooked, leave covered off the heat while finishing the chicken. The spinach will cook in the sauce, so no steamer or extra vegetable pan is needed.",
+    "Pat the skinless, boneless chicken thighs dry and cut into roughly 3 cm pieces. Crush or finely grate the garlic and grate the ginger. Wash the spinach if needed and drain well. Stir the coconut milk in its tin or carton before measuring, so the cream and liquid are combined.",
+    "Heat 1 tsp neutral oil in a large frying pan over medium-high heat. Add the chicken in a single layer and fry for 5-7 minutes, turning occasionally, until browned on several sides. It will finish cooking in the sauce.",
+    "Lower the heat to medium-low. Add the garlic and ginger directly to the chicken pan and stir for 30 seconds. Add 20 g gochujang (about 1 tbsp), 100 ml coconut milk, 1 tsp light soy sauce, 1 tsp honey and 30 ml water directly to the pan. Stir until smooth, scraping up the browned juices; no separate mixing bowl is needed.",
+    "Bring to a gentle simmer and cook for about 6-8 minutes, stirring occasionally, until the sauce coats the chicken and the thickest pieces reach 75°C. Add a small splash of water if the sauce becomes too thick before the chicken is cooked.",
+    "Add 100 g spinach in handfuls and stir into the sauce for the final 1-2 minutes, just until wilted. If the spinach releases a lot of water, simmer briefly until the sauce coats the chicken again.",
+    "Take off the heat and squeeze in juice from the half lime to taste, starting with about 1 tsp. Taste before adding any more soy sauce, as the gochujang is already salty. Serve the chicken, spinach and coconut sauce over the jasmine rice."
+  ]
+}

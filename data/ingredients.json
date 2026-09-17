@@ -396,6 +396,24 @@
       "pack_quantity": 30,
       "pack_unit": "each"
     },
+    "coconut_milk": {
+      "name": "Full-fat coconut milk",
+      "category": "Cupboard",
+      "pack_quantity": 400,
+      "pack_unit": "ml"
+    },
+    "gochujang": {
+      "name": "Gochujang (Korean chilli paste)",
+      "category": "Cupboard",
+      "pack_quantity": 200,
+      "pack_unit": "g"
+    },
+    "lime": {
+      "name": "Limes",
+      "category": "Produce",
+      "pack_quantity": 1,
+      "pack_unit": "each"
+    },
     "chorizo": {
       "name": "Chorizo",
       "category": "Deli",
