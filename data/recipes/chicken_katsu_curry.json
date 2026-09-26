@@ -1,7 +1,7 @@
 {
   "id": "chicken_katsu_curry",
-  "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Cabbage",
-  "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded cabbage and a smooth, mild Japanese-style curry sauce.",
+  "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Gem Lettuce",
+  "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded gem lettuce and a smooth, mild Japanese-style curry sauce. The sauce makes two portions so one can be saved for tomorrow.",
   "servings": 1,
   "active": true,
   "meal_types": [
@@ -41,27 +41,27 @@
     },
     {
       "ingredient_id": "carrots",
-      "quantity": 100,
+      "quantity": 200,
       "unit": "g"
     },
     {
-      "ingredient_id": "white_cabbage",
-      "quantity": 0.25,
+      "ingredient_id": "gem_lettuce",
+      "quantity": 1,
       "unit": "each"
     },
     {
       "ingredient_id": "garlic",
-      "quantity": 1,
+      "quantity": 2,
       "unit": "cloves"
     },
     {
       "ingredient_id": "fresh_ginger",
-      "quantity": 10,
+      "quantity": 20,
       "unit": "g"
     },
     {
       "ingredient_id": "chicken_stock",
-      "quantity": 0.5,
+      "quantity": 1,
       "unit": "cubes"
     }
   ],
@@ -79,27 +79,49 @@
   ],
   "instructions": [
     "Rinse the jasmine rice until the water runs mostly clear. Add it to a small saucepan with 195 ml water and a pinch of salt, bring to a boil, cover and simmer on the lowest heat for 12 minutes. Remove from the heat and leave covered for 10 minutes.",
-    "For the curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8–10 minutes until soft but not browned.",
-    "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 2 tsp mild curry powder, 1/4 tsp ground turmeric and 1/2 tsp garam masala, then cook for another 30 seconds.",
-    "Stir 10 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 300 ml prepared chicken stock, then add 1 tsp light soy sauce and 1 tsp honey. Simmer gently for 12–15 minutes.",
-    "Immersion-blend the sauce until smooth, stir in 1 tsp rice vinegar and season with salt and black pepper. Keep warm over a very low heat, adding a splash of water if it becomes too thick.",
+    "For the two-portion curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8–10 minutes until soft but not browned.",
+    "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 4 tsp mild curry powder, 1/2 tsp ground turmeric and 1 tsp garam masala, then cook for another 30 seconds.",
+    "Stir 20 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 600 ml prepared chicken stock, then add 2 tsp light soy sauce and 2 tsp honey. Simmer gently for 12–15 minutes.",
+    "Immersion-blend the sauce until smooth, stir in 2 tsp rice vinegar and season with salt and black pepper. Use roughly half for this meal. Cool and refrigerate the remaining sauce for tomorrow.",
     "Butterfly the chicken breast and flatten it to an even 1.5 cm thickness. Season both sides with salt and black pepper.",
     "Put 20 g plain flour, the beaten egg and the panko breadcrumbs in three separate shallow dishes. Coat the chicken in flour, then egg, then panko, pressing the crumbs on firmly.",
     "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200°C for 10–12 minutes, turning halfway, until crisp and the centre reaches 75°C. Rest for 3 minutes, then slice.",
-    "Finely shred the white cabbage. Fluff the rice and serve it with the cabbage, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+    "Finely shred the gem lettuce. Fluff the rice and serve it with the lettuce, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+  ],
+  "substitutions": [
+    {
+      "id": "pre_breaded_chicken",
+      "label": "Use pre-breaded chicken breasts",
+      "replaces": [
+        "chicken_breast",
+        "panko_breadcrumbs",
+        "eggs"
+      ],
+      "buy": [
+        {
+          "ingredient_id": "pre_breaded_chicken",
+          "quantity": 1,
+          "unit": "each"
+        }
+      ],
+      "omit_pantry": [
+        "plain_flour"
+      ],
+      "note": "Use one pre-breaded chicken breast instead of breading the chicken yourself. Skip the butterflying and breading steps and cook according to the packet instructions until piping hot throughout, then rest briefly and slice."
+    }
   ],
   "make_ahead": {
-    "component": "Curry sauce",
+    "component": "Curry sauce (2 portions)",
     "max_refrigerated_hours": 48,
     "instructions": [
       "Cook the onion and carrot in neutral oil, then add the garlic, ginger and spices.",
-      "Stir in 10 g plain flour, gradually add the prepared chicken stock, light soy sauce and honey, then simmer for 12–15 minutes.",
-      "Immersion-blend until smooth, finish with the rice vinegar and season to taste."
+      "Stir in 20 g plain flour, gradually add 600 ml prepared chicken stock, 2 tsp light soy sauce and 2 tsp honey, then simmer for 12–15 minutes.",
+      "Immersion-blend until smooth, finish with 2 tsp rice vinegar and season to taste. The batch makes two portions."
     ],
-    "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+    "storage": "Use roughly half for the first meal. Cool the remaining sauce promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
     "day_of": [
-      "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
-      "Cook the rice, bread and air-fry the chicken, and shred the cabbage fresh."
+      "Reheat one portion of sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+      "Cook the rice, bread and air-fry the chicken (or cook the selected pre-breaded chicken), and shred the gem lettuce fresh."
     ]
   }
 }
