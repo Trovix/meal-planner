@@ -384,6 +384,12 @@
       "pack_quantity": 1,
       "pack_unit": "roll"
     },
+    "ciabatta_roll": {
+      "name": "Ciabatta roll",
+      "category": "Bakery",
+      "pack_quantity": 1,
+      "pack_unit": "roll"
+    },
     "pork_mince": {
       "name": "Pork mince (15% fat)",
       "category": "Meat & Fish",
