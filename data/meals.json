@@ -68,10 +68,10 @@
         "black_pepper"
       ],
       "instructions": [
-        "Bring a small saucepan of water to the boil. Carefully lower in the egg and cook for 6\u00bd minutes. Transfer it immediately to cold water, then peel and halve it.",
-        "Pat the steak dry and season it with salt and black pepper. Heat 1 tsp neutral oil in a frying pan over high heat and sear the steak for approximately 2\u20133 minutes per side, depending on its thickness and your preferred doneness.",
-        "Transfer the steak to a board and rest it for at least 5 minutes. For medium-rare steak, aim for approximately 52\u201354\u00b0C after resting.",
-        "Add 500 ml water and the beef stock cube to the saucepan. Add the crushed garlic, grated ginger, 1 tbsp light soy sauce, 1 tsp dark soy sauce and 1 tsp honey. Simmer gently for 8\u201310 minutes.",
+        "Bring a small saucepan of water to the boil. Carefully lower in the egg and cook for 6½ minutes. Transfer it immediately to cold water, then peel and halve it.",
+        "Pat the steak dry and season it with salt and black pepper. Heat 1 tsp neutral oil in a frying pan over high heat and sear the steak for approximately 2–3 minutes per side, depending on its thickness and your preferred doneness.",
+        "Transfer the steak to a board and rest it for at least 5 minutes. For medium-rare steak, aim for approximately 52–54°C after resting.",
+        "Add 500 ml water and the beef stock cube to the saucepan. Add the crushed garlic, grated ginger, 1 tbsp light soy sauce, 1 tsp dark soy sauce and 1 tsp honey. Simmer gently for 8–10 minutes.",
         "Add the noodles and cook according to their packet instructions. Halve the pak choi lengthways and add it for the final 2 minutes.",
         "Remove the broth from the heat and stir in 1 tsp rice vinegar and 1 tsp sesame oil. Taste before adding any extra salt.",
         "Slice the rested steak thinly against the grain. Divide the noodles, pak choi and broth into a deep bowl, then arrange the steak and soft-boiled egg on top. Finish with finely sliced spring onions, black pepper and the steak's resting juices."
@@ -166,14 +166,14 @@
         "sugar"
       ],
       "instructions": [
-        "Mix the chicken thighs with the Greek yoghurt, 1 tsp garam masala, \u00bd tsp turmeric, \u00bd tsp mild curry powder, half the grated ginger, 1 crushed garlic clove and \u00bd tsp salt. Leave to marinate for at least 20 minutes, or refrigerate for up to 24 hours.",
+        "Mix the chicken thighs with the Greek yoghurt, 1 tsp garam masala, ½ tsp turmeric, ½ tsp mild curry powder, half the grated ginger, 1 crushed garlic clove and ½ tsp salt. Leave to marinate for at least 20 minutes, or refrigerate for up to 24 hours.",
         "Rinse the basmati rice until the water runs mostly clear. Cook the 100 g rice according to the packet instructions, then cover and keep warm.",
         "Heat 1 tsp neutral oil in a frying pan over high heat. Shake excess marinade from the chicken and cook for 3-4 minutes per side until well browned and lightly charred. It does not need to be completely cooked through yet. Transfer to a plate.",
         "Reduce the heat to medium and melt 15 g butter in the same pan. Add the remaining garlic and ginger and cook for about 30 seconds.",
-        "Add 1 tsp garam masala and \u00bd tsp mild curry powder and cook for another 30 seconds until fragrant.",
-        "Add the canned tomatoes, \u00bd tsp sugar and a pinch of salt. Simmer for 8-10 minutes until reduced and slightly darkened.",
+        "Add 1 tsp garam masala and ½ tsp mild curry powder and cook for another 30 seconds until fragrant.",
+        "Add the canned tomatoes, ½ tsp sugar and a pinch of salt. Simmer for 8-10 minutes until reduced and slightly darkened.",
         "Blend the sauce until completely smooth with an immersion blender, then return it to the pan over low heat.",
-        "Stir in the double cream and remaining 10 g butter. Return the chicken and any resting juices to the sauce and simmer gently for 5-7 minutes, until the chicken reaches 75\u00b0C in the centre and the sauce is thick and glossy. Add a splash of water if it becomes too thick.",
+        "Stir in the double cream and remaining 10 g butter. Return the chicken and any resting juices to the sauce and simmer gently for 5-7 minutes, until the chicken reaches 75°C in the centre and the sauce is thick and glossy. Add a splash of water if it becomes too thick.",
         "Taste and adjust the salt and sugar if necessary. Serve over the basmati rice and finish with roughly chopped fresh coriander."
       ],
       "make_ahead": {
@@ -184,7 +184,7 @@
         ],
         "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
         "day_of": [
-          "Marinate and char the chicken, then reheat the prepared sauce until steaming. Add the chicken and its resting juices and simmer until the chicken reaches 75\u00b0C. Cook the basmati rice fresh and serve with chopped coriander."
+          "Marinate and char the chicken, then reheat the prepared sauce until steaming. Add the chicken and its resting juices and simmer until the chicken reaches 75°C. Cook the basmati rice fresh and serve with chopped coriander."
         ]
       }
     },
@@ -264,15 +264,15 @@
         "Cook jasmine rice in a rice cooker or saucepan.",
         "Whisk together 1 tsp dark soy sauce, 1 tsp light soy sauce, 20 ml prepared chicken stock, 2 tsp rice vinegar, 2 tsp honey, 3/4 tsp cornflour and a pinch of black pepper until smooth.",
         "Toast the raw cashews in a dry frying pan over medium heat for 5-8 minutes, stirring often, until lightly golden and fragrant, then set aside.",
-        "Season the chicken thigh pieces with salt. Heat 1 tsp neutral oil in a wok over high heat and sear the chicken for 6-8 minutes, turning often, until evenly browned and cooked through to 75\u00b0C. Transfer to a plate.",
+        "Season the chicken thigh pieces with salt. Heat 1 tsp neutral oil in a wok over high heat and sear the chicken for 6-8 minutes, turning often, until evenly browned and cooked through to 75°C. Transfer to a plate.",
         "Add the remaining 1/2 tsp neutral oil to the wok. Stir-fry the spring onions for 1 minute until lightly charred, then add the roughly chopped garlic and grated ginger and stir-fry for 30 seconds.",
         "Add the diced celery and green pepper and stir-fry vigorously for 30 seconds. Return the chicken, stir-fry for another 30 seconds, then pour in the sauce. Bring to a boil and toss for about 25 seconds until thick and glossy. Fold through the toasted cashews and serve immediately."
       ]
     },
     {
       "id": "chicken_katsu_curry",
-      "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Cabbage",
-      "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded cabbage and a smooth, mild Japanese-style curry sauce.",
+      "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Gem Lettuce",
+      "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded gem lettuce and a smooth, mild Japanese-style curry sauce. The sauce makes two portions so one can be saved for tomorrow.",
       "servings": 1,
       "active": true,
       "meal_types": [
@@ -312,27 +312,27 @@
         },
         {
           "ingredient_id": "carrots",
-          "quantity": 100,
+          "quantity": 200,
           "unit": "g"
         },
         {
-          "ingredient_id": "white_cabbage",
-          "quantity": 0.25,
+          "ingredient_id": "gem_lettuce",
+          "quantity": 1,
           "unit": "each"
         },
         {
           "ingredient_id": "garlic",
-          "quantity": 1,
+          "quantity": 2,
           "unit": "cloves"
         },
         {
           "ingredient_id": "fresh_ginger",
-          "quantity": 10,
+          "quantity": 20,
           "unit": "g"
         },
         {
           "ingredient_id": "chicken_stock",
-          "quantity": 0.5,
+          "quantity": 1,
           "unit": "cubes"
         }
       ],
@@ -350,27 +350,49 @@
       ],
       "instructions": [
         "Rinse the jasmine rice until the water runs mostly clear. Add it to a small saucepan with 195 ml water and a pinch of salt, bring to a boil, cover and simmer on the lowest heat for 12 minutes. Remove from the heat and leave covered for 10 minutes.",
-        "For the curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8\u201310 minutes until soft but not browned.",
-        "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 2 tsp mild curry powder, 1/4 tsp ground turmeric and 1/2 tsp garam masala, then cook for another 30 seconds.",
-        "Stir 10 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 300 ml prepared chicken stock, then add 1 tsp light soy sauce and 1 tsp honey. Simmer gently for 12\u201315 minutes.",
-        "Immersion-blend the sauce until smooth, stir in 1 tsp rice vinegar and season with salt and black pepper. Keep warm over a very low heat, adding a splash of water if it becomes too thick.",
+        "For the two-portion curry sauce, finely slice the onion and dice the carrot. Heat 1 tbsp neutral oil in a saucepan over medium heat and cook them for 8–10 minutes until soft but not browned.",
+        "Add the crushed garlic and grated ginger and cook for 30 seconds. Stir in 4 tsp mild curry powder, 1/2 tsp ground turmeric and 1 tsp garam masala, then cook for another 30 seconds.",
+        "Stir 20 g plain flour into the vegetables and cook for 1 minute. Gradually whisk in 600 ml prepared chicken stock, then add 2 tsp light soy sauce and 2 tsp honey. Simmer gently for 12–15 minutes.",
+        "Immersion-blend the sauce until smooth, stir in 2 tsp rice vinegar and season with salt and black pepper. Use roughly half for this meal. Cool and refrigerate the remaining sauce for tomorrow.",
         "Butterfly the chicken breast and flatten it to an even 1.5 cm thickness. Season both sides with salt and black pepper.",
         "Put 20 g plain flour, the beaten egg and the panko breadcrumbs in three separate shallow dishes. Coat the chicken in flour, then egg, then panko, pressing the crumbs on firmly.",
-        "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200\u00b0C for 10\u201312 minutes, turning halfway, until crisp and the centre reaches 75\u00b0C. Rest for 3 minutes, then slice.",
-        "Finely shred the white cabbage. Fluff the rice and serve it with the cabbage, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+        "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200°C for 10–12 minutes, turning halfway, until crisp and the centre reaches 75°C. Rest for 3 minutes, then slice.",
+        "Finely shred the gem lettuce. Fluff the rice and serve it with the lettuce, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+      ],
+      "substitutions": [
+        {
+          "id": "pre_breaded_chicken",
+          "label": "Use pre-breaded chicken breasts",
+          "replaces": [
+            "chicken_breast",
+            "panko_breadcrumbs",
+            "eggs"
+          ],
+          "buy": [
+            {
+              "ingredient_id": "pre_breaded_chicken",
+              "quantity": 1,
+              "unit": "each"
+            }
+          ],
+          "omit_pantry": [
+            "plain_flour"
+          ],
+          "note": "Use one pre-breaded chicken breast instead of breading the chicken yourself. Skip the butterflying and breading steps and cook according to the packet instructions until piping hot throughout, then rest briefly and slice."
+        }
       ],
       "make_ahead": {
-        "component": "Curry sauce",
+        "component": "Curry sauce (2 portions)",
         "max_refrigerated_hours": 48,
         "instructions": [
           "Cook the onion and carrot in neutral oil, then add the garlic, ginger and spices.",
-          "Stir in 10 g plain flour, gradually add the prepared chicken stock, light soy sauce and honey, then simmer for 12\u201315 minutes.",
-          "Immersion-blend until smooth, finish with the rice vinegar and season to taste."
+          "Stir in 20 g plain flour, gradually add 600 ml prepared chicken stock, 2 tsp light soy sauce and 2 tsp honey, then simmer for 12–15 minutes.",
+          "Immersion-blend until smooth, finish with 2 tsp rice vinegar and season to taste. The batch makes two portions."
         ],
-        "storage": "Cool promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
+        "storage": "Use roughly half for the first meal. Cool the remaining sauce promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
         "day_of": [
-          "Reheat the sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
-          "Cook the rice, bread and air-fry the chicken, and shred the cabbage fresh."
+          "Reheat one portion of sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
+          "Cook the rice, bread and air-fry the chicken (or cook the selected pre-breaded chicken), and shred the gem lettuce fresh."
         ]
       }
     },
@@ -448,18 +470,18 @@
         "component": "Chicken pie filling",
         "max_refrigerated_hours": 48,
         "instructions": [
-          "Cut the chicken into roughly 3 cm pieces, season and roll lightly in 15 g plain flour. Brown in 1 tbsp olive oil, then continue cooking until the centre reaches 75\u00b0C; transfer to a plate.",
-          "Melt the butter in the same pan. Add the leek, carrot, celery and dried thyme, then cook for 8\u201310 minutes until softened.",
+          "Cut the chicken into roughly 3 cm pieces, season and roll lightly in 15 g plain flour. Brown in 1 tbsp olive oil, then continue cooking until the centre reaches 75°C; transfer to a plate.",
+          "Melt the butter in the same pan. Add the leek, carrot, celery and dried thyme, then cook for 8–10 minutes until softened.",
           "Gradually stir in 150 ml prepared chicken stock and simmer until thickened. Stir in the double cream and 1/2 tsp Dijon mustard, then return the cooked chicken only long enough to coat it and bring the filling back to a simmer."
         ],
         "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
         "day_of": [
-          "Transfer the cold filling to a small pie dish while the oven heats to 200\u00b0C conventional or 180\u00b0C fan.",
-          "Top with the shortcrust pastry, trim and crimp, cut a steam hole and brush with beaten egg. Bake for 30\u201335 minutes until deeply golden and the filling is bubbling and steaming throughout."
+          "Transfer the cold filling to a small pie dish while the oven heats to 200°C conventional or 180°C fan.",
+          "Top with the shortcrust pastry, trim and crimp, cut a steam hole and brush with beaten egg. Bake for 30–35 minutes until deeply golden and the filling is bubbling and steaming throughout."
         ]
       },
       "instructions": [
-        "Heat the oven to 200\u00b0C conventional or 180\u00b0C fan.",
+        "Heat the oven to 200°C conventional or 180°C fan.",
         "Season the chicken breast pieces with salt and black pepper. Roll them lightly in 15 g plain flour and shake off any excess.",
         "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Brown the chicken for 2-3 minutes per side, then transfer it to a plate; it does not need to be fully cooked yet.",
         "Reduce the heat to medium and melt the butter in the same pan. Add the sliced leek, diced carrot, diced celery and dried thyme, then cook for 8-10 minutes until softened.",
@@ -577,7 +599,7 @@
       ],
       "instructions": [
         "Blitz the bread into breadcrumbs and mix with 15 g of the Parmesan. Flatten the chicken to an even 1.5 cm thickness, season it, dredge in 25 g plain flour, dip in the beaten egg and coat with the Parmesan breadcrumbs.",
-        "Heat 3 tbsp neutral oil in a frying pan over medium-high heat. Fry the chicken for 4\u20135 minutes on each side, until crisp and cooked through to 75\u00b0C, then rest it on a rack for 5 minutes.",
+        "Heat 3 tbsp neutral oil in a frying pan over medium-high heat. Fry the chicken for 4–5 minutes on each side, until crisp and cooked through to 75°C, then rest it on a rack for 5 minutes.",
         "Meanwhile, warm 1 tbsp olive oil in a saucepan. Cook the crushed garlic for 30 seconds, add the canned tomatoes and simmer for 10 minutes. Immersion-blend until smooth and season to taste.",
         "Boil the rigatoni in salted water according to the packet instructions. Reserve a splash of pasta water, drain, then toss through the tomato sauce, loosening it if necessary.",
         "Fold through the torn mozzarella, remaining 15 g Parmesan and most of the basil. Serve beside the Milanese and finish with the remaining basil, keeping the sauce off the crust."
@@ -638,10 +660,10 @@
       ],
       "instructions": [
         "Marinate the chicken for 15 minutes with 1 tbsp light soy sauce, 1 tsp sesame oil, 1 crushed garlic clove and a little black pepper.",
-        "Heat a frying pan over medium-high heat and cook the chicken for 6\u20138 minutes on each side, until charred and cooked through to 75\u00b0C. Rest for 5 minutes, then slice.",
-        "Whisk 1\u00bd tbsp sesame paste, 1\u00bd tbsp peanut butter, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil and \u00bd finely grated garlic clove. Whisk in about 60 ml hot noodle water until glossy.",
+        "Heat a frying pan over medium-high heat and cook the chicken for 6–8 minutes on each side, until charred and cooked through to 75°C. Rest for 5 minutes, then slice.",
+        "Whisk 1½ tbsp sesame paste, 1½ tbsp peanut butter, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil and ½ finely grated garlic clove. Whisk in about 60 ml hot noodle water until glossy.",
         "Boil the noodles according to the packet instructions, drain and toss thoroughly through the sauce.",
-        "Thinly slice the cucumber, toss with \u00bc tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, \u00bd tsp sugar and the remaining \u00bd finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
+        "Thinly slice the cucumber, toss with ¼ tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, ½ tsp sugar and the remaining ½ finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
         "Plate the noodles with the sliced chicken and cucumber salad, then finish with freshly ground black pepper."
       ]
     },
@@ -709,10 +731,10 @@
       ],
       "instructions": [
         "Boil the rigatoni in well-salted water until al dente. Reserve about 150 ml pasta water, then drain.",
-        "Meanwhile, tear the Serrano ham into rough strips. Lay them in a dry frying pan over medium heat and fry for 2\u20133 minutes, turning, until crisp. Transfer to a plate lined with kitchen paper.",
-        "Cut the chicken breast into bite-sized strips and season with salt and black pepper. Add 1 tsp olive oil to the same pan and cook the chicken over medium-high heat for 6\u20138 minutes until golden and the centre reaches 75\u00b0C. Transfer it to a plate.",
+        "Meanwhile, tear the Serrano ham into rough strips. Lay them in a dry frying pan over medium heat and fry for 2–3 minutes, turning, until crisp. Transfer to a plate lined with kitchen paper.",
+        "Cut the chicken breast into bite-sized strips and season with salt and black pepper. Add 1 tsp olive oil to the same pan and cook the chicken over medium-high heat for 6–8 minutes until golden and the centre reaches 75°C. Transfer it to a plate.",
         "Reduce the heat to medium-low. Add the crushed garlic and sliced sun-dried tomatoes to the pan and cook for 30 seconds.",
-        "Stir in the double cream and green pesto and warm gently for 1\u20132 minutes. Add the Parmesan and enough reserved pasta water to make a smooth, glossy sauce; do not boil the pesto hard.",
+        "Stir in the double cream and green pesto and warm gently for 1–2 minutes. Add the Parmesan and enough reserved pasta water to make a smooth, glossy sauce; do not boil the pesto hard.",
         "Return the chicken and its resting juices to the pan, add the drained rigatoni and toss until everything is evenly coated and steaming throughout. Loosen with more pasta water if needed.",
         "Serve immediately with plenty of black pepper and scatter the crisp Serrano ham over the top so it stays crunchy."
       ]
@@ -787,10 +809,10 @@
         "black_pepper"
       ],
       "instructions": [
-        "Cut the potatoes into even chunks, cover with salted water and simmer for 15\u201318 minutes until tender. Drain, steam-dry for 2 minutes, then mash with 20 g butter and season.",
-        "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Season the pork and sear for about 2 minutes on each side. Lower the heat and continue cooking, turning regularly, until the centre reaches 63\u00b0C. Rest for 8 minutes before slicing.",
-        "Dissolve \u00bc chicken stock cube in 100 ml boiling water. In the pork pan, cook the finely chopped shallot and crushed garlic with the remaining 5 g butter for 2 minutes. Add the white wine and reduce by half.",
-        "Add the prepared stock and simmer for 5 minutes. Stir in 1 tsp Dijon mustard, 1 tsp wholegrain mustard and the cream, then simmer gently for 2\u20133 minutes and season to taste.",
+        "Cut the potatoes into even chunks, cover with salted water and simmer for 15–18 minutes until tender. Drain, steam-dry for 2 minutes, then mash with 20 g butter and season.",
+        "Heat 1 tbsp olive oil in a frying pan over medium-high heat. Season the pork and sear for about 2 minutes on each side. Lower the heat and continue cooking, turning regularly, until the centre reaches 63°C. Rest for 8 minutes before slicing.",
+        "Dissolve ¼ chicken stock cube in 100 ml boiling water. In the pork pan, cook the finely chopped shallot and crushed garlic with the remaining 5 g butter for 2 minutes. Add the white wine and reduce by half.",
+        "Add the prepared stock and simmer for 5 minutes. Stir in 1 tsp Dijon mustard, 1 tsp wholegrain mustard and the cream, then simmer gently for 2–3 minutes and season to taste.",
         "Wilt the spinach in a covered pan with a splash of water for 2 minutes. Serve with the mash, sliced pork and mustard cream sauce."
       ]
     },
@@ -855,10 +877,10 @@
       ],
       "instructions": [
         "Rinse the rice, combine it with 195 ml water and bring to a simmer. Cover and cook on low for 12 minutes, then remove from the heat and rest, covered, for 10 minutes. Spread it on a plate for 10 minutes so excess steam can escape.",
-        "Preheat the air fryer to 190\u00b0C. Mix the white miso paste with 1 tbsp light soy sauce and 1 tsp sesame oil. Pat the salmon dry and spread the miso mixture over the flesh, keeping the skin mostly clean.",
-        "Lightly oil the air-fryer basket and place the salmon skin-side down. Air-fry for 8\u201310 minutes, depending on thickness, until lightly caramelised and cooked through to 63\u00b0C. Rest for 3 minutes.",
-        "Meanwhile, heat 1 tsp neutral oil in a frying pan over medium-high heat. Char the tenderstem for 5\u20136 minutes, adding a splash of water and covering briefly if necessary, then set aside.",
-        "Heat another 2 tsp neutral oil in the pan. Stir-fry the crushed garlic and sliced spring onions for 30 seconds, scramble in the eggs, then add the rice, 1 tbsp light soy sauce and 1 tsp dark soy sauce. Fry for 3\u20134 minutes and finish with 1 tsp sesame oil.",
+        "Preheat the air fryer to 190°C. Mix the white miso paste with 1 tbsp light soy sauce and 1 tsp sesame oil. Pat the salmon dry and spread the miso mixture over the flesh, keeping the skin mostly clean.",
+        "Lightly oil the air-fryer basket and place the salmon skin-side down. Air-fry for 8–10 minutes, depending on thickness, until lightly caramelised and cooked through to 63°C. Rest for 3 minutes.",
+        "Meanwhile, heat 1 tsp neutral oil in a frying pan over medium-high heat. Char the tenderstem for 5–6 minutes, adding a splash of water and covering briefly if necessary, then set aside.",
+        "Heat another 2 tsp neutral oil in the pan. Stir-fry the crushed garlic and sliced spring onions for 30 seconds, scramble in the eggs, then add the rice, 1 tbsp light soy sauce and 1 tsp dark soy sauce. Fry for 3–4 minutes and finish with 1 tsp sesame oil.",
         "Serve the fried rice with the tenderstem and air-fried miso-soy salmon."
       ]
     },
@@ -937,10 +959,10 @@
         "worcestershire_sauce"
       ],
       "instructions": [
-        "Finely dice the onion, carrot and celery. Heat 1 tbsp olive oil in a saucepan over medium heat and cook the vegetables for 8\u201310 minutes until soft and lightly golden.",
-        "Add the crushed garlic and 1 tsp dried oregano and cook for 30 seconds. Stir in the tomato pur\u00e9e and cook for 2 minutes until it darkens slightly.",
-        "Increase the heat to medium-high, add the beef mince and season with salt and black pepper. Cook for 6\u20138 minutes, breaking it up thoroughly, until well browned with no pink remaining.",
-        "Add the canned tomatoes, 200 ml prepared beef stock and 2 tsp Worcestershire sauce. Bring to a simmer, then cook uncovered over low heat for 30\u201340 minutes, stirring occasionally, until rich and thick.",
+        "Finely dice the onion, carrot and celery. Heat 1 tbsp olive oil in a saucepan over medium heat and cook the vegetables for 8–10 minutes until soft and lightly golden.",
+        "Add the crushed garlic and 1 tsp dried oregano and cook for 30 seconds. Stir in the tomato purée and cook for 2 minutes until it darkens slightly.",
+        "Increase the heat to medium-high, add the beef mince and season with salt and black pepper. Cook for 6–8 minutes, breaking it up thoroughly, until well browned with no pink remaining.",
+        "Add the canned tomatoes, 200 ml prepared beef stock and 2 tsp Worcestershire sauce. Bring to a simmer, then cook uncovered over low heat for 30–40 minutes, stirring occasionally, until rich and thick.",
         "Boil the spaghetti in well-salted water until al dente. Reserve a mugful of pasta water, then drain.",
         "Taste and season the Bolognese. Toss the spaghetti through the sauce, adding a splash of pasta water if needed so the sauce coats it evenly.",
         "Serve immediately with the grated Parmesan and plenty of black pepper."
@@ -949,9 +971,9 @@
         "component": "Bolognese sauce",
         "max_refrigerated_hours": 48,
         "instructions": [
-          "Cook the onion, carrot and celery in olive oil until soft, then add the garlic, dried oregano and tomato pur\u00e9e.",
+          "Cook the onion, carrot and celery in olive oil until soft, then add the garlic, dried oregano and tomato purée.",
           "Brown the beef mince thoroughly, breaking it up well, until no pink remains.",
-          "Add the canned tomatoes, prepared beef stock and Worcestershire sauce. Simmer uncovered for 30\u201340 minutes until rich and thick, then season to taste."
+          "Add the canned tomatoes, prepared beef stock and Worcestershire sauce. Simmer uncovered for 30–40 minutes until rich and thick, then season to taste."
         ],
         "storage": "Cool promptly in a shallow container, cover and refrigerate within two hours for up to 48 hours.",
         "day_of": [
@@ -1025,11 +1047,11 @@
         "salt"
       ],
       "instructions": [
-        "Cook the frozen chips in an air fryer at 200\u00b0C for 20\u201325 minutes, shaking twice, until crisp, or follow the packet instructions.",
-        "Pat the ribeye dry and season generously with salt and 1 tsp coarsely cracked black pepper. Heat 1 tsp olive oil in a heavy frying pan over high heat and sear for 2\u20133 minutes on each side, adjusting for thickness and preferred doneness. Add 10 g butter for the final minute and baste, then rest the steak for 8 minutes.",
-        "Dissolve \u00bc beef stock cube in 100 ml boiling water. Lower the pan to medium heat and cook the finely chopped shallot in the remaining 5 g butter for 2 minutes. Add 25 ml brandy and simmer for 1 minute, scraping up the browned bits.",
-        "Add the prepared stock and reduce by half. Stir in the cream, \u00bd tsp Dijon mustard and another \u00bd tsp cracked black pepper, then simmer gently for 2\u20133 minutes.",
-        "Whisk 1 tbsp lemon juice with \u00bd tsp Dijon mustard and 1 tbsp olive oil. Toss with the salad leaves, then serve beside the chips, rested steak and peppercorn sauce."
+        "Cook the frozen chips in an air fryer at 200°C for 20–25 minutes, shaking twice, until crisp, or follow the packet instructions.",
+        "Pat the ribeye dry and season generously with salt and 1 tsp coarsely cracked black pepper. Heat 1 tsp olive oil in a heavy frying pan over high heat and sear for 2–3 minutes on each side, adjusting for thickness and preferred doneness. Add 10 g butter for the final minute and baste, then rest the steak for 8 minutes.",
+        "Dissolve ¼ beef stock cube in 100 ml boiling water. Lower the pan to medium heat and cook the finely chopped shallot in the remaining 5 g butter for 2 minutes. Add 25 ml brandy and simmer for 1 minute, scraping up the browned bits.",
+        "Add the prepared stock and reduce by half. Stir in the cream, ½ tsp Dijon mustard and another ½ tsp cracked black pepper, then simmer gently for 2–3 minutes.",
+        "Whisk 1 tbsp lemon juice with ½ tsp Dijon mustard and 1 tbsp olive oil. Toss with the salad leaves, then serve beside the chips, rested steak and peppercorn sauce."
       ]
     }
   ]
