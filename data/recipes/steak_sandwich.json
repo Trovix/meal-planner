@@ -1,0 +1,37 @@
+{
+  "id": "steak_sandwich",
+  "name": "Steak Sandwich with Mustard Mayo & Onions",
+  "description": "Thinly sliced steak in toasted ciabatta with mustard mayo, soft onions and salad leaves. An optional leftover-steak swap makes it a quick lunch.",
+  "servings": 1,
+  "active": true,
+  "meal_types": ["lunch"],
+  "macros": {
+    "calories_kcal": 760,
+    "protein_g": 48,
+    "carbs_g": 55,
+    "fat_g": 39
+  },
+  "buy": [
+    {"ingredient_id": "rump_steak", "quantity": 180, "unit": "g"},
+    {"ingredient_id": "ciabatta_roll", "quantity": 1, "unit": "roll"},
+    {"ingredient_id": "onion", "quantity": 0.5, "unit": "each"},
+    {"ingredient_id": "salad_leaves", "quantity": 25, "unit": "g"}
+  ],
+  "pantry": ["mayonnaise", "dijon_mustard", "olive_oil", "salt", "black_pepper"],
+  "instructions": [
+    "Thinly slice half an onion. Cook it in 1 tsp olive oil over medium-low heat for 10–12 minutes, stirring occasionally, until soft and golden. Set aside.",
+    "Season the steak with salt and black pepper. Heat the pan until hot and sear the steak for 2–3 minutes per side, adjusting for thickness and preferred doneness. Rest for 5 minutes, then slice thinly against the grain.",
+    "Mix 1 tbsp mayonnaise with 1 tsp Dijon mustard. Split and toast the ciabatta roll, then spread the mustard mayo on both cut sides.",
+    "Layer in the salad leaves, warm onions and sliced steak. Add any resting juices, close the sandwich and serve straight away."
+  ],
+  "substitutions": [
+    {
+      "id": "leftover_steak",
+      "label": "Use leftover cooked steak",
+      "replaces": ["rump_steak"],
+      "buy": [],
+      "omit_pantry": [],
+      "note": "Use about 150–180 g of cooked steak kept refrigerated. Skip the steak-cooking step: slice it thinly against the grain and add it cold, or warm it briefly and gently in the pan after cooking the onions. Do not sear it again."
+    }
+  ]
+}
