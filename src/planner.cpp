@@ -39,10 +39,11 @@ const json& pantry_catalogue(const json& root) {
 std::set<std::string> validate_buy_items(
     const json& items,
     const json& ingredients,
-    const std::string& field
+    const std::string& field,
+    bool require_items = true
 ) {
-    if (!items.is_array() || items.empty()) {
-        throw std::runtime_error(field + " must be a non-empty array");
+    if (!items.is_array() || (require_items && items.empty())) {
+        throw std::runtime_error(field + (require_items ? " must be a non-empty array" : " must be an array"));
     }
     std::set<std::string> seen;
     for (const auto& item : items) {
@@ -108,7 +109,7 @@ void validate_substitutions(
                 throw std::runtime_error("Substitution replaces an invalid ingredient: " + replacement_id);
             }
         }
-        validate_buy_items(substitution["buy"], ingredients, "substitution buy");
+        validate_buy_items(substitution["buy"], ingredients, "substitution buy", false);
         if (substitution.contains("omit_pantry")) {
             if (!substitution["omit_pantry"].is_array()) {
                 throw std::runtime_error("Substitution omit_pantry must be an array");
