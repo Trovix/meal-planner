@@ -70,6 +70,22 @@ int main() {
     );
     assert(validation["valid"] == true);
 
+    auto leftover_recipe = first_recipe;
+    leftover_recipe["substitutions"][0]["buy"] = json::array();
+    const auto leftover_validation = json::parse(
+        mealplanner::validate_recipe_json(leftover_recipe.dump(), ingredients, pantry)
+    );
+    assert(leftover_validation["valid"] == true);
+
+    leftover_recipe["substitutions"][0]["buy"] = nullptr;
+    bool invalid_substitution_buy_rejected = false;
+    try {
+        mealplanner::validate_recipe_json(leftover_recipe.dump(), ingredients, pantry);
+    } catch (const std::exception&) {
+        invalid_substitution_buy_rejected = true;
+    }
+    assert(invalid_substitution_buy_rejected);
+
     auto make_ahead_recipe = first_recipe;
     make_ahead_recipe["make_ahead"] = {
         {"component", "Sauce"},
