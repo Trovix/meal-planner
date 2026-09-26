@@ -425,6 +425,12 @@
       "category": "Deli",
       "pack_quantity": 1,
       "pack_unit": "pack"
+    },
+    "gem_lettuce": {
+      "name": "Gem lettuce",
+      "category": "Produce",
+      "pack_quantity": 2,
+      "pack_unit": "each"
     }
   }
 }
