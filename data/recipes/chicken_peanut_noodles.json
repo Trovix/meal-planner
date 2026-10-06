@@ -7,21 +7,67 @@
   "meal_types": [
     "dinner"
   ],
-  "macros": {"calories_kcal": 1450, "protein_g": 80, "carbs_g": 125, "fat_g": 65},
+  "macros": {
+    "calories_kcal": 1450,
+    "protein_g": 80,
+    "carbs_g": 125,
+    "fat_g": 65
+  },
   "buy": [
-    {"ingredient_id": "boneless_chicken_thighs", "quantity": 250, "unit": "g"},
-    {"ingredient_id": "wheat_noodles", "quantity": 150, "unit": "g"},
-    {"ingredient_id": "cucumber", "quantity": 0.5, "unit": "each"},
-    {"ingredient_id": "spring_onions", "quantity": 2, "unit": "each"},
-    {"ingredient_id": "garlic", "quantity": 2, "unit": "cloves"}
+    {
+      "ingredient_id": "boneless_chicken_thighs",
+      "quantity": 250,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "wheat_noodles",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "cucumber",
+      "quantity": 0.5,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "spring_onions",
+      "quantity": 2,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 3,
+      "unit": "cloves"
+    }
   ],
-  "pantry": ["sesame_paste", "peanut_butter", "light_soy", "rice_vinegar", "sesame_oil", "sesame_seeds", "black_pepper", "sugar", "salt"],
+  "pantry": [
+    "sesame_paste",
+    "peanut_butter",
+    "light_soy",
+    "rice_vinegar",
+    "sesame_oil",
+    "sesame_seeds",
+    "black_pepper",
+    "sugar",
+    "salt",
+    "honey",
+    "ginger_paste",
+    "chilli_flakes"
+  ],
   "instructions": [
     "Marinate the chicken for 15 minutes with 1 tbsp light soy sauce, 1 tsp sesame oil, 1 crushed garlic clove and a little black pepper.",
     "Heat a frying pan over medium-high heat and cook the chicken for 6–8 minutes on each side, until charred and cooked through to 75°C. Rest for 5 minutes, then slice.",
-    "Whisk 1½ tbsp sesame paste, 1½ tbsp peanut butter, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp sesame oil and ½ finely grated garlic clove. Whisk in about 60 ml hot noodle water until glossy.",
-    "Boil the noodles according to the packet instructions, drain and toss thoroughly through the sauce.",
-    "Thinly slice the cucumber, toss with ¼ tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, ½ tsp sugar and the remaining ½ finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
+    "Mix 2 tbsp peanut butter, 1 tsp sesame paste, 1 tbsp light soy sauce, 1 tbsp rice vinegar, 1 tsp honey or sugar, 1 finely grated garlic clove, ½ tsp ginger paste and chilli flakes to taste. Gradually stir in 3–5 tbsp hot water until smooth and pourable.",
+    "Boil the noodles according to the packet instructions, reserving a mug of noodle water before draining. Toss the noodles thoroughly through the peanut sauce over low heat, adding reserved noodle water a tablespoon at a time until glossy and generously coated. Turn off the heat and stir in ½ tsp sesame oil. Loosen with another splash of noodle water if the sauce thickens before serving.",
+    "Thinly slice the cucumber, toss with ¼ tsp salt and leave for 10 minutes, then drain and pat dry. Mix 1 tbsp rice vinegar, 1 tsp light soy sauce, 1 tsp sesame oil, ½ tsp sugar and ½ finely grated garlic clove. Toss with the cucumber just before serving and finish with the sliced spring onions and 2 tsp sesame seeds.",
     "Plate the noodles with the sliced chicken and cucumber salad, then finish with freshly ground black pepper."
-  ]
+  ],
+  "pantry_definitions": {
+    "ginger_paste": {
+      "name": "Ginger paste"
+    },
+    "chilli_flakes": {
+      "name": "Chilli flakes"
+    }
+  }
 }
