@@ -1,0 +1,81 @@
+{
+  "id": "salmon_pommes_puree_creamed_spinach",
+  "name": "Crispy Salmon, Pommes Purée & Creamed Spinach",
+  "description": "Crispy-skinned salmon with silky butter-and-milk potato purée, shallot and garlic creamed spinach, and a fresh lemon finish. One generous serving, ready in about 35 minutes. Macros are approximate.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "dinner"
+  ],
+  "macros": {
+    "calories_kcal": 1200,
+    "protein_g": 54,
+    "carbs_g": 65,
+    "fat_g": 80
+  },
+  "buy": [
+    {
+      "ingredient_id": "salmon_fillet",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "potatoes",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "spinach",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "semi_skimmed_milk",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "double_cream",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "shallot",
+      "quantity": 0.5,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "garlic",
+      "quantity": 1,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "lemon",
+      "quantity": 0.5,
+      "unit": "each"
+    }
+  ],
+  "pantry": [
+    "neutral_oil",
+    "salt",
+    "black_pepper"
+  ],
+  "substitutions": [],
+  "instructions": [
+    "Allow about 35 minutes and use a saucepan, frying pan, colander and potato masher or ricer. Peel 300 g Maris Piper or King Edward potatoes and cut into even 2-3 cm chunks. Put in the saucepan, cover with cold water, add a generous pinch of salt and bring to the boil. Reduce to a simmer and cook for 15-20 minutes, until a knife slides through without resistance.",
+    "While the potatoes cook, finely dice half a shallot and crush 1 garlic clove. Wash and drain 150 g spinach. Pat the 200 g salmon fillet thoroughly dry, especially the skin; check for pin bones and remove any you find. Keep the fish on a separate plate and wash your hands and any utensils after handling it.",
+    "Make the creamed spinach while the potatoes simmer. Melt 5 g of the butter in the frying pan over medium-low heat. Cook the shallot for 3-4 minutes until soft without browning, then add the garlic and cook for 30 seconds.",
+    "Add the spinach in handfuls and turn it until wilted, about 2-3 minutes. Let any released water evaporate so the finished spinach is not watery. Stir in 40 ml double cream and simmer gently for 1-2 minutes until it coats the leaves. Season with salt, black pepper and 1 tsp lemon juice. Transfer to a bowl and cover to keep warm; wipe out the frying pan.",
+    "When the potatoes are completely tender, drain thoroughly and return to the saucepan over low heat for 1 minute, shaking gently to steam off excess moisture. Warm 60 ml milk in a mug in the microwave or a small pan; it should be hot but not boiling.",
+    "Take the saucepan off the heat. Rice the potatoes or mash thoroughly while hot, then stir in the remaining 25 g butter. Stir in the warm milk a little at a time until silky and soft; use up to 2 tbsp extra hot water if needed. Taste and season with salt. For an extra-smooth finish, press the mashed potatoes through a fine sieve before adding the butter and milk. Do not use a blender or food processor, which can make them gluey. Cover and keep warm off the heat.",
+    "Season the salmon with salt just before cooking. Heat 1 tsp neutral oil in the clean frying pan over medium-high heat until shimmering. Place the fish skin-side down, away from you, and press gently with a spatula for the first 20-30 seconds to keep the skin flat.",
+    "Reduce to medium heat and cook skin-side down for about 4-6 minutes, depending on thickness, without moving it. When the skin is crisp and the flesh is turning opaque most of the way up the sides, turn carefully and cook the flesh side for about 1-3 minutes. Thick fillets may need longer on lower heat. Check the thickest part: the centre should be opaque and flake easily; a thermometer should read 63°C. For skinless salmon, cook in the same oil for about 3-4 minutes per side and check the centre in the same way.",
+    "Transfer the salmon to a plate and rest for 1-2 minutes, skin-side up and uncovered so it stays crisp. If necessary, briefly reheat the spinach in the frying pan over low heat. Gently rewarm the purée over low heat, adding a small splash of hot water if it has thickened.",
+    "Spoon the pommes purée onto a warm plate, add the creamed spinach alongside and place the salmon skin-side up. Finish the flesh with a small squeeze of the remaining lemon and black pepper. Serve the remaining lemon as a wedge and keep cream and lemon juice off the crispy skin."
+  ]
+}
