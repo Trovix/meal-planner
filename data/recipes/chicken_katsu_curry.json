@@ -1,7 +1,7 @@
 {
   "id": "chicken_katsu_curry",
-  "name": "Air-Fried Chicken Katsu Curry with Rice & Shredded Gem Lettuce",
-  "description": "Crisp air-fried panko chicken breast with jasmine rice, shredded gem lettuce and a smooth, mild Japanese-style curry sauce. The sauce makes two portions so one can be saved for tomorrow.",
+  "name": "Air-Fried Chicken Katsu Curry with Rice & Sesame Cucumber Salad",
+  "description": "Crisp air-fried panko chicken breast with jasmine rice, a sesame cucumber salad and a smooth, mild Japanese-style curry sauce. The sauce makes two portions so one can be saved for tomorrow.",
   "servings": 1,
   "active": true,
   "meal_types": [
@@ -45,8 +45,8 @@
       "unit": "g"
     },
     {
-      "ingredient_id": "gem_lettuce",
-      "quantity": 1,
+      "ingredient_id": "cucumber",
+      "quantity": 0.5,
       "unit": "each"
     },
     {
@@ -75,7 +75,10 @@
     "salt",
     "mild_curry_powder",
     "turmeric",
-    "garam_masala"
+    "garam_masala",
+    "sesame_oil",
+    "sugar",
+    "sesame_seeds"
   ],
   "instructions": [
     "Rinse the jasmine rice until the water runs mostly clear. Add it to a small saucepan with 195 ml water and a pinch of salt, bring to a boil, cover and simmer on the lowest heat for 12 minutes. Remove from the heat and leave covered for 10 minutes.",
@@ -86,7 +89,7 @@
     "Butterfly the chicken breast and flatten it to an even 1.5 cm thickness. Season both sides with salt and black pepper.",
     "Put 20 g plain flour, the beaten egg and the panko breadcrumbs in three separate shallow dishes. Coat the chicken in flour, then egg, then panko, pressing the crumbs on firmly.",
     "Lightly brush or spray both sides of the breaded chicken with neutral oil. Air-fry at 200°C for 10–12 minutes, turning halfway, until crisp and the centre reaches 75°C. Rest for 3 minutes, then slice.",
-    "Finely shred the gem lettuce. Fluff the rice and serve it with the lettuce, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
+    "Thinly slice half a cucumber. Mix 2 tsp rice vinegar, 1 tsp light soy sauce, 1/2 tsp sugar and 1/2 tsp sesame oil in a bowl, then toss with the cucumber. Add 1 tsp sesame seeds if using. Fluff the rice and serve with the cucumber salad, curry sauce and sliced katsu, keeping most of the sauce underneath or beside the chicken so the crust stays crisp."
   ],
   "substitutions": [
     {
@@ -121,7 +124,7 @@
     "storage": "Use roughly half for the first meal. Cool the remaining sauce promptly, transfer to a covered container and refrigerate within two hours for up to 48 hours.",
     "day_of": [
       "Reheat one portion of sauce until steaming throughout, stirring and adding a splash of water if it has thickened.",
-      "Cook the rice, bread and air-fry the chicken (or cook the selected pre-breaded chicken), and shred the gem lettuce fresh."
+      "Cook the rice, bread and air-fry the chicken (or cook the selected pre-breaded chicken), and make the sesame cucumber salad fresh."
     ]
   }
 }
