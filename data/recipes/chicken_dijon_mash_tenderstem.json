@@ -1,17 +1,17 @@
 {
   "id": "chicken_dijon_mash_tenderstem",
-  "name": "Chicken, Dijon Cream Pan Sauce, French-Style Roast Potatoes & Tenderstem",
-  "description": "Golden pan-fried chicken breast with a shallot and Dijon cream pan sauce, crisp butter-roasted potatoes with garlic and thyme, and tenderstem broccoli. One generous serving, ready in about 50 minutes. Macros are approximate.",
+  "name": "Chicken, Dijon Cream Pan Sauce, Pommes Purée & Tenderstem",
+  "description": "Golden pan-fried chicken breast with a shallot and Dijon cream pan sauce, silky pommes purée made from whole oven-roasted potatoes, and tenderstem broccoli. Allow about 60-85 minutes, mostly hands-off roasting. Macros are approximate.",
   "servings": 1,
   "active": true,
   "meal_types": [
     "dinner"
   ],
   "macros": {
-    "calories_kcal": 1070,
-    "protein_g": 58,
-    "carbs_g": 65,
-    "fat_g": 64
+    "calories_kcal": 1250,
+    "protein_g": 62,
+    "carbs_g": 68,
+    "fat_g": 80
   },
   "buy": [
     {
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_id": "butter",
-      "quantity": 25,
+      "quantity": 55,
       "unit": "g"
     },
     {
@@ -55,29 +55,29 @@
       "unit": "each"
     },
     {
-      "ingredient_id": "garlic",
-      "quantity": 2,
-      "unit": "cloves"
+      "ingredient_id": "semi_skimmed_milk",
+      "quantity": 80,
+      "unit": "ml"
     }
   ],
   "pantry": [
     "dijon_mustard",
     "olive_oil",
     "salt",
-    "black_pepper",
-    "dried_thyme"
+    "black_pepper"
   ],
   "substitutions": [],
   "instructions": [
-    "Allow about 50 minutes. Heat the oven to 220°C / 200°C fan. Peel 300 g Maris Piper or King Edward potatoes and cut into even 3 cm chunks. Cover with cold salted water in a saucepan, bring to the boil and simmer for 7-8 minutes, until the outsides soften but the centres still hold their shape.",
-    "Drain the potatoes and leave to steam-dry in the colander for 3-5 minutes. Shake gently to roughen the edges. Toss with 2 tsp olive oil, salt and black pepper, then spread in a single layer on a metal roasting tray. Roast for 20 minutes.",
-    "Lightly crush 2 unpeeled garlic cloves. After the first 20 minutes, turn the potatoes and add 20 g butter, the garlic and half a teaspoon of dried thyme to the tray. Toss carefully to coat in the melting butter. Roast for another 15-20 minutes, turning once more, until crisp, golden and tender. Add the butter and herbs at this stage so they do not burn during the initial roast.",
-    "While the potatoes roast, finely chop half a shallot and trim 150 g tenderstem broccoli. Prepare 50 ml chicken stock using about one eighth of a stock cube, adjusting to the packet's dilution instructions.",
-    "When the potatoes have about 20 minutes left, pat a 200 g chicken breast dry and flatten its thick end slightly so it cooks evenly. Season both sides with salt and black pepper. Heat 1 tsp olive oil in a frying pan over medium-high heat.",
-    "Add the chicken and cook for roughly 5-7 minutes per side, adjusting the heat to keep the browned bits golden rather than burnt. Thickness affects the time: check the thickest part is cooked through and reaches 75°C. Transfer to a plate and rest loosely covered while making the sauce.",
-    "Lower the frying pan heat to medium-low. Leave the golden browned bits in the pan, but remove any black, burnt pieces. Add the remaining 5 g butter and the chopped shallot and soften for 2-3 minutes.",
+    "Allow about 60-85 minutes, depending on potato size. Heat the oven to 200°C / 180°C fan. Scrub and dry 300 g Maris Piper or King Edward potatoes, leaving them whole with their skins on. Prick a few times with a fork and place on a baking tray. Do not wrap in foil: roasting them uncovered keeps the flesh relatively dry for a rich, smooth purée.",
+    "Roast for about 50-75 minutes until completely soft all the way through; a skewer should slide into the centre without resistance. Small potatoes may cook sooner and large ones may take longer. The flesh must be fully tender before ricing.",
+    "While the potatoes roast, finely chop half a shallot and trim 150 g tenderstem broccoli. Prepare 50 ml chicken stock using about one eighth of a stock cube, adjusting to the packet's dilution instructions. Cut 55 g butter into small cubes, reserving 5 g for the sauce and 50 g for the purée.",
+    "When the potatoes are nearly tender, pat a 200 g chicken breast dry and flatten its thick end slightly so it cooks evenly. Season both sides with salt and black pepper. Heat 1 tsp olive oil in a frying pan over medium-high heat.",
+    "Cook the chicken for roughly 5-7 minutes per side, adjusting the heat to keep the browned bits golden rather than burnt. Thickness affects the time: check the thickest part is cooked through and reaches 75°C. Transfer to a plate and rest loosely covered.",
+    "As soon as the potatoes are fully tender, halve them and scoop the hot flesh out of the skins, using a clean towel to handle them. Pass the flesh through a potato ricer into a saucepan. For a very fine texture, press the riced potato through a fine sieve while still hot. If you only have a masher, mash thoroughly, then use a sieve for a smoother finish. Do not use a blender or food processor, which can make the potatoes gluey.",
+    "Set the saucepan over very low heat. Gradually work the 50 g butter into the hot potato with a spatula until smooth. Warm 80 ml milk separately until hot but not boiling, then stir it in a little at a time until the purée is silky and softly spoonable; you may not need all of it. Season with salt and black pepper. Cover and keep warm very gently, adding a little hot water if it thickens.",
+    "Lower the frying pan heat to medium-low. Leave the golden browned bits in the pan, but remove any black, burnt pieces. Add the reserved 5 g butter and chopped shallot and soften for 2-3 minutes.",
     "Pour in the 50 ml prepared chicken stock and scrape up the browned bits with a wooden spoon. Simmer until reduced by about half. Stir in 50 ml double cream and 1-2 tsp Dijon mustard, then simmer gently for 2-3 minutes until the sauce lightly coats a spoon. Taste and add black pepper, salt if needed and a small squeeze of lemon.",
     "While the sauce simmers, steam or boil the tenderstem broccoli for 3-4 minutes until just tender. Drain well and season with a pinch of salt, black pepper and a little lemon juice.",
-    "Add the chicken's resting juices to the sauce and stir. Return the chicken to the pan briefly over low heat and spoon sauce over it. Serve with the French-style roast potatoes and broccoli, spooning the sauce mainly over the chicken so the potatoes keep their crisp edges."
+    "Add the chicken's resting juices to the sauce and stir. Return the chicken to the pan briefly over low heat and spoon sauce over it. Serve with the warm pommes purée and broccoli, spooning the remaining Dijon cream pan sauce over the chicken."
   ]
 }
