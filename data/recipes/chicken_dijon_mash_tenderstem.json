@@ -1,0 +1,81 @@
+{
+  "id": "chicken_dijon_mash_tenderstem",
+  "name": "Chicken, Dijon Cream Pan Sauce, Mash & Tenderstem",
+  "description": "Golden pan-fried chicken breast with a shallot and Dijon cream pan sauce, buttery mash and tenderstem broccoli. One generous serving, ready in about 35 minutes. Macros are approximate.",
+  "servings": 1,
+  "active": true,
+  "meal_types": [
+    "dinner"
+  ],
+  "macros": {
+    "calories_kcal": 1050,
+    "protein_g": 60,
+    "carbs_g": 65,
+    "fat_g": 60
+  },
+  "buy": [
+    {
+      "ingredient_id": "chicken_breast",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "potatoes",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "tenderstem_broccoli",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "shallot",
+      "quantity": 0.5,
+      "unit": "each"
+    },
+    {
+      "ingredient_id": "chicken_stock",
+      "quantity": 0.125,
+      "unit": "cubes"
+    },
+    {
+      "ingredient_id": "double_cream",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "butter",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "semi_skimmed_milk",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "ingredient_id": "lemon",
+      "quantity": 0.25,
+      "unit": "each"
+    }
+  ],
+  "pantry": [
+    "dijon_mustard",
+    "olive_oil",
+    "salt",
+    "black_pepper"
+  ],
+  "substitutions": [],
+  "instructions": [
+    "Allow about 35 minutes. Peel 300 g potatoes and cut into even 2-3 cm chunks. Cover with cold salted water in a saucepan, bring to the boil and simmer for 15-20 minutes until completely tender.",
+    "While the potatoes cook, finely chop half a shallot and trim 150 g tenderstem broccoli. Prepare 50 ml chicken stock using about one eighth of a stock cube, adjusting to the packet's dilution instructions.",
+    "Pat a 200 g chicken breast dry and flatten its thick end slightly so it cooks evenly. Season both sides with salt and black pepper. Heat 1 tsp olive oil in a frying pan over medium-high heat.",
+    "Add the chicken and cook for roughly 5-7 minutes per side, adjusting the heat to keep the browned bits golden rather than burnt. Thickness affects the time: check the thickest part is cooked through and reaches 75°C. Transfer to a plate and rest loosely covered while making the sauce.",
+    "Lower the frying pan heat to medium-low. Leave the golden browned bits in the pan, but remove any black, burnt pieces. Add 5 g butter and the chopped shallot and soften for 2-3 minutes.",
+    "Pour in the 50 ml prepared chicken stock and scrape up the browned bits with a wooden spoon. Simmer until reduced by about half. Stir in 50 ml double cream and 1-2 tsp Dijon mustard, then simmer gently for 2-3 minutes until the sauce lightly coats a spoon. Taste and add black pepper, salt if needed and a small squeeze of lemon.",
+    "When the potatoes are tender, drain thoroughly and return to the saucepan over low heat for 1 minute to steam-dry. Take off the heat and mash with the remaining 20 g butter. Gradually stir in 60 ml warm milk until smooth, then season to taste. Cover to keep warm.",
+    "Steam or boil the tenderstem broccoli for 3-4 minutes until just tender. Drain well and season with a pinch of salt, black pepper and a little lemon juice.",
+    "Add the chicken's resting juices to the sauce and stir. Return the chicken to the pan briefly over low heat and spoon sauce over it. Serve with the mash and broccoli, pouring the remaining pan sauce over the chicken."
+  ]
+}
